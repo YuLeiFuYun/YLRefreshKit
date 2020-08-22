@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "13.0"	
   s.source       = { :git => "https://github.com/YuLeiFuYun/YLRefreshKit.git", :tag => s.version }
   s.source_files = "Sources/YLRefreshKit/*.swift"
-  s.dependency   = "YLExtensions"
-  s.dependency   = "YLStateMachine"
-  s.dependency   = "ESPullToRefresh"
+  s.dependency "YLExtensions"
+  s.dependency "YLStateMachine"
+  s.dependency "ESPullToRefresh"
 end
