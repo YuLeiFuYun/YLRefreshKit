@@ -1,2 +1,2 @@
 # YLRefreshKit
-统一刷新操作并实现自动刷新。
+The refresh operation is unified and automatic refresh is implemented.
