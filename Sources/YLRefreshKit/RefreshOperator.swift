@@ -16,7 +16,7 @@ open class RefreshOperator<DataSource: DataSourceType>: OperatorType {
     }
     
     // The subclass must override this method
-    public func transition(with action: RefreshAction, completion: @escaping (RefreshState) -> Void) {
+    open func transition(with action: RefreshAction, completion: @escaping (RefreshState) -> Void) {
         fatalError()
     }
 }
