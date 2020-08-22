@@ -1,0 +1,6 @@
+framework module Pods_YLRefreshKit_Demo {
+  umbrella header "Pods-YLRefreshKit-Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

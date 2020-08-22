@@ -1,0 +1,6 @@
+framework module YLStateMachine {
+  umbrella header "YLStateMachine-umbrella.h"
+
+  export *
+  module * { export * }
+}

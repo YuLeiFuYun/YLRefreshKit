@@ -1,0 +1,6 @@
+framework module YLRefreshKit {
+  umbrella header "YLRefreshKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
