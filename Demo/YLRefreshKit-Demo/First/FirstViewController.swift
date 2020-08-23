@@ -14,12 +14,6 @@ class FirstViewController: TViewController<EmojiModel, FirstViewModel, XRefreshO
 
         tableView!.delegate = self
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tableView!.frame = view.frame
-    }
 
 }
 
@@ -30,7 +24,7 @@ extension FirstViewController: UITableViewDelegate {
         let refreshOperator = XRefreshOperator(dataSource: viewModel)
         secondViewController.viewModel = viewModel
         secondViewController.refreshStateMachine = StateMachine(operator: refreshOperator)
-        secondViewController.bindRefreshStateMachine(nil)
+        secondViewController.bindRefreshStateMachine()
         
         navigationController?.pushViewController(secondViewController, animated: true)
     }

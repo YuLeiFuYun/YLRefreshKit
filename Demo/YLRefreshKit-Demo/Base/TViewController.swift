@@ -33,13 +33,13 @@ class TViewController<Model: ModelType, DataSource: DataSourceType, Operator: Re
         
         view.addSubview(tableView!)
         
-        tableView!.setAutoRefresh(with: refreshStateMachine, completion: nil)
+        tableView!.setAutoRefresh(with: refreshStateMachine)
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        
-//        tableView!.frame = view.frame
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView!.frame = view.frame
+    }
     
 }

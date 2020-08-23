@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/YLExtensions" "${PODS_CONFIGURATION_BUILD_DIR}/YLRefreshKit" "${PODS_CONFIGURATION_BUILD_DIR}/YLStateMachine"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/YLExtensions" "${PODS_CONFIGURATION_BUILD_DIR}/YLRefreshKit" "${PODS_CONFIGURATION_BUILD_DIR}/YLStateMachine"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh/ESPullToRefresh.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLExtensions/YLExtensions.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLRefreshKit/YLRefreshKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLStateMachine/YLStateMachine.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLExtensions/YLExtensions.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLRefreshKit/YLRefreshKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLStateMachine/YLStateMachine.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "ESPullToRefresh" -framework "YLExtensions" -framework "YLRefreshKit" -framework "YLStateMachine"
+OTHER_LDFLAGS = $(inherited) -framework "MJRefresh" -framework "YLExtensions" -framework "YLRefreshKit" -framework "YLStateMachine"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

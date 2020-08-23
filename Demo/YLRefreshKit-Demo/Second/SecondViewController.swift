@@ -13,11 +13,5 @@ class SecondViewController: TViewController<NumberModel, SecondViewModel, XRefre
         super.viewDidLoad()
 
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tableView!.frame = view.frame
-    }
 
 }

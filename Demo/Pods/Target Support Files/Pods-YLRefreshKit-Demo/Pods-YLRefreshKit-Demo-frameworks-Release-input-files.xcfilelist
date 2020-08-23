@@ -1,5 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-YLRefreshKit-Demo/Pods-YLRefreshKit-Demo-frameworks.sh
-${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/YLExtensions/YLExtensions.framework
 ${BUILT_PRODUCTS_DIR}/YLRefreshKit/YLRefreshKit.framework
 ${BUILT_PRODUCTS_DIR}/YLStateMachine/YLStateMachine.framework

@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let refreshOperator = XRefreshOperator(dataSource: viewModel)
         viewController.viewModel = viewModel
         viewController.refreshStateMachine = StateMachine(operator: refreshOperator)
-        viewController.bindRefreshStateMachine(nil)
+        viewController.bindRefreshStateMachine()
         let navigationController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navigationController
     }
