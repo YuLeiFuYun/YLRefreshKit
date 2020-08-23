@@ -26,7 +26,46 @@ class XRefreshOperator<DataSource: DataSourceType>: RefreshOperator<DataSource> 
     }
     
     override func transition(with action: RefreshAction, completion: @escaping (RefreshState) -> Void) {
-        fatalError()
+        updateTarget(action: action)
+        
+        networkManager.request(target: target) {
+            [unowned self] (result: Result<DataSource.Model, Error>) in
+            switch result {
+            case .success(let model):
+                switch action {
+                case .pullToRefresh:
+                    // 先清空再设置值，方便 viewModel 处理
+                    self.dataSource.model = nil
+                    self.dataSource.model = model
+                case .loadingMore:
+                    self.dataSource.model = model
+                }
+                
+                // 传递刷新状态
+                let state: RefreshState = (model.nextPage == nil) ? .populated : .paginated
+                completion(state)
+            case .failure(let error):
+                completion(self.errorHandling(error))
+            }
+        }
+    }
+}
+
+private extension XRefreshOperator {
+    func updateTarget(action: RefreshAction) {
+        switch target {
+        case .first(let page):
+            let p = (action == .pullToRefresh) ? 1 : page + 1
+            target = .first(page: p)
+        case .second(let page):
+            let p = (action == .pullToRefresh) ? 1 : page + 1
+            target = .second(page: p)
+        }
+    }
+    
+    func errorHandling(_ error: Error) -> RefreshState {
+        print("error handling...")
+        return .error(error)
     }
 }
 

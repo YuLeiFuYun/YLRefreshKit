@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E01EA0C24F234EB00A3478E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01EA0B24F234EB00A3478E /* SecondViewController.swift */; };
 		4EDA9E5A24F1552B00B466C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E5924F1552B00B466C0 /* AppDelegate.swift */; };
 		4EDA9E5C24F1552B00B466C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E5B24F1552B00B466C0 /* SceneDelegate.swift */; };
-		4EDA9E5E24F1552B00B466C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E5D24F1552B00B466C0 /* ViewController.swift */; };
 		4EDA9E6324F1552E00B466C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA9E6224F1552E00B466C0 /* Assets.xcassets */; };
 		4EDA9E6624F1552E00B466C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA9E6424F1552E00B466C0 /* LaunchScreen.storyboard */; };
 		4EDA9E6F24F15BD200B466C0 /* TViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E6E24F15BD200B466C0 /* TViewModel.swift */; };
@@ -19,7 +19,7 @@
 		4EDA9E7824F1665E00B466C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7724F1665E00B466C0 /* FirstViewController.swift */; };
 		4EDA9E7B24F1672800B466C0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7A24F1672800B466C0 /* NetworkManager.swift */; };
 		4EDA9E7E24F1676000B466C0 /* NumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7D24F1676000B466C0 /* NumberModel.swift */; };
-		4EDA9E8024F1679C00B466C0 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7F24F1679C00B466C0 /* SecondModel.swift */; };
+		4EDA9E8024F1679C00B466C0 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7F24F1679C00B466C0 /* SecondViewModel.swift */; };
 		4EDA9E8224F1699200B466C0 /* XRefreshOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E8124F1699200B466C0 /* XRefreshOperator.swift */; };
 		FFA58C1D2A1F909C565E0FD7 /* Pods_YLRefreshKit_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CBCC9DFFC673D06B1F895C /* Pods_YLRefreshKit_Demo.framework */; };
 /* End PBXBuildFile section */
@@ -28,10 +28,10 @@
 		14CBCC9DFFC673D06B1F895C /* Pods_YLRefreshKit_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLRefreshKit_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2265088F245D1355E06C0E2D /* Pods-YLRefreshKit-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLRefreshKit-Demo.debug.xcconfig"; path = "Target Support Files/Pods-YLRefreshKit-Demo/Pods-YLRefreshKit-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		265B17BC75A0B120FEB494CC /* Pods-YLRefreshKit-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLRefreshKit-Demo.release.xcconfig"; path = "Target Support Files/Pods-YLRefreshKit-Demo/Pods-YLRefreshKit-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		4E01EA0B24F234EB00A3478E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4EDA9E5624F1552B00B466C0 /* YLRefreshKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YLRefreshKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDA9E5924F1552B00B466C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDA9E5B24F1552B00B466C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EDA9E5D24F1552B00B466C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EDA9E6224F1552E00B466C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDA9E6524F1552E00B466C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDA9E6724F1552E00B466C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		4EDA9E7724F1665E00B466C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4EDA9E7A24F1672800B466C0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4EDA9E7D24F1676000B466C0 /* NumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberModel.swift; sourceTree = "<group>"; };
-		4EDA9E7F24F1679C00B466C0 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		4EDA9E7F24F1679C00B466C0 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		4EDA9E8124F1699200B466C0 /* XRefreshOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRefreshOperator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +90,6 @@
 			children = (
 				4EDA9E5924F1552B00B466C0 /* AppDelegate.swift */,
 				4EDA9E5B24F1552B00B466C0 /* SceneDelegate.swift */,
-				4EDA9E5D24F1552B00B466C0 /* ViewController.swift */,
 				4EDA9E7C24F1673900B466C0 /* Second */,
 				4EDA9E7224F163C800B466C0 /* First */,
 				4EDA9E7924F166F100B466C0 /* NetworkManager */,
@@ -134,7 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				4EDA9E7D24F1676000B466C0 /* NumberModel.swift */,
-				4EDA9E7F24F1679C00B466C0 /* SecondModel.swift */,
+				4EDA9E7F24F1679C00B466C0 /* SecondViewModel.swift */,
+				4E01EA0B24F234EB00A3478E /* SecondViewController.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 				4EDA9E7B24F1672800B466C0 /* NetworkManager.swift in Sources */,
 				4EDA9E7124F15C4E00B466C0 /* TViewController.swift in Sources */,
 				4EDA9E7E24F1676000B466C0 /* NumberModel.swift in Sources */,
-				4EDA9E5E24F1552B00B466C0 /* ViewController.swift in Sources */,
 				4EDA9E8224F1699200B466C0 /* XRefreshOperator.swift in Sources */,
-				4EDA9E8024F1679C00B466C0 /* SecondModel.swift in Sources */,
+				4EDA9E8024F1679C00B466C0 /* SecondViewModel.swift in Sources */,
+				4E01EA0C24F234EB00A3478E /* SecondViewController.swift in Sources */,
 				4EDA9E7424F1641400B466C0 /* EmojiModel.swift in Sources */,
 				4EDA9E7824F1665E00B466C0 /* FirstViewController.swift in Sources */,
 				4EDA9E5A24F1552B00B466C0 /* AppDelegate.swift in Sources */,

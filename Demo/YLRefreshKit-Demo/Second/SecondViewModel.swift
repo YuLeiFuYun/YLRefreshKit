@@ -1,5 +1,5 @@
 //
-//  SecondModel.swift
+//  SecondViewModel.swift
 //  YLRefreshKit-Demo
 //
 //  Created by 玉垒浮云 on 2020/8/22.
@@ -29,7 +29,7 @@ class SecondViewModel: TViewModel<NumberModel> {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier, for: indexPath)
         cell.textLabel?.text = "index: \(numbers[indexPath.row])"
         
         return cell

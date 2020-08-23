@@ -9,7 +9,7 @@ import YLExtensions
 import YLStateMachine
 import YLRefreshKit
 
-class TViewController<Model: ModelType, DataSource: DataSourceType, Operator: RefreshOperator<DataSource>>: UIViewController, Refreshable, UITableViewDelegate {
+class TViewController<Model: ModelType, DataSource: DataSourceType, Operator: RefreshOperator<DataSource>>: UIViewController, Refreshable {
     
     var tableView: UITableView?
     var collectionView: UICollectionView?
@@ -22,26 +22,24 @@ class TViewController<Model: ModelType, DataSource: DataSourceType, Operator: Re
         tableView = UITableView()
         tableView!.separatorStyle = .none
         tableView!.dataSource = viewModel
-        tableView!.delegate = self
         
-        if let model = viewModel.model {
-            if model.tCells != nil {
-                tableView!.registerCells(with: model.tCells!)
-            }
-            
-            if model.tNibs != nil {
-                tableView!.registerNibs(with: model.tNibs!)
-            }
+        if Model.tCells != nil {
+            tableView!.registerCells(with: Model.tCells!)
         }
         
-        tableView!.setAutoRefresh(with: refreshStateMachine)
+        if Model.tNibs != nil {
+            tableView!.registerNibs(with: Model.tNibs!)
+        }
+        
         view.addSubview(tableView!)
+        
+        tableView!.setAutoRefresh(with: refreshStateMachine, completion: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tableView!.frame = view.frame
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        
+//        tableView!.frame = view.frame
+//    }
     
 }

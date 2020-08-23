@@ -28,9 +28,7 @@ struct NetworkManager {
             let nextPage = (end >= eEmojis.count) ? nil : page + 1
             let emojiModel = EmojiModel(emojis: emojis, nextPage: nextPage)
             
-            print("completion")
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                print("success")
                 completion(.success(emojiModel as! T))
             }
         case .second(let page):

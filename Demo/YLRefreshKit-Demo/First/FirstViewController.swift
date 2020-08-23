@@ -6,25 +6,33 @@
 //
 
 import YLStateMachine
-/*
-class FirstViewController: TViewController<EmojiModel, FirstViewModel, > {
+
+class FirstViewController: TViewController<EmojiModel, FirstViewModel, XRefreshOperator<FirstViewModel>> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView!.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView!.frame = view.frame
     }
-    */
 
 }
-*/
+
+extension FirstViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let secondViewController = SecondViewController()
+        let viewModel = SecondViewModel()
+        let refreshOperator = XRefreshOperator(dataSource: viewModel)
+        secondViewController.viewModel = viewModel
+        secondViewController.refreshStateMachine = StateMachine(operator: refreshOperator)
+        secondViewController.bindRefreshStateMachine(nil)
+        
+        navigationController?.pushViewController(secondViewController, animated: true)
+    }
+}
+

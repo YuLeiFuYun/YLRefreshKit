@@ -5,7 +5,7 @@
 //  Created by 玉垒浮云 on 2020/8/22.
 //
 
-import UIKit
+import YLStateMachine
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,10 +13,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.windowScene = scene
+        window?.makeKeyAndVisible()
+        
+        let viewController = FirstViewController()
+        let viewModel = FirstViewModel()
+        let refreshOperator = XRefreshOperator(dataSource: viewModel)
+        viewController.viewModel = viewModel
+        viewController.refreshStateMachine = StateMachine(operator: refreshOperator)
+        viewController.bindRefreshStateMachine(nil)
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -30,7 +30,7 @@ class FirstViewModel: TViewModel<EmojiModel> {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 由于知道 tableView 仅有一类自带的 cell，所以可以这么写
-        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier, for: indexPath)
         let emoji = emojis[indexPath.row]
         cell.textLabel?.text = "\(emoji.emoji): \(emoji.name)"
         
