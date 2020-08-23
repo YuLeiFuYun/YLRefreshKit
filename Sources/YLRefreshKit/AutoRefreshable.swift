@@ -5,201 +5,87 @@
 //  Created by 玉垒浮云 on 2020/8/22.
 //
 
-import ESPullToRefresh
+import MJRefresh
 import YLStateMachine
 
 public protocol AutoRefreshable {
     func setAutoRefresh<DataSource: DataSourceType, Operator: RefreshOperator<DataSource>>(
-        with refreshStateMachine: StateMachine<Operator>,
-        completion: (() -> Void)?
+        with refreshStateMachine: StateMachine<Operator>
     )
     
     func setAutoRefresh<DataSource: DataSourceType, Operator: RefreshOperator<DataSource>>(
         with refreshStateMachine: StateMachine<Operator>,
-        headerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        completion: (() -> Void)?
-    )
-    
-    func setAutoRefresh<DataSource: DataSourceType, Operator: RefreshOperator<DataSource>>(
-        with refreshStateMachine: StateMachine<Operator>,
-        footerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        completion: (() -> Void)?
-    )
-    
-    func setAutoRefresh<DataSource: DataSourceType, Operator: RefreshOperator<DataSource>>(
-        with refreshStateMachine: StateMachine<Operator>,
-        headerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        footerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        completion: (() -> Void)?
+        completion: @escaping () -> Void
     )
 }
 
 extension UIScrollView: AutoRefreshable {
     public func setAutoRefresh<DataSource, Operator>(
         with refreshStateMachine: StateMachine<Operator>,
-        completion: (() -> Void)?
+        completion: @escaping () -> Void
     ) where DataSource : DataSourceType, Operator : RefreshOperator<DataSource> {
-        es.addPullToRefresh {
+        let header = MJRefreshNormalHeader(refreshingBlock: {
             refreshStateMachine.trigger(.pullToRefresh) { [unowned self] in
-                if case .paginated = refreshStateMachine.currentState {
-                    // 有下一页
-                    self.es.stopPullToRefresh()
-                } else {
-                    // 没有下一页了
-                    self.es.stopPullToRefresh(ignoreDate: true, ignoreFooter: true)
-                }
+                self.mj_footer?.resetNoMoreData()
+                self.mj_header?.endRefreshing()
                 
-                completion?()
+                completion()
             }
-        }
+        })
         
-        es.addInfiniteScrolling {
+        let footer = MJRefreshAutoNormalFooter(refreshingBlock: {
             refreshStateMachine.trigger(.loadingMore) { [unowned self] in
                 if case .paginated = refreshStateMachine.currentState {
                     // 有下一页
-                    self.es.stopLoadingMore()
+                    self.mj_footer?.endRefreshing()
                 } else {
                     // 没有下一页了
-                    self.es.noticeNoMoreData()
+                    self.mj_footer?.endRefreshingWithNoMoreData()
                 }
                 
-                completion?()
+                completion()
             }
-        }
+        })
         
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            if self.refreshIdentifier == nil {
-                self.es.startPullToRefresh()
-            } else {
-                self.es.autoPullToRefresh()
-            }
-        }
+        footer.stateLabel?.isHidden = true
+        mj_footer = footer
+        
+        header.isAutomaticallyChangeAlpha = true
+        header.lastUpdatedTimeLabel?.isHidden = true
+        header.stateLabel?.isHidden = true
+        mj_header = header
+        mj_header?.beginRefreshing()
     }
     
     public func setAutoRefresh<DataSource, Operator>(
-        with refreshStateMachine: StateMachine<Operator>,
-        headerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        completion: (() -> Void)?
+        with refreshStateMachine: StateMachine<Operator>
     ) where DataSource : DataSourceType, Operator : RefreshOperator<DataSource> {
-        es.addPullToRefresh(animator: headerAnimator) {
+        let header = MJRefreshNormalHeader(refreshingBlock: {
             refreshStateMachine.trigger(.pullToRefresh) { [unowned self] in
-                if case .paginated = refreshStateMachine.currentState {
-                    // 有下一页
-                    self.es.stopPullToRefresh()
-                } else {
-                    // 没有下一页了
-                    self.es.stopPullToRefresh(ignoreDate: true, ignoreFooter: true)
-                }
-                
-                completion?()
+                self.mj_footer?.resetNoMoreData()
+                self.mj_header?.endRefreshing()
             }
-        }
+        })
         
-        es.addInfiniteScrolling {
+        let footer = MJRefreshAutoNormalFooter(refreshingBlock: {
             refreshStateMachine.trigger(.loadingMore) { [unowned self] in
                 if case .paginated = refreshStateMachine.currentState {
                     // 有下一页
-                    self.es.stopLoadingMore()
+                    self.mj_footer?.endRefreshing()
                 } else {
                     // 没有下一页了
-                    self.es.noticeNoMoreData()
+                    self.mj_footer?.endRefreshingWithNoMoreData()
                 }
-                
-                completion?()
             }
-        }
+        })
         
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            if self.refreshIdentifier == nil {
-                self.es.startPullToRefresh()
-            } else {
-                self.es.autoPullToRefresh()
-            }
-        }
-    }
-    
-    public func setAutoRefresh<DataSource, Operator>(
-        with refreshStateMachine: StateMachine<Operator>,
-        footerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        completion: (() -> Void)?
-    ) where DataSource : DataSourceType, Operator : RefreshOperator<DataSource> {
-        es.addPullToRefresh {
-            refreshStateMachine.trigger(.pullToRefresh) { [unowned self] in
-                if case .paginated = refreshStateMachine.currentState {
-                    // 有下一页
-                    self.es.stopPullToRefresh()
-                } else {
-                    // 没有下一页了
-                    self.es.stopPullToRefresh(ignoreDate: true, ignoreFooter: true)
-                }
-                
-                completion?()
-            }
-        }
+        footer.stateLabel?.isHidden = true
+        mj_footer = footer
         
-        es.addInfiniteScrolling(animator: footerAnimator) {
-            refreshStateMachine.trigger(.loadingMore) { [unowned self] in
-                if case .paginated = refreshStateMachine.currentState {
-                    // 有下一页
-                    self.es.stopLoadingMore()
-                } else {
-                    // 没有下一页了
-                    self.es.noticeNoMoreData()
-                }
-                
-                completion?()
-            }
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            if self.refreshIdentifier == nil {
-                self.es.startPullToRefresh()
-            } else {
-                self.es.autoPullToRefresh()
-            }
-        }
-    }
-    
-    public func setAutoRefresh<DataSource, Operator>(
-        with refreshStateMachine: StateMachine<Operator>,
-        headerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        footerAnimator: ESRefreshAnimatorProtocol & ESRefreshProtocol,
-        completion: (() -> Void)?
-    ) where DataSource : DataSourceType, Operator : RefreshOperator<DataSource> {
-        es.addPullToRefresh(animator: headerAnimator) {
-            refreshStateMachine.trigger(.pullToRefresh) { [unowned self] in
-                if case .paginated = refreshStateMachine.currentState {
-                    // 有下一页
-                    self.es.stopPullToRefresh()
-                } else {
-                    // 没有下一页了
-                    self.es.stopPullToRefresh(ignoreDate: true, ignoreFooter: true)
-                }
-                
-                completion?()
-            }
-        }
-        
-        es.addInfiniteScrolling(animator: footerAnimator) {
-            refreshStateMachine.trigger(.loadingMore) { [unowned self] in
-                if case .paginated = refreshStateMachine.currentState {
-                    // 有下一页
-                    self.es.stopLoadingMore()
-                } else {
-                    // 没有下一页了
-                    self.es.noticeNoMoreData()
-                }
-                
-                completion?()
-            }
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            if self.refreshIdentifier == nil {
-                self.es.startPullToRefresh()
-            } else {
-                self.es.autoPullToRefresh()
-            }
-        }
+        header.isAutomaticallyChangeAlpha = true
+        header.lastUpdatedTimeLabel?.isHidden = true
+        header.stateLabel?.isHidden = true
+        mj_header = header
+        mj_header?.beginRefreshing()
     }
 }
