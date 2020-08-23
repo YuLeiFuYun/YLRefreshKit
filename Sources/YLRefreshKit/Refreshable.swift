@@ -16,11 +16,11 @@ public protocol Refreshable {
     var tableView: UITableView? { get set }
     var collectionView: UICollectionView? { get set }
     
-    func bindRefreshStateMachine()
+    func bindRefreshStateMachine(_ completion: (() -> Void)?)
 }
 
 extension Refreshable where Self: UIViewController {
-    public func bindRefreshStateMachine() {
+    public func bindRefreshStateMachine(_ completion: (() -> Void)?) {
         refreshStateMachine.completionHandler = { [weak self] in
             guard
                 let self = self,
@@ -31,6 +31,8 @@ extension Refreshable where Self: UIViewController {
             self.tableView?.separatorStyle = .singleLine
             
             self.collectionView?.reloadData()
+            
+            completion?()
         }
     }
 }
