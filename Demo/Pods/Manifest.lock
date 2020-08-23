@@ -1,7 +1,7 @@
 PODS:
   - MJRefresh (3.5.0)
   - YLExtensions (1.2.0)
-  - YLRefreshKit (1.2.0):
+  - YLRefreshKit (1.2.1):
     - MJRefresh
     - YLExtensions
     - YLStateMachine
@@ -20,7 +20,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   YLExtensions: 72ce351afe0a90003b0552a609f0268a1cd9c512
-  YLRefreshKit: 67401da21322436c31f270630c81297bfaca4b1f
+  YLRefreshKit: e28e1c15324a04e6af62d4c19074c866e78f8ab6
   YLStateMachine: f93c6d7789d2732f7c7ffed0ff2a298a5f8ab250
 
 PODFILE CHECKSUM: b73ec98dc4c8cfa2d10afc36cb8ffe7991cfddf4
