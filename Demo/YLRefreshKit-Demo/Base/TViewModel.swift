@@ -18,12 +18,19 @@ class TViewModel<Model: ModelType>:
     // DataSourceType 的要求
     var model: Model?
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        model == nil ? 0 : model!.data!.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        model == nil ? 0 : model!.data![section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        let cell = tableView.dequeueReusableCell(for: indexPath, with: Model.tAll!)
+        cell.configure(model!.data![indexPath.section][indexPath.row])
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {

@@ -13,14 +13,25 @@ struct Emoji {
     let emoji: String
 }
 
-struct EmojiModel {
+struct EmojiModel: ModelType {
     let emojis: [Emoji]
     let nextPage: Int?
+    var data: [[Any]]?
+    
+    init(emojis: [Emoji], nextPage: Int?) {
+        self.emojis = emojis
+        self.nextPage = nextPage
+        data = [emojis]
+    }
 }
 
-extension EmojiModel: ModelType {
+extension EmojiModel {
     static var tCells: [UITableViewCell.Type]? {
-        [UITableViewCell.self]
+        [EmojiCell.self]
+    }
+    
+    static var tAll: [UITableViewCell.Type]? {
+        [EmojiCell.self]
     }
 }
 

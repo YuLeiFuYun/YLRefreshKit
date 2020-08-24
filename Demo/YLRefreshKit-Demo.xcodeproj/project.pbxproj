@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E01EA0C24F234EB00A3478E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01EA0B24F234EB00A3478E /* SecondViewController.swift */; };
+		4E7ED79924F3839300D99DDE /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7ED79824F3839300D99DDE /* EmojiCell.swift */; };
+		4E7ED79B24F383AD00D99DDE /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7ED79A24F383AD00D99DDE /* NumberCell.swift */; };
 		4EDA9E5A24F1552B00B466C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E5924F1552B00B466C0 /* AppDelegate.swift */; };
 		4EDA9E5C24F1552B00B466C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E5B24F1552B00B466C0 /* SceneDelegate.swift */; };
 		4EDA9E6324F1552E00B466C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA9E6224F1552E00B466C0 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		2265088F245D1355E06C0E2D /* Pods-YLRefreshKit-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLRefreshKit-Demo.debug.xcconfig"; path = "Target Support Files/Pods-YLRefreshKit-Demo/Pods-YLRefreshKit-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		265B17BC75A0B120FEB494CC /* Pods-YLRefreshKit-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLRefreshKit-Demo.release.xcconfig"; path = "Target Support Files/Pods-YLRefreshKit-Demo/Pods-YLRefreshKit-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		4E01EA0B24F234EB00A3478E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4E7ED79824F3839300D99DDE /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
+		4E7ED79A24F383AD00D99DDE /* NumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
 		4EDA9E5624F1552B00B466C0 /* YLRefreshKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YLRefreshKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDA9E5924F1552B00B466C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDA9E5B24F1552B00B466C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			children = (
 				4EDA9E7324F1641400B466C0 /* EmojiModel.swift */,
 				4EDA9E7524F1654500B466C0 /* FirstViewModel.swift */,
+				4E7ED79824F3839300D99DDE /* EmojiCell.swift */,
 				4EDA9E7724F1665E00B466C0 /* FirstViewController.swift */,
 			);
 			path = First;
@@ -134,6 +139,7 @@
 			children = (
 				4EDA9E7D24F1676000B466C0 /* NumberModel.swift */,
 				4EDA9E7F24F1679C00B466C0 /* SecondViewModel.swift */,
+				4E7ED79A24F383AD00D99DDE /* NumberCell.swift */,
 				4E01EA0B24F234EB00A3478E /* SecondViewController.swift */,
 			);
 			path = Second;
@@ -266,11 +272,13 @@
 				4EDA9E8224F1699200B466C0 /* XRefreshOperator.swift in Sources */,
 				4EDA9E8024F1679C00B466C0 /* SecondViewModel.swift in Sources */,
 				4E01EA0C24F234EB00A3478E /* SecondViewController.swift in Sources */,
+				4E7ED79B24F383AD00D99DDE /* NumberCell.swift in Sources */,
 				4EDA9E7424F1641400B466C0 /* EmojiModel.swift in Sources */,
 				4EDA9E7824F1665E00B466C0 /* FirstViewController.swift in Sources */,
 				4EDA9E5A24F1552B00B466C0 /* AppDelegate.swift in Sources */,
 				4EDA9E7624F1654500B466C0 /* FirstViewModel.swift in Sources */,
 				4EDA9E5C24F1552B00B466C0 /* SceneDelegate.swift in Sources */,
+				4E7ED79924F3839300D99DDE /* EmojiCell.swift in Sources */,
 				4EDA9E6F24F15BD200B466C0 /* TViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

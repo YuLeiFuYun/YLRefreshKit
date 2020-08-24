@@ -7,13 +7,24 @@
 
 import YLExtensions
 
-struct NumberModel {
+struct NumberModel: ModelType {
     let numbers: [Int]
     let nextPage: Int?
+    var data: [[Any]]?
+    
+    init(numbers: [Int], nextPage: Int?) {
+        self.numbers = numbers
+        self.nextPage = nextPage
+        data = [numbers]
+    }
 }
 
-extension NumberModel: ModelType {
+extension NumberModel {
     static var tCells: [UITableViewCell.Type]? {
-        [UITableViewCell.self]
+        [NumberCell.self]
+    }
+    
+    static var tAll: [UITableViewCell.Type]? {
+        [NumberCell.self]
     }
 }

@@ -34,11 +34,9 @@ class XRefreshOperator<DataSource: DataSourceType>: RefreshOperator<DataSource> 
             case .success(let model):
                 switch action {
                 case .pullToRefresh:
-                    // 先清空再设置值，方便 viewModel 处理
-                    self.dataSource.model = nil
                     self.dataSource.model = model
                 case .loadingMore:
-                    self.dataSource.model = model
+                    self.dataSource.model!.data![0] += model.data![0]
                 }
                 
                 // 传递刷新状态
