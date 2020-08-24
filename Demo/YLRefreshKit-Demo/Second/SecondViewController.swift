@@ -7,11 +7,4 @@
 
 import UIKit
 
-class SecondViewController: TViewController<NumberModel, SecondViewModel, XRefreshOperator<SecondViewModel>> {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
-}
+class SecondViewController: TViewController<NumberModel, SecondViewModel, XRefreshOperator<SecondViewModel>> { }

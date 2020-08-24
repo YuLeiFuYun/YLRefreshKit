@@ -12,7 +12,6 @@ class TViewModel<Model: ModelType>:
     NSObject,
     DataSourceType,
     UITableViewDataSource,
-    UITableViewDelegate,
     UITableViewDataSourcePrefetching
 {
     // DataSourceType 的要求

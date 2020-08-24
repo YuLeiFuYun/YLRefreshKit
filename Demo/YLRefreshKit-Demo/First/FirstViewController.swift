@@ -8,13 +8,11 @@
 import YLStateMachine
 
 class FirstViewController: TViewController<EmojiModel, FirstViewModel, XRefreshOperator<FirstViewModel>> {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView!.delegate = self
     }
-
 }
 
 extension FirstViewController: UITableViewDelegate {
