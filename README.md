@@ -1,5 +1,5 @@
 # YLRefreshKit
-为了实现自动刷新及统一刷新操作，YLRefreshKit 对项目的各个方面都有要求：Model、Cell、ViewModel、NetworkManager、ViewController，与其把它看作一个库，不如把它当作项目编写规范来看，只要按照这个规范的要求编写项目，就能获得自动刷新的功能并实现刷新操作的统一处理。由于步骤繁多并使用了相当数量的协议，YLRefreshKit 可能不是很容易上手，非常建议你通过 Demo 来学习如何使用它。
+为了实现自动刷新及统一刷新操作，YLRefreshKit 对项目的各个方面都有要求：Model、Cell、ViewModel、NetworkManager、ViewController，与其把它看作一个库，不如把它当作项目编写规范来看，只要按照这个规范的要求编写项目，就能获得自动刷新的功能并实现刷新操作的统一处理。由于使用步骤较多且使用了相当数量的协议，YLRefreshKit 可能不是很容易上手，非常建议你通过 Demo 来学习如何使用它。
 
 
 
