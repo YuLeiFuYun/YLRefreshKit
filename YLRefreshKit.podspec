@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source_files = "Sources/YLRefreshKit/*.swift"
   s.dependency "YLExtensions"
   s.dependency "YLStateMachine"
-  s.dependency "PullToRefreshKit"
+  s.dependency 'PullToRefreshKit'
 end
