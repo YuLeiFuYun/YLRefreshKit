@@ -251,11 +251,6 @@ class TViewController<Model: ModelType, DataSource: DataSourceType, Operator: Re
         
         // 设置自动刷新
         tableView!.setAutoRefresh(with: refreshStateMachine)
-        // 或者，如果你需要在刷新结束后进行一些处理
-        tableView!.setAutoRefresh(with: refreshStateMachine) {
-            // 后续处理
-            ...
-        }
         // 如果你希望自定义刷新的 header 与 footer，
         // 请参考 YLRefreshKit 中的 AutoRefreshable.swift 页面实现你自己的自动刷新方法。
     }
@@ -303,6 +298,10 @@ let refreshOperator = SomeRefreshOperator(dataSource: viewModel)
 viewController.viewModel = viewModel
 viewController.refreshStateMachine = StateMachine(operator: refreshOperator)
 viewController.bindRefreshStateMachine()
+// 或者，你需要在刷新后进行一些操作
+viewController.bindRefreshStateMachine {
+    ...
+}
 ```
 
 
