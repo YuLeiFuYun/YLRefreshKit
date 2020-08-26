@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "YLRefreshKit"
-  s.version      = "1.2.1"
-  s.summary      = "The refresh operation is unified and automatic refresh is implemented."
+  s.version      = "1.3.0"
+  s.summary      = "Consolidate and automate refresh operations."
   s.homepage     = "https://github.com/YuLeiFuYun/YLRefreshKit"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "YuLeiFuYun" => "yuleifuyunn@gmail.com" }
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source_files = "Sources/YLRefreshKit/*.swift"
   s.dependency "YLExtensions"
   s.dependency "YLStateMachine"
-  s.dependency "MJRefresh"
+  s.dependency "PullToRefreshKit"
 end
