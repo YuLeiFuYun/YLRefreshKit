@@ -5,7 +5,7 @@
 //  Created by 玉垒浮云 on 2020/8/22.
 //
 
-import PullToRefreshKit
+import YLPullToRefreshKit
 import YLStateMachine
 
 public protocol AutoRefreshable {
@@ -20,13 +20,14 @@ extension UIScrollView: AutoRefreshable {
     ) where DataSource : DataSourceType, Operator : RefreshOperator<DataSource> {
         configRefreshHeader(container: self) { [unowned self] in
             refreshStateMachine.trigger(.pullToRefresh) {
-                if case .error = refreshStateMachine.currentState {
+                switch refreshStateMachine.currentState {
+                case .error:
                     // 出错了
                     self.switchRefreshHeader(to: .normal(.failure, 0.5))
-                } else if case .paginated = refreshStateMachine.currentState {
+                case .paginated:
                     // 有下一页
                     self.switchRefreshHeader(to: .normal(.success, 0.5))
-                } else {
+                default:
                     // 没有下一页了
                     self.switchRefreshFooter(to: .removed)
                 }
@@ -35,12 +36,13 @@ extension UIScrollView: AutoRefreshable {
         
         configRefreshFooter(container: self) { [unowned self] in
             refreshStateMachine.trigger(.loadingMore) {
-                if case .populated = refreshStateMachine.currentState {
-                    // 有下一页或是出错了
-                    self.switchRefreshFooter(to: .normal)
-                } else {
+                switch refreshStateMachine.currentState {
+                case .populated:
                     // 没有下一页了
                     self.switchRefreshFooter(to: .removed)
+                default:
+                    // 有下一页或是出错了
+                    self.switchRefreshFooter(to: .normal)
                 }
             }
         }
