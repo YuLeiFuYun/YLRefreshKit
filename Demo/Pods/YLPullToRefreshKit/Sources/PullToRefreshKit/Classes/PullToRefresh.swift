@@ -82,8 +82,6 @@ public extension UIScrollView{
         let refreshHeight = refrehser.heightForHeader()
         let bounds = CGRect(x: 0,y: containFrame.height - refreshHeight,width: self.frame.width,height: refreshHeight)
         refrehser.frame = bounds
-        // 隐藏 footer
-        refrehser.isHidden = true
         containComponent.addSubview(refrehser)
         configAssociatedObject(object: object)
         switchRefreshHeader(to: .refreshing)
@@ -143,6 +141,8 @@ public extension UIScrollView{
         containComponent.delegate = refrehser
         refrehser.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         refrehser.frame = containComponent.bounds
+        // 隐藏 footer
+        refrehser.isHidden = true
         containComponent.addSubview(refrehser)
         configAssociatedObject(object: object)
     }
