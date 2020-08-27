@@ -197,14 +197,14 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLExtensions/YLExtensions.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YLPullToRefreshKit/YLPullToRefreshKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLRefreshKit/YLRefreshKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLStateMachine/YLStateMachine.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLExtensions/YLExtensions.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YLPullToRefreshKit/YLPullToRefreshKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLRefreshKit/YLRefreshKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLStateMachine/YLStateMachine.framework"
 fi

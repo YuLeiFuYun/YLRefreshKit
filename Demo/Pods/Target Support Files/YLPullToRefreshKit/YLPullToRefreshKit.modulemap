@@ -1,0 +1,6 @@
+framework module YLPullToRefreshKit {
+  umbrella header "YLPullToRefreshKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
