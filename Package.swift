@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "YLRefreshKit",
             dependencies: [
-                "PullToRefreshKit", "YLExtensions", "YLStateMachine"
+                "YLPullToRefreshKit", "YLExtensions", "YLStateMachine"
             ])
     ]
 )
