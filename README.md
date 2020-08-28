@@ -30,10 +30,6 @@ end
 
 Run `pod install` to build your dependencies.
 
-### Swift Package Manager
-
-Select File > Swift Packages > Add Package Dependency. Enter `https://github.com/YuLeiFuYun/YLRefreshKit.git` in the "Choose Package Repository" dialog.
-
 
 
 ## Usage
