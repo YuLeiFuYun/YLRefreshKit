@@ -7,4 +7,4 @@
 
 import YLRefreshKit
 
-class SecondViewController: TViewController<SecondViewModel, NetworkManager<NumberModel>> { }
+class SecondViewController: TViewController<SecondViewModel, NetworkManager<NumberModel>, CustomRefreshOperator<SecondViewModel, NetworkManager<NumberModel>>> { }

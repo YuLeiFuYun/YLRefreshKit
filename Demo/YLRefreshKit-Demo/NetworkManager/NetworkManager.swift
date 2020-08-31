@@ -12,12 +12,19 @@ enum Target: SceneTargetType {
     case first(page: Int)
     case second(page: Int)
     
+    // 是否能进行下拉刷新。注意，不是指是否遵循 Refreshable 协议
+    var isRefreshable: Bool {
+        return true
+    }
+    
     var viewController: UIViewController {
         switch self {
         case .first:
-            return FirstViewController(dataSource: FirstViewModel(), networkManager: NetworkManager<EmojiModel>(), target: .first(page: 1))
+            let refreshOperator = CustomRefreshOperator(dataSource: FirstViewModel(), networkManager: NetworkManager<EmojiModel>(), target: Target.first(page: 1))
+            return FirstViewController(refreshOperator: refreshOperator)
         case .second:
-            return SecondViewController(dataSource: SecondViewModel(), networkManager: NetworkManager<NumberModel>(), target: .second(page: 1))
+            let refreshOperator = CustomRefreshOperator(dataSource: SecondViewModel(), networkManager: NetworkManager<NumberModel>(), target: Target.second(page: 1))
+            return SecondViewController(refreshOperator: refreshOperator)
         }
     }
     
