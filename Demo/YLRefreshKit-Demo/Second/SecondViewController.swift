@@ -5,6 +5,6 @@
 //  Created by 玉垒浮云 on 2020/8/23.
 //
 
-import UIKit
+import YLRefreshKit
 
-class SecondViewController: TViewController<NumberModel, SecondViewModel, XRefreshOperator<SecondViewModel>> { }
+class SecondViewController: TViewController<SecondViewModel, NetworkManager<NumberModel>> { }

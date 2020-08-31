@@ -6,7 +6,6 @@
 //  Copyright © 2016年 Leo. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 @IBDesignable
@@ -69,11 +68,7 @@ open class ElasticRefreshControl: UIView {
         addSubview(spinner)
         sizeToFit()
         spinner.hidesWhenStopped = true
-        if #available(iOS 13.0, *) {
-            spinner.style = UIActivityIndicatorView.Style.medium
-        } else {
-            spinner.style = .gray
-        }
+        spinner.style = UIActivityIndicatorView.Style.medium
     }
    open override func layoutSubviews() {
         super.layoutSubviews()

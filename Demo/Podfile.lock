@@ -1,7 +1,7 @@
 PODS:
   - YLExtensions (1.2.1)
-  - YLPullToRefreshKit (0.9.4)
-  - YLRefreshKit (1.4.0):
+  - YLPullToRefreshKit (1.0.0)
+  - YLRefreshKit (2.0.1):
     - YLExtensions
     - YLPullToRefreshKit
     - YLStateMachine
@@ -19,8 +19,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   YLExtensions: a182a96d9685aae302023cf565c56f65991fc8fb
-  YLPullToRefreshKit: fe50b13bc4709ccc0077338cf0fded2e0767b117
-  YLRefreshKit: dc64a599e1919976006dd81b5521fe91c08a1369
+  YLPullToRefreshKit: ace06a77856f45b803697c33c1400953d9ed93f8
+  YLRefreshKit: 5e1c8d4ccdd9da8236b93197ca0bf981ebc64753
   YLStateMachine: f93c6d7789d2732f7c7ffed0ff2a298a5f8ab250
 
 PODFILE CHECKSUM: b73ec98dc4c8cfa2d10afc36cb8ffe7991cfddf4

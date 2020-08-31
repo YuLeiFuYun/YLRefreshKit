@@ -6,9 +6,7 @@
 //  I refer a lot logic for MJRefresh https://github.com/CoderMJLee/MJRefresh ,thanks to this lib and all contributors.
 //  Copyright © 2016年 Leo. All rights reserved.
 
-import Foundation
 import UIKit
-import ObjectiveC
 
 // MARK: - Header API  -
 
@@ -63,7 +61,6 @@ struct AssociatedObject {
 }
 
 public extension UIScrollView{
-    
     func configRefreshHeader(with refrehser:UIView & RefreshableHeader = DefaultRefreshHeader.header(),
                                     container object: AnyObject,
                                     action:@escaping ()->()){

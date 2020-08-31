@@ -15,14 +15,12 @@
 		4EDA9E6324F1552E00B466C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA9E6224F1552E00B466C0 /* Assets.xcassets */; };
 		4EDA9E6624F1552E00B466C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA9E6424F1552E00B466C0 /* LaunchScreen.storyboard */; };
 		4EDA9E6F24F15BD200B466C0 /* TViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E6E24F15BD200B466C0 /* TViewModel.swift */; };
-		4EDA9E7124F15C4E00B466C0 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7024F15C4E00B466C0 /* TViewController.swift */; };
 		4EDA9E7424F1641400B466C0 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7324F1641400B466C0 /* EmojiModel.swift */; };
 		4EDA9E7624F1654500B466C0 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7524F1654500B466C0 /* FirstViewModel.swift */; };
 		4EDA9E7824F1665E00B466C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7724F1665E00B466C0 /* FirstViewController.swift */; };
 		4EDA9E7B24F1672800B466C0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7A24F1672800B466C0 /* NetworkManager.swift */; };
 		4EDA9E7E24F1676000B466C0 /* NumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7D24F1676000B466C0 /* NumberModel.swift */; };
 		4EDA9E8024F1679C00B466C0 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E7F24F1679C00B466C0 /* SecondViewModel.swift */; };
-		4EDA9E8224F1699200B466C0 /* XRefreshOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA9E8124F1699200B466C0 /* XRefreshOperator.swift */; };
 		FFA58C1D2A1F909C565E0FD7 /* Pods_YLRefreshKit_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CBCC9DFFC673D06B1F895C /* Pods_YLRefreshKit_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,14 +38,12 @@
 		4EDA9E6524F1552E00B466C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDA9E6724F1552E00B466C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EDA9E6E24F15BD200B466C0 /* TViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewModel.swift; sourceTree = "<group>"; };
-		4EDA9E7024F15C4E00B466C0 /* TViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewController.swift; sourceTree = "<group>"; };
 		4EDA9E7324F1641400B466C0 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 		4EDA9E7524F1654500B466C0 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 		4EDA9E7724F1665E00B466C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4EDA9E7A24F1672800B466C0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4EDA9E7D24F1676000B466C0 /* NumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberModel.swift; sourceTree = "<group>"; };
 		4EDA9E7F24F1679C00B466C0 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
-		4EDA9E8124F1699200B466C0 /* XRefreshOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRefreshOperator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				4EDA9E6E24F15BD200B466C0 /* TViewModel.swift */,
-				4EDA9E7024F15C4E00B466C0 /* TViewController.swift */,
-				4EDA9E8124F1699200B466C0 /* XRefreshOperator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -267,9 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EDA9E7B24F1672800B466C0 /* NetworkManager.swift in Sources */,
-				4EDA9E7124F15C4E00B466C0 /* TViewController.swift in Sources */,
 				4EDA9E7E24F1676000B466C0 /* NumberModel.swift in Sources */,
-				4EDA9E8224F1699200B466C0 /* XRefreshOperator.swift in Sources */,
 				4EDA9E8024F1679C00B466C0 /* SecondViewModel.swift in Sources */,
 				4E01EA0C24F234EB00A3478E /* SecondViewController.swift in Sources */,
 				4E7ED79B24F383AD00D99DDE /* NumberCell.swift in Sources */,

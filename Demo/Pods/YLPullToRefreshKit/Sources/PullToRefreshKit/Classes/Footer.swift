@@ -6,7 +6,6 @@
 //  I refer a lot logic for MJRefresh https://github.com/CoderMJLee/MJRefresh ,thanks to this lib and all contributors.
 //  Copyright © 2016年 Leo. All rights reserved.
 
-import Foundation
 import UIKit
 
 @objc public protocol RefreshableFooter:class{
@@ -76,7 +75,6 @@ public enum RefreshMode{
     case scrollAndTap
 }
 
-@available(iOS 13.0, *)
 open class DefaultRefreshFooter:UIView, RefreshableFooter{
     public static func footer()-> DefaultRefreshFooter{
         return DefaultRefreshFooter()

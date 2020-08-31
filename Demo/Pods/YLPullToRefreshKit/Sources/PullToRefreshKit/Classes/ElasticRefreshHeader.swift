@@ -6,7 +6,6 @@
 //  Copyright © 2016年 Leo. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 open class ElasticRefreshHeader: UIView,RefreshableHeader {

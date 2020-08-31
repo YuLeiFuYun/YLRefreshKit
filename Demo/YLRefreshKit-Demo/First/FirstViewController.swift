@@ -5,9 +5,9 @@
 //  Created by 玉垒浮云 on 2020/8/22.
 //
 
-import YLStateMachine
+import YLRefreshKit
 
-class FirstViewController: TViewController<EmojiModel, FirstViewModel, XRefreshOperator<FirstViewModel>> {
+class FirstViewController: TViewController<FirstViewModel, NetworkManager<EmojiModel>> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,14 +17,9 @@ class FirstViewController: TViewController<EmojiModel, FirstViewModel, XRefreshO
 
 extension FirstViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let secondViewController = SecondViewController()
-        let viewModel = SecondViewModel()
-        let refreshOperator = XRefreshOperator(dataSource: viewModel)
-        secondViewController.viewModel = viewModel
-        secondViewController.refreshStateMachine = StateMachine(operator: refreshOperator)
-        secondViewController.bindRefreshStateMachine()
-        
-        navigationController?.pushViewController(secondViewController, animated: true)
+        guard let viewController = Target.second(page: 1).viewController as? SecondViewController else { return }
+        viewController.refreshStateMachine.operator.dataSource.targetInfo = "some info"
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

@@ -11,11 +11,11 @@ import YLRefreshKit
 class TViewModel<Model: ModelType>:
     NSObject,
     DataSourceType,
-    UITableViewDataSource,
-    UITableViewDataSourcePrefetching
+    UITableViewDataSource
 {
     // DataSourceType 的要求
     var model: Model?
+    var targetInfo: Any?
     
     func numberOfSections(in tableView: UITableView) -> Int {
         model == nil ? 0 : model!.data!.count
@@ -30,9 +30,5 @@ class TViewModel<Model: ModelType>:
         cell.configure(model!.data![indexPath.section][indexPath.row])
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        
     }
 }

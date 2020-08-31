@@ -7,7 +7,6 @@
 //  Copyright © 2016年 Leo. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 @objc public protocol RefreshableHeader: class{
@@ -85,7 +84,6 @@ public enum RefreshKitHeaderText{
     case willRefresh = 3
 }
 
-@available(iOS 13.0, *)
 open class DefaultRefreshHeader: UIView, RefreshableHeader {
     
     open class func header()->DefaultRefreshHeader{

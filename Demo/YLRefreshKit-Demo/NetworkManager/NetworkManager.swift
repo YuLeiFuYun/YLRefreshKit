@@ -5,15 +5,48 @@
 //  Created by 玉垒浮云 on 2020/8/22.
 //
 
-import Foundation
+import YLRefreshKit
+import YLExtensions
 
-enum Target {
+enum Target: SceneTargetType {
     case first(page: Int)
     case second(page: Int)
+    
+    var viewController: UIViewController {
+        switch self {
+        case .first:
+            return FirstViewController(dataSource: FirstViewModel(), networkManager: NetworkManager<EmojiModel>(), target: .first(page: 1))
+        case .second:
+            return SecondViewController(dataSource: SecondViewModel(), networkManager: NetworkManager<NumberModel>(), target: .second(page: 1))
+        }
+    }
+    
+    mutating func update(with action: RefreshAction, targetInfo: Any?) {
+        guard isRefreshable else { return }
+        
+        print("targetInfo: \(String(describing: targetInfo))")
+        
+        switch action {
+        case .pullToRefresh:
+            switch self {
+            case .first:
+                self = .first(page: 1)
+            case .second:
+                self = .second(page: 1)
+            }
+        case .loadingMore:
+            switch self {
+            case .first(let page):
+                self = .first(page: page + 1)
+            case .second(let page):
+                self = .second(page: page + 1)
+            }
+        }
+    }
 }
 
-struct NetworkManager {
-    func request<T>(target: Target, completion: @escaping (Result<T, Error>) -> Void) {
+struct NetworkManager<Model: ModelType>: NetworkManagerType {
+    func request(target: Target, completion: @escaping (Result<Model, Error>) -> Void) {
         switch target {
         case .first(let page):
             let start = 30 * (page - 1)
@@ -29,7 +62,7 @@ struct NetworkManager {
             let emojiModel = EmojiModel(emojis: emojis, nextPage: nextPage)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                completion(.success(emojiModel as! T))
+                completion(.success(emojiModel as! Model))
             }
         case .second(let page):
             let start = 30 * (page - 1)
@@ -39,7 +72,7 @@ struct NetworkManager {
             let numberModel = NumberModel(numbers: numbers, nextPage: nextPage)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                completion(.success(numberModel as! T))
+                completion(.success(numberModel as! Model))
             }
         }
     }

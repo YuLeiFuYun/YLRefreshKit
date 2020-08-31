@@ -5,9 +5,8 @@
 //  Created by huangwenchen on 16/7/12.
 //  Copyright © 2016年 Leo. All rights reserved.
 //
-import Foundation
-import UIKit
 
+import UIKit
 
 open class DefaultRefreshRight:UIView, RefreshableLeftRight {
     public static func right()->DefaultRefreshRight{

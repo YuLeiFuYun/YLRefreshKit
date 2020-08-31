@@ -6,7 +6,6 @@
 //  Copyright © 2016年 Leo. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public protocol RefreshableLeftRight:class{
@@ -35,6 +34,7 @@ public enum RefreshKitLeftRightText{
     case scrollToAction
     case releaseToAction
 }
+
 @objcMembers
 open class DefaultRefreshLeft: UIView, RefreshableLeftRight {
     public static func left()->DefaultRefreshLeft{

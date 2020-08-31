@@ -1,6 +1,5 @@
 <p align="center">
-
- [![Version](https://img.shields.io/cocoapods/v/PullToRefreshKit.svg?style=flat)](http://cocoapods.org/pods/YLPullToRefreshKit)  [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+ [![Version](https://img.shields.io/cocoapods/v/YLPullToRefreshKit.svg?style=flat)](http://cocoapods.org/pods/YLPullToRefreshKit)  [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
  [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
@@ -13,7 +12,7 @@
 ## Requirements
 
 - iOS 13.0+
-- Swift 5.0+
+- Swift 5.1+
 
 
 
@@ -52,7 +51,7 @@ Run `pod install` to build your dependencies.
 
 ### Swift Package Manager
 
-Select File > Swift Packages > Add Package Dependency. Enter `https://github.com/YuLeiFuYun/PullToRefreshKit.git` in the "Choose Package Repository" dialog.
+Select File > Swift Packages > Add Package Dependency. Enter `https://github.com/YuLeiFuYun/YLPullToRefreshKit.git` in the "Choose Package Repository" dialog.
 
 
 
@@ -76,7 +75,7 @@ self.tableView.configRefreshHeader(container:self) { [weak self] in
 }
 ```
 
-<img src="https://raw.github.com/LeoMobileDeveloper/PullToRefreshKit/master/Screenshot/gif1.gif" width="320">
+<img src="Screenshot/gif1.gif" width="320">
 
 #### Pull up to load more
 
@@ -95,7 +94,7 @@ self.tableView.configRefreshFooter(container:self) { [weak self] in
 };
 ```
 
-<img src="https://raw.github.com/LeoMobileDeveloper/PullToRefreshKit/master/Screenshot/gif2.gif" width="320">
+<img src="Screenshot/gif2.gif" width="320">
 
 #### Pull left to exit
 
@@ -105,7 +104,7 @@ scrollView.configSideRefresh(with: DefaultRefreshLeft.left(), container:self, at
 };
 ```
 
-<img src="https://raw.github.com/LeoMobileDeveloper/PullToRefreshKit/master/Screenshot/gif3.gif" width="200">
+<img src="Screenshot/gif3.gif" width="200">
 
 #### Pull right to Pop
 
@@ -119,11 +118,11 @@ scrollView.configSideRefresh(with: right, container:self, at: .right) { [weak se
 };
 ```
 
-<img src="https://raw.github.com/LeoMobileDeveloper/PullToRefreshKit/master/Screenshot/gif4.gif" width="200">
+<img src="Screenshot/gif4.gif" width="200">
 
 #### Config the default refresh text
 
-YLRefresh offer `SetUp` operator，for example
+YLPullToRefreshKit offer `SetUp` operator，for example
 
 ```swift
 let header = DefaultRefreshHeader.header()
@@ -185,4 +184,4 @@ For exmaple,to create a custom header
 
 ## License
 
-YLRefresh is available under the MIT license. See the LICENSE file for more info.
+YLPullToRefreshKit is available under the MIT license. See the LICENSE file for more info.

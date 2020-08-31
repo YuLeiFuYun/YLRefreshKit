@@ -19,13 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = scene
         window?.makeKeyAndVisible()
         
-        let viewController = FirstViewController()
-        let viewModel = FirstViewModel()
-        let refreshOperator = XRefreshOperator(dataSource: viewModel)
-        viewController.viewModel = viewModel
-        viewController.refreshStateMachine = StateMachine(operator: refreshOperator)
-        viewController.bindRefreshStateMachine()
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let target: Target = .first(page: 1)
+        let navigationController = UINavigationController(rootViewController: target.viewController)
         window?.rootViewController = navigationController
     }
 
