@@ -12,7 +12,7 @@ import YLStateMachine
 open class TViewController<DS: DataSourceType, NM: NetworkManagerType>: UIViewController, Refreshable where DS.Model == NM.Model {
     
     public var tableView: UITableView? = UITableView()
-    private var collectionView: UICollectionView?
+    public var collectionView: UICollectionView?
     public var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>!
     
     public convenience init(dataSource: DS, networkManager: NM, target: NM.Target) {
