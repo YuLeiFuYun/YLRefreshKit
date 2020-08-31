@@ -9,30 +9,22 @@ import UIKit
 import YLExtensions
 import YLStateMachine
 
-open class TViewController<DS: DataSourceType, NM: NetworkManagerType>: UIViewController, Refreshable where DS.Model == NM.Model {
+open class TViewController<DS: DataSourceType, NM: NetworkManagerType, RO: RefreshOperator<DS, NM>>: UIViewController, Refreshable where DS.Model == NM.Model {
     
     public var tableView: UITableView? = UITableView()
     public var collectionView: UICollectionView?
     public var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>!
     
-    public convenience init(dataSource: DS, networkManager: NM, target: NM.Target) {
+    public convenience init(refreshOperator: RO) {
         self.init()
         
-        let refreshOperator = RefreshOperator(
-            dataSource: dataSource, networkManager: networkManager, target: target
-        )
         refreshStateMachine = StateMachine(operator: refreshOperator)
         bindRefreshStateMachine()
     }
     
-    public convenience init(
-        dataSource: DS, networkManager: NM, target: NM.Target, afterRefreshed: @escaping () -> Void
-    ) {
+    public convenience init(refreshOperator: RO, afterRefreshed: @escaping () -> Void) {
         self.init()
         
-        let refreshOperator = RefreshOperator(
-            dataSource: dataSource, networkManager: networkManager, target: target
-        )
         refreshStateMachine = StateMachine(operator: refreshOperator)
         bindRefreshStateMachine(afterRefreshed)
     }
