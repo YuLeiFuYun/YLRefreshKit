@@ -1,18 +1,18 @@
 //
 //  Refreshable.swift
-//  RefreshKit
+//  YLRefreshKit-Test
 //
-//  Created by 玉垒浮云 on 2020/8/22.
+//  Created by 玉垒浮云 on 2020/8/30.
 //
 
 import UIKit
 import YLStateMachine
 
 public protocol Refreshable {
-    associatedtype DataSource: DataSourceType
-    associatedtype Operator: RefreshOperator<DataSource>
+    associatedtype DS: DataSourceType
+    associatedtype NM: NetworkManagerType where DS.Model == NM.Model
     
-    var refreshStateMachine: StateMachine<Operator>! { get set }
+    var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>! { get set }
     var tableView: UITableView? { get set }
     var collectionView: UICollectionView? { get set }
     
@@ -46,6 +46,7 @@ extension Refreshable where Self: UIViewController {
             self.tableView?.separatorStyle = .singleLine
             
             self.collectionView?.reloadData()
+            
             
             completion()
         }
