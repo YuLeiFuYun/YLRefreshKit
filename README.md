@@ -1,6 +1,6 @@
 ![logo](logo.png)
 
-YLRefreshKit 通过协议对 Model、Cell、ViewModel、NetworkManager 及 ViewController 等进行了规范，再藉由状态机串联起各个部分，实现了刷新操作的自动化。通过使用它，你不需要再向 ViewModel 或 Controller 写任何刷新代码，它会自动帮你完成刷新操作。
+YLRefreshKit 通过协议对 Model、Cell、NetworkManager 及 ViewController 等进行了规范，再藉由状态机勾连起各个部分，实现了刷新操作的自动化。通过使用它，你不需要再向 ViewModel 或 Controller 写任何刷新代码，它会自动帮你完成刷新操作。
 
 
 
