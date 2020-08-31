@@ -1,5 +1,6 @@
-# YLRefreshKit
-为了实现自动刷新及统一刷新操作，YLRefreshKit 对项目的各个方面都有要求：Model、Cell、ViewModel、NetworkManager、ViewController，与其把它看作一个库，不如把它当作项目编写规范来看，只要按照这个规范的要求编写项目，就能获得自动刷新的功能并实现刷新操作的统一处理。由于使用步骤较多且使用了相当数量的协议，YLRefreshKit 可能不是很容易上手，非常建议你通过 Demo 来学习如何使用它。
+![logo](logo.png)
+
+YLRefreshKit 通过协议对 Model、Cell、ViewModel、NetworkManager 及 ViewController 等进行了规范，再藉由状态机串联起各个部分，实现了刷新操作的自动化。通过使用它，你不需要再向 ViewModel 或 Controller 写任何刷新代码，它会自动帮你完成刷新操作。
 
 
 
@@ -34,7 +35,7 @@ Run `pod install` to build your dependencies.
 
 ## Usage
 
-让 Model 遵循并满足 ModelType 协议：
+首先，让你的 Model 遵循并满足 ModelType 协议：
 
 ```swift
 import YLExtensions
@@ -50,7 +51,7 @@ struct SomeModel: ModelType {
     // 创建一个初始化方法初始化 data
     init(something: [Something]) {
         self.something = something
-        data = [something]
+        self.data = [something]
     }
 }
 
@@ -64,7 +65,7 @@ extension Something {
         // 所有以 nib 形式创建的 cell 类型
         [CCell.self, DCell.self]
     }
-    
+    // 必须实现
     static var tAll: [UITableViewCell.Type]? {
         // 所有 cell 类型，以显示顺序排列
         [ACell.self, BCell.self, CCell.self, DCell.self]
@@ -72,18 +73,23 @@ extension Something {
 }
 ```
 
-在 cell 中重写 `configure(_:)` 方法：
+接着，让 NetworkManager 遵循并实现 NetworkManagerType：
 
 ```swift
-class SomeCell {
-    ...
-    override func configure(_ model: Any?) {
+struct NetworkManager<SomeModel>: NetworkManagerType {
+    // 可以是这样
+    func request(target: Target, completion: @escaping (Result<Model, Error>) -> Void) {
+        ...
+    }
+    
+    // 也可以是这样
+    func request(target: Target, completion: @escaping (Result<Model, Error>) -> Void) -> <#something#> {
         ...
     }
 }
 ```
 
-创建一个 TViewModel（适用于 table view 的 ViewModel。collection view 与之类似。）：
+以 table view 页面为例（collection view 与之类似），为了代码复用，我们创建一个 TViewModel：
 
 ```swift
 import YLExtensions
@@ -92,11 +98,11 @@ import YLRefreshKit
 class TViewModel<Model: ModelType>:
     NSObject,
     DataSourceType,
-    UITableViewDataSource,
-    UITableViewDataSourcePrefetching
+    UITableViewDataSource
 {
     // DataSourceType 的要求
     var model: Model?
+    var targetInfo: Any?
     
     func numberOfSections(in tableView: UITableView) -> Int {
         model == nil ? 0 : model!.data!.count
@@ -112,10 +118,6 @@ class TViewModel<Model: ModelType>:
         
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        
-    }
 }
 ```
 
@@ -123,184 +125,119 @@ class TViewModel<Model: ModelType>:
 
 ```swift
 class SomeViewModel: TViewModel<SomeModel> {}
-
-extension SomeViewModel {
-    // table view data source prefetching
-    ...
-}
 ```
 
-NetworkManager 的形式：
+如果你需要进行错误处理或在刷新前后进行一些操作，请创建一个继承自 RefreshOperator 的子类并重写你需要的方法（如果没有这些需求，直接使用 RefreshOperator 即可）：
 
 ```swift
-enum Target {
-    case first(page: Int)
-    case second(page: Int)
-}
-
-struct NetworkManager {
-    func request<T>(target: Target, completion: @escaping (Result<T, Error>) -> Void) {
-        switch target {
-        case .first(let page):
-            ...
-            DispatchQueue.main.async {
-                completion(.success(model as! T))
-            }
-        case .second(let page):
-            ...
-        }
-    }
-}
-```
-
-创建 SomeRefreshOperator 继承自 RefreshOperator：
-
-```swift
-import YLExtensions
 import YLRefreshKit
 
-class SomeRefreshOperator<DataSource: DataSourceType>: RefreshOperator<DataSource> {
-    private let networkManager = NetworkManager()
-    private var target: Target
-    
-    override init(dataSource: DataSource) {
-        switch dataSource {
-        case is FirstViewModel:
-            target = .first(page: 1)
-        case is SecondViewModel:
-            target = .second(page: 1)
-        default:
-            fatalError()
-        }
-        
-        super.init(dataSource: dataSource)
+class CustomRefreshOperator<DS: DataSourceType, NM: NetworkManagerType>: RefreshOperator<DS, NM> where DS.Model == NM.Model {
+    override func startTransition(_ state: RefreshState) {
+        print("startTransition")
     }
     
-    override func transition(with action: RefreshAction, completion: @escaping (RefreshState) -> Void) {
-        updateTarget(action: action)
-        
-        networkManager.request(target: target) {
-            [unowned self] (result: Result<DataSource.Model, Error>) in
-            switch result {
-            case .success(let model):
-                switch action {
-                case .pullToRefresh:
-                    // 处理数据
-                    ...
-                case .loadingMore:
-                    // 处理数据
-                    ...
-                }
-                
-                // 传递刷新状态
-                let state: RefreshState = (model.nextPage == nil) ? .populated : .paginated
-                completion(state)
-            case .failure(let error):
-                completion(self.errorHandling(error))
-            }
-        }
-    }
-}
-
-private extension SomeRefreshOperator {
-    func updateTarget(action: RefreshAction) {
-        // 更新 target
-        ...
+    override func endTransition(_ state: RefreshState) {
+        print("endTransition")
     }
     
-    func errorHandling(_ error: Error) -> RefreshState {
-        // 处理错误
-        ...
+    override func errorHandling(_ error: Error) -> RefreshState {
+        // 错误处理
+        print("errorHandling")
         return .error(error)
     }
 }
 ```
 
-为了代码复用，可以创建一个 TViewController：
+接下来，创建你的 view controller：
 
 ```swift
-import YLExtensions
-import YLStateMachine
+// 如果 controller 上只是简单的放了一个 table view，你可以这样做：
 import YLRefreshKit
 
-class TViewController<Model: ModelType, DataSource: DataSourceType, Operator: RefreshOperator<DataSource>>: UIViewController, Refreshable {
-    
-    var refreshStateMachine: StateMachine<Operator>!
-    var viewModel: TViewModel<Model>!
-    
-    // Refreshable 的要求
-    var tableView: UITableView?
-    var collectionView: UICollectionView?
-    
+class FirstViewController: TViewController<SomeViewModel, NetworkManager<SomeModel>, CustomRefreshOperator<SomeViewModel, NetworkManager<SomeModel>>> { 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView = UITableView()
-        tableView!.separatorStyle = .none
-        tableView!.dataSource = viewModel
-        
-        if Model.tCells != nil {
-            tableView!.registerCells(with: Model.tCells!)
-        }
-        
-        if Model.tNibs != nil {
-            tableView!.registerNibs(with: Model.tNibs!)
-        }
-        
-        view.addSubview(tableView!)
-        
-        // 设置自动刷新
-        tableView!.setAutoRefresh(with: refreshStateMachine)
-        // 如果你希望自定义刷新的 header 与 footer，
-        // 请参考 YLRefreshKit 中的 AutoRefreshable.swift 页面实现你自己的自动刷新方法。
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tableView!.frame = view.frame
-    }
-    
-}
-```
-
-然后，让 ViewController 继承自 TViewController：
-
-```swift
-import YLStateMachine
-
-// FirstViewController 页面
-class FirstViewController: TViewController<FirstModel, FirstViewModel, SomeRefreshOperator<FirstViewModel>> {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+        // 如果要进行页面跳转
         tableView!.delegate = self
     }
 }
 
 extension FirstViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // 跳转页面
-        ...
+        guard let viewController = Target.second(page: 1).viewController as? SecondViewController else { return }
+        // 给 target 传递一些信息
+        viewController.refreshStateMachine.operator.dataSource.targetInfo = "some info"
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
-// SecondViewController 页面
-class SecondViewController: TViewController<SecondModel, SecondViewModel, SomeRefreshOperator<SecondViewModel>> { }
+
+// 或者，如果你的 controller 比较复杂，请参考 TViewController 页面进行自定义
+// 同时，如果你希望自定义 table view 的 header 或 footer，请参考 AutoRefreshable.swift 页面
 ```
 
-最后，你需要这样创建及配置 ViewController：
+然后，创建一个 target 让它遵循并实现 SceneTargetType 协议：
 
 ```swift
-let viewController = FirstViewController()
-let viewModel = FirstViewModel()
-let refreshOperator = SomeRefreshOperator(dataSource: viewModel)
-viewController.viewModel = viewModel
-viewController.refreshStateMachine = StateMachine(operator: refreshOperator)
-viewController.bindRefreshStateMachine()
-// 或者，你需要在刷新后进行一些操作
-viewController.bindRefreshStateMachine {
+import YLRefreshKit
+
+enum SomeTarget: SceneTargetType {
+    case first(page: Int)
+    case second(page: Int)
     ...
+    
+    // 是否能进行下拉刷新。注意，不是指是否遵循 Refreshable 协议.
+    var isRefreshable: Bool {
+        switch self {
+            ...
+        }
+    }
+    
+    // 返回与 target 对应的 viewController
+    var viewController: UIViewController {
+        switch self {
+        case .first:
+            let refreshOperator = CustomRefreshOperator(dataSource: FirstViewModel(), networkManager: NetworkManager<FirstModel>(), target: SomeTarget.first(page: 1))
+            return FirstViewController(refreshOperator: refreshOperator)
+        case .second:
+            ...
+        }
+    }
+    
+    // 更新 target
+    mutating func update(with action: RefreshAction, targetInfo: Any?) {
+        guard isRefreshable else { return }
+        print("targetInfo: \(String(describing: targetInfo))")
+        
+        switch action {
+        case .pullToRefresh:
+            switch self {
+            case .first:
+                self = .first(page: 1)
+            case .second:
+                self = .second(page: 1)
+            }
+        case .loadingMore:
+            switch self {
+            case .first(let page):
+                self = .first(page: page + 1)
+            case .second(let page):
+                self = .second(page: page + 1)
+            }
+        }
+    }
+}
+```
+
+最后，在 Cell 中重写 `configure(_:)` 方法：
+
+```swift
+class SomeCell: UITableViewCell {
+    override func configure(_ model: Any?) {
+        ...
+    }
 }
 ```
 
