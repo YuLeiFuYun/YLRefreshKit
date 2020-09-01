@@ -8,7 +8,7 @@
 import YLRefreshKit
 import YLExtensions
 
-enum Scene: SceneType {
+enum Target: TargetType {
     case first(page: Int)
     case second(page: Int)
     
@@ -17,21 +17,10 @@ enum Scene: SceneType {
         return true
     }
     
-    var viewController: UIViewController {
-        switch self {
-        case .first:
-            let refreshOperator = CustomRefreshOperator(dataSource: FirstViewModel(), networkManager: NetworkManager<EmojiModel>(), scene: Scene.first(page: 1))
-            return FirstViewController(refreshOperator: refreshOperator)
-        case .second:
-            let refreshOperator = CustomRefreshOperator(dataSource: SecondViewModel(), networkManager: NetworkManager<NumberModel>(), scene: Scene.second(page: 1))
-            return SecondViewController(refreshOperator: refreshOperator)
-        }
-    }
-    
-    mutating func update(with action: RefreshAction, sceneInfo: Any?) {
+    mutating func update(with action: RefreshAction, targetInfo: Any?) {
         guard isRefreshable else { return }
         
-        print("sceneInfo: \(String(describing: sceneInfo))")
+        print("targetInfo: \(String(describing: targetInfo))")
         
         switch action {
         case .pullToRefresh:
@@ -53,7 +42,7 @@ enum Scene: SceneType {
 }
 
 struct NetworkManager<Model: ModelType>: NetworkManagerType {
-    func request(target: Scene, completion: @escaping (Result<Model, Error>) -> Void) {
+    func request(target: Target, completion: @escaping (Result<Model, Error>) -> Void) {
         switch target {
         case .first(let page):
             let start = 30 * (page - 1)

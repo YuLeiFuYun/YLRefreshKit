@@ -11,8 +11,7 @@ import YLStateMachine
 
 open class TViewController<DS: DataSourceType, NM: NetworkManagerType, RO: RefreshOperator<DS, NM>>: UIViewController, Refreshable where DS.Model == NM.Model {
     
-    public var tableView: UITableView? = UITableView()
-    public var collectionView: UICollectionView?
+    public var refreableView: UIScrollView? = UITableView()
     public var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>!
     
     public convenience init(refreshOperator: RO) {
@@ -32,21 +31,21 @@ open class TViewController<DS: DataSourceType, NM: NetworkManagerType, RO: Refre
     open override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView!.frame = view.frame
-        tableView!.separatorStyle = .none
-        tableView!.dataSource = refreshStateMachine.operator.dataSource as? UITableViewDataSource
+        guard let tableView = refreableView as? UITableView else { return }
+        
+        tableView.frame = view.bounds
+        tableView.separatorStyle = .none
+        tableView.dataSource = refreshStateMachine.operator.dataSource as? UITableViewDataSource
         
         if DS.Model.tCells != nil {
-            tableView!.registerCells(with: DS.Model.tCells!)
+            tableView.registerCells(with: DS.Model.tCells!)
         }
         
         if DS.Model.tNibs != nil {
-            tableView!.registerNibs(with: DS.Model.tNibs!)
+            tableView.registerNibs(with: DS.Model.tNibs!)
         }
         
-        view.addSubview(tableView!)
-        
-        tableView!.setAutoRefresh(refreshStateMachine: refreshStateMachine)
+        view.addSubview(tableView)
     }
     
 }

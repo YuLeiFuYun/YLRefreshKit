@@ -19,8 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = scene
         window?.makeKeyAndVisible()
         
-        let first: Scene = .first(page: 1)
-        let navigationController = UINavigationController(rootViewController: first.viewController)
+        let refreshOperator = CustomRefreshOperator(dataSource: FirstViewModel(), networkManager: NetworkManager<EmojiModel>(), target: Target.first(page: 1))
+        let firstViewController = FirstViewController(refreshOperator: refreshOperator)
+        let navigationController = UINavigationController(rootViewController: firstViewController)
         window?.rootViewController = navigationController
     }
 

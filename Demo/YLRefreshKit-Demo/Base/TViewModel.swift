@@ -15,7 +15,7 @@ class TViewModel<Model: ModelType>:
 {
     // DataSourceType 的要求
     var model: Model?
-    var sceneInfo: Any?
+    var targetInfo: Any?
     
     func numberOfSections(in tableView: UITableView) -> Int {
         model == nil ? 0 : model!.data!.count

@@ -16,12 +16,12 @@ open class RefreshOperator<
     
     public private(set) var networkManager: NM
     
-    public private(set) var scene: NM.Scene
+    public private(set) var target: NM.Target
     
-    public init(dataSource: DS, networkManager: NM, scene: NM.Scene) {
+    public init(dataSource: DS, networkManager: NM, target: NM.Target) {
         self.dataSource = dataSource
         self.networkManager = networkManager
-        self.scene = scene
+        self.target = target
     }
     
     open func startTransition(_ state: RefreshState) { }
@@ -29,9 +29,9 @@ open class RefreshOperator<
     open func endTransition(_ state: RefreshState) { }
     
     open func transition(with action: RefreshAction, completion: @escaping (RefreshState) -> Void) {
-        scene.update(with: action, sceneInfo: dataSource.sceneInfo)
+        target.update(with: action, targetInfo: dataSource.targetInfo)
         
-        networkManager.request(target: scene) {
+        networkManager.request(target: target) {
             [unowned self] (result: Result<DS.Model, NM.E>) in
             
             switch result {
