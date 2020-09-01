@@ -31,7 +31,7 @@ open class TViewController<DS: DataSourceType, NM: NetworkManagerType, RO: Refre
     open override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let tableView = refreableView as? UITableView else { return }
+        guard let tableView = refreshableView as? UITableView else { return }
         
         tableView.frame = view.bounds
         tableView.separatorStyle = .none

@@ -31,7 +31,7 @@ class CViewController<DS: DataSourceType, NM: NetworkManagerType, RO: RefreshOpe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let collection = refreableView as? UICollectionView else { return }
+        guard let collection = refreshableView as? UICollectionView else { return }
         collection.frame = view.bounds
         collection.dataSource = refreshStateMachine.operator.dataSource as? UICollectionViewDataSource
         
