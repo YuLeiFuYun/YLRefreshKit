@@ -10,43 +10,45 @@
 		0046C3B105F119A808855A9628592C94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
 		02650295F3477CE7A5BBFB70B3F5AB47 /* ElasticRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C39EC1FE0F5ADE64BF012AE4045899 /* ElasticRefreshHeader.swift */; };
 		063BF44AA7EF94A10826E85493CFD1B2 /* Left.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98C72BF6DF932A95A14A0770022071D /* Left.swift */; };
-		0A53221FE69F54FD22BC5DC10159EF0B /* YLRefreshKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E03F33669FC1B91857B2D71982B1 /* YLRefreshKit-dummy.m */; };
+		069CFBF8A9E7870A552ADE99A4EE3417 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3537A11D718155C2D3C06FA024C5C0 /* SceneType.swift */; };
+		08FA4C58268FE77773985F31847245AD /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B0EB87B1D81B98811A43F8F060ED3 /* Refreshable.swift */; };
+		11736CFD59F64EAC35E121652AD9E60C /* YLRefreshKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 099AC6967D48AB64DEC3A49EE6DB3F2B /* YLRefreshKit-dummy.m */; };
 		18634DBF6DFD9AB51AC88E3404426B96 /* YLExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F33E841FC5921A5CFF0D99C240E390 /* YLExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CBD6FBDCD35C4D6A02C09F7331B8882 /* SceneTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DC9FAAD6F34D003740167326094 /* SceneTargetType.swift */; };
 		1CC1270401372751BD953942FB3BAC36 /* UICollectionView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE62EBE9B6095F0F4DF789EB585A3B /* UICollectionView+Ex.swift */; };
 		2238A0862B9F7BBFC3A926ACC0C8819E /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEE9B881C8D7614960DFB9F9093830 /* arrow_down@3x.png */; };
 		28816B663F923A33E8880039244EC6E8 /* YLPullToRefreshKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8FB5DFCBD6583882F28A3050D1583B /* YLPullToRefreshKit.framework */; };
 		29069562931DA0366D8C29EBD97D195A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
 		2AFE535AA4C6427EEFC4472017C190A3 /* failure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 250457BC33511C91B79C1B8D5AB548B7 /* failure@3x.png */; };
 		2B14904267CB8F6523AA62344A76CFFA /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B01B85A6FA1DE98457539B91BF55F /* PullToRefresh.swift */; };
-		2E20C9D72D4FD92DA089DE758C9B3BD9 /* RefreshAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761BCFAF756832061374EC5EF25C8BF /* RefreshAction.swift */; };
 		408B4D8DEAB927BDCDA7849B74996B72 /* YLExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D366312E25089912516E100069AFE1 /* YLExtensions-dummy.m */; };
+		42CE508F92CADB38DC932341D8D2CE56 /* AutoRefreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD588A6C5FBABA252966FE6CBC66C7 /* AutoRefreshable.swift */; };
 		4DD4D4306CCD70C26D5D91719A27E3A6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694808F915E7A13ABE41E12DAE65A27 /* Utils.swift */; };
 		50E26C0B4B122B1499ED5E83E3C76106 /* YLStateMachine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C92EF6D07064DAF2C86BD14338EE790 /* YLStateMachine-dummy.m */; };
 		51C33B3F5632E13BD5B9DD3BC320A4B0 /* YLStateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7DC475074EEE5FC54F60C6A3BD51A2 /* YLStateMachine.framework */; };
+		5ED97E9691A8A9CCC14E53C4C3E7446F /* RefreshState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248412F3DE30F56EAA56115302CC5376 /* RefreshState.swift */; };
 		61DD69648D0221BF724EEECD94E216D4 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A10349858C8074A35E32AC70CE450 /* Footer.swift */; };
 		6B957D5652B98F139FC50CA708A2525A /* arrow_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AB08093522B829ABF6E212617C2040 /* arrow_left@3x.png */; };
 		79D7CE937DE416C7FC4D81315CED0818 /* Pods-YLRefreshKit-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 641D7D91AC3CA296FAEF8B59DD5FA113 /* Pods-YLRefreshKit-Demo-dummy.m */; };
 		7E380C08F2AF57359D5D305D67F757AB /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07382B3A29EEDDB45B86C559C942E7F4 /* arrow_right@3x.png */; };
+		7FAB2C14658410B8559FE36DC1FF677F /* RefreshOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB660A4AF2635AFCA8205638679E7A /* RefreshOperator.swift */; };
 		83259813B3951731A99E9B6A100FDB98 /* YLPullToRefreshKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9112881FDFC39A7FD55610C541DF070B /* YLPullToRefreshKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83453A33C84DC43D42F38D9460EF3A21 /* AutoRefreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A45BDC1AFB87891E0E46A45821899B1 /* AutoRefreshable.swift */; };
-		88E46FC3A1FBDF31B8972D8A1D5434A0 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A094303E5CA0DF8B5E4D11A6F53E6E5 /* TViewController.swift */; };
 		8CB3F46986C01685CB5418BAE4151224 /* OperatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0DF1CD42474C9C8331A5B0A288E72 /* OperatorType.swift */; };
 		8F08CB899A9835084C078D685240F5F7 /* YLExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE53AD04B1229C24654F930B7E7C47B /* YLExtensions.framework */; };
 		917EBE9381A85A7769FEE190A419266F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
 		93C0A6083F14CCC025AAA706823EDBDB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EFA498DA3A9D1755383DBCB3125D1F /* Header.swift */; };
 		961D3D6C8333C422B484F1E90B21330B /* YLStateMachine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7049CEA344956E0B513E44F401996F6E /* YLStateMachine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A579DB630F7A5A84CEB45D228C240231 /* NetworkManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DB2A82FF8BA8F51EAF47EEBB65480 /* NetworkManagerType.swift */; };
 		A8E1CD179A1040DC79355719A13845C1 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE1FEBBA26FF05EC78F8595D1CBDEB3 /* Pageable.swift */; };
-		AD4664E8AD1BAE6FFBFB81537B9780FA /* RefreshState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FEDD9B2DEBE7866DD61C3ED6EFBCC /* RefreshState.swift */; };
+		AB0CA00B1E501F6BBCCD17FA26C2BB6F /* NetworkManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FF4A09B1E2FFE6566B5B17DE13361 /* NetworkManagerType.swift */; };
 		B030F7D750F5E65636DB97A42FD62014 /* Right.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E4639776417D51090E7D0570AC1E /* Right.swift */; };
 		B97AEDC2FB9F0F7843D559D4AF73E01C /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 553665628E4342FDFB5291C3FEAB59FA /* Localize.strings */; };
 		B98A3A9890CD33AE1EF212F254A5019A /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F276268109F47A93781F7A5CAC071B /* success@3x.png */; };
 		BC2BCE16CB9F23A660C8149CF00DF4C9 /* YLPullToRefreshKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CE25E70DFCF68C92FE810FD7AE1A3E /* YLPullToRefreshKit-dummy.m */; };
+		BD87C9781ADF2451924AAC799483113A /* RefreshAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59918DF97C5B413004646769BCCC2945 /* RefreshAction.swift */; };
 		C50E375D0347EF9EC4AB41845F0E3987 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7737BEAAD892035B68A033D8ECFF9432 /* Configurable.swift */; };
-		CA16D9A76F479DCDDA874536903D4AE1 /* YLRefreshKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D8B94982CB9B1736EEC48E6F22C79F /* YLRefreshKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA16D9A76F479DCDDA874536903D4AE1 /* YLRefreshKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AB7393D95D2FADA0D9683552D05FE0 /* YLRefreshKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB679B1F706F1A4A8B466F9997626221 /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828DA671377DC395BE92DB9EAB41422 /* ActionType.swift */; };
 		D1CCD93FD53EE2382BE916EB825AFDC1 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8597DE02FB10D49EA1F8F870418DD /* ModelType.swift */; };
+		D291CB4AD0224161531188A3D901A936 /* DataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BBDDB1897E5A718B9F44AE27E79F2A /* DataSourceType.swift */; };
 		D29DF4986F7AE68DDC45C8BBF5209B4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
 		D45E94460D78D90E564CD76FE49041CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
 		D4CCAF6EFC8F9BCE951211548011DDFB /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C781545DD01FF2A90C4555C2DFFF9E /* UITableView+Ex.swift */; };
@@ -54,10 +56,8 @@
 		E0FB58A174CD2481783061230A849196 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB3126B573A0A50CBCEAC11DAA2230 /* ReusableView.swift */; };
 		E1F9C3FA997E042AE53F0966BFF4D517 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213AD395E61DCAF8D4ACD0462E33A7C /* NibView.swift */; };
 		E434FFA90D2BC03768CC9C40650247FE /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD17ED216869669CE29290E39AE814 /* StateMachine.swift */; };
+		E6D094BE6B9A990FC666DF7CC42066F4 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CEDC74F7AC38EDE66EFC3696D842B7 /* TViewController.swift */; };
 		F183EE6B7FA42BA0C46B941423F127E7 /* StateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEAC7E76B100EFD3FC3467F8754D29 /* StateType.swift */; };
-		F291F1BF32002EB47CCE456F17CDA72B /* RefreshOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518571E4D957FF3104FE94D4C44C8095 /* RefreshOperator.swift */; };
-		F5D51F00B25DAA508737F79903271E39 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334A040ACC34680E2E3B54C09ADF754 /* Refreshable.swift */; };
-		FF1739C9143958F3E326A83695E35B7C /* DataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507255F233A99EB4F0B75207E5FD3D /* DataSourceType.swift */; };
 		FFC84D024357590F216E7ADC602009E3 /* ElasticRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621ACA75C1F0A9B211A0F0E43CA90409 /* ElasticRefreshControl.swift */; };
 /* End PBXBuildFile section */
 
@@ -116,8 +116,9 @@
 /* Begin PBXFileReference section */
 		00C781545DD01FF2A90C4555C2DFFF9E /* UITableView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Ex.swift"; path = "Sources/YLExtensions/UITableView+Ex.swift"; sourceTree = "<group>"; };
 		01B1E4639776417D51090E7D0570AC1E /* Right.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Right.swift; path = Sources/PullToRefreshKit/Classes/Right.swift; sourceTree = "<group>"; };
+		04AB7393D95D2FADA0D9683552D05FE0 /* YLRefreshKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-umbrella.h"; sourceTree = "<group>"; };
 		07382B3A29EEDDB45B86C559C942E7F4 /* arrow_right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_right@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_right@3x.png"; sourceTree = "<group>"; };
-		0A45BDC1AFB87891E0E46A45821899B1 /* AutoRefreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoRefreshable.swift; path = Sources/YLRefreshKit/AutoRefreshable.swift; sourceTree = "<group>"; };
+		099AC6967D48AB64DEC3A49EE6DB3F2B /* YLRefreshKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRefreshKit-dummy.m"; sourceTree = "<group>"; };
 		0BE53AD04B1229C24654F930B7E7C47B /* YLExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F038B410D35DB18590344CCCC6D49A /* YLExtensions-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLExtensions-Info.plist"; sourceTree = "<group>"; };
 		1213AD395E61DCAF8D4ACD0462E33A7C /* NibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = Sources/YLExtensions/NibView.swift; sourceTree = "<group>"; };
@@ -125,33 +126,27 @@
 		217E4256DF6E27FB40D1E86900896F3A /* YLPullToRefreshKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLPullToRefreshKit.modulemap; sourceTree = "<group>"; };
 		223E6A0BE6DD6FA6572D3674B12D600B /* YLExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLExtensions.modulemap; sourceTree = "<group>"; };
 		231C6E221E52940D8E2216D044BE7588 /* Pods-YLRefreshKit-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLRefreshKit-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		248412F3DE30F56EAA56115302CC5376 /* RefreshState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshState.swift; path = Sources/YLRefreshKit/RefreshState.swift; sourceTree = "<group>"; };
 		250457BC33511C91B79C1B8D5AB548B7 /* failure@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "failure@3x.png"; path = "Sources/PullToRefreshKit/Assets/failure@3x.png"; sourceTree = "<group>"; };
 		2694808F915E7A13ABE41E12DAE65A27 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/PullToRefreshKit/Classes/Utils.swift; sourceTree = "<group>"; };
-		2761BCFAF756832061374EC5EF25C8BF /* RefreshAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshAction.swift; path = Sources/YLRefreshKit/RefreshAction.swift; sourceTree = "<group>"; };
 		29D68A8931B7BFE07E838546953C03BA /* Pods_YLRefreshKit_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLRefreshKit_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA5E7821B2DB7E3AE86E0584913E378 /* Pods-YLRefreshKit-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YLRefreshKit-Demo-umbrella.h"; sourceTree = "<group>"; };
 		2AF5BA5D4BCE9BBD74C242DAAE1C28E2 /* YLPullToRefreshKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLPullToRefreshKit.debug.xcconfig; sourceTree = "<group>"; };
-		2B3B698D60B9AE34E7DC195043C7F846 /* YLRefreshKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLRefreshKit.modulemap; sourceTree = "<group>"; };
-		2CB9E03F33669FC1B91857B2D71982B1 /* YLRefreshKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRefreshKit-dummy.m"; sourceTree = "<group>"; };
-		33507255F233A99EB4F0B75207E5FD3D /* DataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceType.swift; path = Sources/YLRefreshKit/DataSourceType.swift; sourceTree = "<group>"; };
 		345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3B6DB2A82FF8BA8F51EAF47EEBB65480 /* NetworkManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManagerType.swift; path = Sources/YLRefreshKit/NetworkManagerType.swift; sourceTree = "<group>"; };
-		42DE8EBD198123BE3282F726DEF244A7 /* YLRefreshKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLRefreshKit-Info.plist"; sourceTree = "<group>"; };
+		37370EE801F034BF886553134F8C60BA /* YLRefreshKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLRefreshKit-Info.plist"; sourceTree = "<group>"; };
 		47AB3126B573A0A50CBCEAC11DAA2230 /* ReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusableView.swift; path = Sources/YLExtensions/ReusableView.swift; sourceTree = "<group>"; };
 		4828DA671377DC395BE92DB9EAB41422 /* ActionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionType.swift; path = Sources/YLStateMachine/ActionType.swift; sourceTree = "<group>"; };
-		48D0F74C900FFDF28C1A00C7D686D0E9 /* YLRefreshKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.release.xcconfig; sourceTree = "<group>"; };
-		48D8B94982CB9B1736EEC48E6F22C79F /* YLRefreshKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-umbrella.h"; sourceTree = "<group>"; };
-		4A094303E5CA0DF8B5E4D11A6F53E6E5 /* TViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TViewController.swift; path = Sources/YLRefreshKit/TViewController.swift; sourceTree = "<group>"; };
-		518571E4D957FF3104FE94D4C44C8095 /* RefreshOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshOperator.swift; path = Sources/YLRefreshKit/RefreshOperator.swift; sourceTree = "<group>"; };
 		58CE25E70DFCF68C92FE810FD7AE1A3E /* YLPullToRefreshKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLPullToRefreshKit-dummy.m"; sourceTree = "<group>"; };
 		5969ED75C9ADC69EC9C53A2B2140CE81 /* YLStateMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLStateMachine.debug.xcconfig; sourceTree = "<group>"; };
+		59918DF97C5B413004646769BCCC2945 /* RefreshAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshAction.swift; path = Sources/YLRefreshKit/RefreshAction.swift; sourceTree = "<group>"; };
 		621ACA75C1F0A9B211A0F0E43CA90409 /* ElasticRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticRefreshControl.swift; path = Sources/PullToRefreshKit/Classes/ElasticRefreshControl.swift; sourceTree = "<group>"; };
 		641D7D91AC3CA296FAEF8B59DD5FA113 /* Pods-YLRefreshKit-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YLRefreshKit-Demo-dummy.m"; sourceTree = "<group>"; };
 		669DABF584BD61E86AD45A6FA19D044A /* Pods-YLRefreshKit-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLRefreshKit-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		6C3F6B5363E4C2384003819FF2F440A0 /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = "zh-Hans.lproj/Localize.strings"; sourceTree = "<group>"; };
+		6EBB660A4AF2635AFCA8205638679E7A /* RefreshOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshOperator.swift; path = Sources/YLRefreshKit/RefreshOperator.swift; sourceTree = "<group>"; };
 		7049CEA344956E0B513E44F401996F6E /* YLStateMachine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLStateMachine-umbrella.h"; sourceTree = "<group>"; };
 		70F33E841FC5921A5CFF0D99C240E390 /* YLExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLExtensions-umbrella.h"; sourceTree = "<group>"; };
-		71E028CA52DEF7478543DE5634863CDF /* YLRefreshKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.debug.xcconfig; sourceTree = "<group>"; };
+		7346C20D6BAA6168FA9DD0F8F9896CC5 /* YLRefreshKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-prefix.pch"; sourceTree = "<group>"; };
 		76C2F3DE5B9ADAAF6A3F429B43A4DF9B /* YLStateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLStateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7737BEAAD892035B68A033D8ECFF9432 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Sources/YLExtensions/Configurable.swift; sourceTree = "<group>"; };
 		7C92EF6D07064DAF2C86BD14338EE790 /* YLStateMachine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLStateMachine-dummy.m"; sourceTree = "<group>"; };
@@ -160,20 +155,20 @@
 		7F165A164BD9F701899891B7CC8D39CB /* YLStateMachine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLStateMachine.modulemap; sourceTree = "<group>"; };
 		859BB4B934F06E4CAEAD44AFE4DC97C0 /* Pods-YLRefreshKit-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLRefreshKit-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		8B67155CDBFE985857F24D95D1A785E8 /* YLPullToRefreshKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLPullToRefreshKit-Info.plist"; sourceTree = "<group>"; };
-		8E7FEDD9B2DEBE7866DD61C3ED6EFBCC /* RefreshState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshState.swift; path = Sources/YLRefreshKit/RefreshState.swift; sourceTree = "<group>"; };
 		8E8162B975D7272B1969F30E136DC58E /* YLStateMachine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLStateMachine-prefix.pch"; sourceTree = "<group>"; };
 		9112881FDFC39A7FD55610C541DF070B /* YLPullToRefreshKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLPullToRefreshKit-umbrella.h"; sourceTree = "<group>"; };
-		9334A040ACC34680E2E3B54C09ADF754 /* Refreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Refreshable.swift; path = Sources/YLRefreshKit/Refreshable.swift; sourceTree = "<group>"; };
+		91BBDDB1897E5A718B9F44AE27E79F2A /* DataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceType.swift; path = Sources/YLRefreshKit/DataSourceType.swift; sourceTree = "<group>"; };
 		93AEE9B881C8D7614960DFB9F9093830 /* arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_down@3x.png"; sourceTree = "<group>"; };
 		93E0DF1CD42474C9C8331A5B0A288E72 /* OperatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorType.swift; path = Sources/YLStateMachine/OperatorType.swift; sourceTree = "<group>"; };
 		95AB08093522B829ABF6E212617C2040 /* arrow_left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_left@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_left@3x.png"; sourceTree = "<group>"; };
+		96F5F7518A48957A96E448D42BF4A245 /* YLRefreshKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.release.xcconfig; sourceTree = "<group>"; };
 		97BA0AC497C6BC49854511D447FE4A5E /* YLStateMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLStateMachine.release.xcconfig; sourceTree = "<group>"; };
 		99EFA498DA3A9D1755383DBCB3125D1F /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Header.swift; path = Sources/PullToRefreshKit/Classes/Header.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0EE82A660D4C2108F529109089F18A /* Pods-YLRefreshKit-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YLRefreshKit-Demo.modulemap"; sourceTree = "<group>"; };
-		A32A5DC9FAAD6F34D003740167326094 /* SceneTargetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneTargetType.swift; path = Sources/YLRefreshKit/SceneTargetType.swift; sourceTree = "<group>"; };
 		A681AA16B177FBBDB1814135663A3323 /* Pods-YLRefreshKit-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLRefreshKit-Demo-frameworks.sh"; sourceTree = "<group>"; };
 		ACF8597DE02FB10D49EA1F8F870418DD /* ModelType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelType.swift; path = Sources/YLExtensions/ModelType.swift; sourceTree = "<group>"; };
+		AD3537A11D718155C2D3C06FA024C5C0 /* SceneType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneType.swift; path = Sources/YLRefreshKit/SceneType.swift; sourceTree = "<group>"; };
 		ADAEAC7E76B100EFD3FC3467F8754D29 /* StateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateType.swift; path = Sources/YLStateMachine/StateType.swift; sourceTree = "<group>"; };
 		ADB30C9961B6EBCE933A7FBD4FF3923B /* Pods-YLRefreshKit-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLRefreshKit-Demo-Info.plist"; sourceTree = "<group>"; };
 		B2AD6FCB420EA2033DBBB9AEB1DBB34C /* YLRefreshKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLRefreshKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,13 +179,18 @@
 		C37B01B85A6FA1DE98457539B91BF55F /* PullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToRefresh.swift; path = Sources/PullToRefreshKit/Classes/PullToRefresh.swift; sourceTree = "<group>"; };
 		C3C39EC1FE0F5ADE64BF012AE4045899 /* ElasticRefreshHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticRefreshHeader.swift; path = Sources/PullToRefreshKit/Classes/ElasticRefreshHeader.swift; sourceTree = "<group>"; };
 		C7748FA4F5F39C34E5D3B0D8D4972A59 /* YLExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLExtensions-prefix.pch"; sourceTree = "<group>"; };
-		DA9944E2D9AEA33E91124E20BFD07FCE /* YLRefreshKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-prefix.pch"; sourceTree = "<group>"; };
+		C7B5530E399A1FC92D98487B4D4006E3 /* YLRefreshKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.debug.xcconfig; sourceTree = "<group>"; };
+		D05B0EB87B1D81B98811A43F8F060ED3 /* Refreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Refreshable.swift; path = Sources/YLRefreshKit/Refreshable.swift; sourceTree = "<group>"; };
 		DE8FB5DFCBD6583882F28A3050D1583B /* YLPullToRefreshKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLPullToRefreshKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E124CB560E47C3C225952CB92DF476F9 /* YLPullToRefreshKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLPullToRefreshKit.release.xcconfig; sourceTree = "<group>"; };
 		E361A4045F176D9EA8D496EC5362A415 /* YLPullToRefreshKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLPullToRefreshKit-prefix.pch"; sourceTree = "<group>"; };
+		E5CEDC74F7AC38EDE66EFC3696D842B7 /* TViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TViewController.swift; path = Sources/YLRefreshKit/TViewController.swift; sourceTree = "<group>"; };
 		E75BE0069F559F33ED35AA489B30E1BD /* YLStateMachine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLStateMachine-Info.plist"; sourceTree = "<group>"; };
 		E84181EDC3BC0DA1DB65702FAA2746E8 /* YLExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLExtensions.debug.xcconfig; sourceTree = "<group>"; };
+		E8758BB9D2B68F1B83E341E9C868F3B7 /* YLRefreshKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLRefreshKit.modulemap; sourceTree = "<group>"; };
 		E953B8DC59988C9FDCC37439708B1A3E /* Pods-YLRefreshKit-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YLRefreshKit-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE8FF4A09B1E2FFE6566B5B17DE13361 /* NetworkManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManagerType.swift; path = Sources/YLRefreshKit/NetworkManagerType.swift; sourceTree = "<group>"; };
+		EFBD588A6C5FBABA252966FE6CBC66C7 /* AutoRefreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoRefreshable.swift; path = Sources/YLRefreshKit/AutoRefreshable.swift; sourceTree = "<group>"; };
 		F41F080966553A3E9C933FB86E1F1874 /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = Base.lproj/Localize.strings; sourceTree = "<group>"; };
 		F8D366312E25089912516E100069AFE1 /* YLExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLExtensions-dummy.m"; sourceTree = "<group>"; };
 		F8F276268109F47A93781F7A5CAC071B /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "success@3x.png"; path = "Sources/PullToRefreshKit/Assets/success@3x.png"; sourceTree = "<group>"; };
@@ -246,23 +246,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A6996E12EA09611BA36F77E8E7C3252 /* YLRefreshKit */ = {
-			isa = PBXGroup;
-			children = (
-				0A45BDC1AFB87891E0E46A45821899B1 /* AutoRefreshable.swift */,
-				33507255F233A99EB4F0B75207E5FD3D /* DataSourceType.swift */,
-				3B6DB2A82FF8BA8F51EAF47EEBB65480 /* NetworkManagerType.swift */,
-				9334A040ACC34680E2E3B54C09ADF754 /* Refreshable.swift */,
-				2761BCFAF756832061374EC5EF25C8BF /* RefreshAction.swift */,
-				518571E4D957FF3104FE94D4C44C8095 /* RefreshOperator.swift */,
-				8E7FEDD9B2DEBE7866DD61C3ED6EFBCC /* RefreshState.swift */,
-				A32A5DC9FAAD6F34D003740167326094 /* SceneTargetType.swift */,
-				4A094303E5CA0DF8B5E4D11A6F53E6E5 /* TViewController.swift */,
-				F0DF6E119081C8C228FA7B5378B89EE1 /* Support Files */,
-			);
-			path = YLRefreshKit;
-			sourceTree = "<group>";
-		};
 		41F2AFAF554D151E002707273FF4DEAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +285,21 @@
 			path = YLStateMachine;
 			sourceTree = "<group>";
 		};
+		752049128990FD19518F822B04725D46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8758BB9D2B68F1B83E341E9C868F3B7 /* YLRefreshKit.modulemap */,
+				099AC6967D48AB64DEC3A49EE6DB3F2B /* YLRefreshKit-dummy.m */,
+				37370EE801F034BF886553134F8C60BA /* YLRefreshKit-Info.plist */,
+				7346C20D6BAA6168FA9DD0F8F9896CC5 /* YLRefreshKit-prefix.pch */,
+				04AB7393D95D2FADA0D9683552D05FE0 /* YLRefreshKit-umbrella.h */,
+				C7B5530E399A1FC92D98487B4D4006E3 /* YLRefreshKit.debug.xcconfig */,
+				96F5F7518A48957A96E448D42BF4A245 /* YLRefreshKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YLRefreshKit";
+			sourceTree = "<group>";
+		};
 		75AB49F9CB6BCDA2B099D0B108DF1FBB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,7 +320,7 @@
 			children = (
 				9927751D7C12053AC31449C87DAE722F /* YLExtensions */,
 				9D658B9D2E7A9B3253B63A33C038AE47 /* YLPullToRefreshKit */,
-				3A6996E12EA09611BA36F77E8E7C3252 /* YLRefreshKit */,
+				D90BDDB1431D143C24CC6879F1BCECC4 /* YLRefreshKit */,
 				54589818DC62F34CEC843BC77161B555 /* YLStateMachine */,
 			);
 			name = Pods;
@@ -412,27 +410,29 @@
 			);
 			sourceTree = "<group>";
 		};
+		D90BDDB1431D143C24CC6879F1BCECC4 /* YLRefreshKit */ = {
+			isa = PBXGroup;
+			children = (
+				EFBD588A6C5FBABA252966FE6CBC66C7 /* AutoRefreshable.swift */,
+				91BBDDB1897E5A718B9F44AE27E79F2A /* DataSourceType.swift */,
+				EE8FF4A09B1E2FFE6566B5B17DE13361 /* NetworkManagerType.swift */,
+				D05B0EB87B1D81B98811A43F8F060ED3 /* Refreshable.swift */,
+				59918DF97C5B413004646769BCCC2945 /* RefreshAction.swift */,
+				6EBB660A4AF2635AFCA8205638679E7A /* RefreshOperator.swift */,
+				248412F3DE30F56EAA56115302CC5376 /* RefreshState.swift */,
+				AD3537A11D718155C2D3C06FA024C5C0 /* SceneType.swift */,
+				E5CEDC74F7AC38EDE66EFC3696D842B7 /* TViewController.swift */,
+				752049128990FD19518F822B04725D46 /* Support Files */,
+			);
+			path = YLRefreshKit;
+			sourceTree = "<group>";
+		};
 		ECA96EB550F68E233962AC2CBBC306F5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		F0DF6E119081C8C228FA7B5378B89EE1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2B3B698D60B9AE34E7DC195043C7F846 /* YLRefreshKit.modulemap */,
-				2CB9E03F33669FC1B91857B2D71982B1 /* YLRefreshKit-dummy.m */,
-				42DE8EBD198123BE3282F726DEF244A7 /* YLRefreshKit-Info.plist */,
-				DA9944E2D9AEA33E91124E20BFD07FCE /* YLRefreshKit-prefix.pch */,
-				48D8B94982CB9B1736EEC48E6F22C79F /* YLRefreshKit-umbrella.h */,
-				71E028CA52DEF7478543DE5634863CDF /* YLRefreshKit.debug.xcconfig */,
-				48D0F74C900FFDF28C1A00C7D686D0E9 /* YLRefreshKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YLRefreshKit";
 			sourceTree = "<group>";
 		};
 		F8633811E5A70DD1700548BF68DEDD36 /* Targets Support Files */ = {
@@ -567,7 +567,7 @@
 			buildConfigurationList = 1062AC61BAAE3E2751F9C61B3801ACD7 /* Build configuration list for PBXNativeTarget "YLRefreshKit" */;
 			buildPhases = (
 				A27EE127D69CA7374BD57E2A26D8AD0B /* Headers */,
-				1BDA9C7A48C775D2B7C64A005E99FC1B /* Sources */,
+				D602E7D6690C19F72408A59D3F68B0BF /* Sources */,
 				B8A349EE4F30AAC85968A27FDB5C3CFA /* Frameworks */,
 				373FC4D6EEC019F4F70F986D0803CF65 /* Resources */,
 			);
@@ -694,23 +694,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BDA9C7A48C775D2B7C64A005E99FC1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83453A33C84DC43D42F38D9460EF3A21 /* AutoRefreshable.swift in Sources */,
-				FF1739C9143958F3E326A83695E35B7C /* DataSourceType.swift in Sources */,
-				A579DB630F7A5A84CEB45D228C240231 /* NetworkManagerType.swift in Sources */,
-				F5D51F00B25DAA508737F79903271E39 /* Refreshable.swift in Sources */,
-				2E20C9D72D4FD92DA089DE758C9B3BD9 /* RefreshAction.swift in Sources */,
-				F291F1BF32002EB47CCE456F17CDA72B /* RefreshOperator.swift in Sources */,
-				AD4664E8AD1BAE6FFBFB81537B9780FA /* RefreshState.swift in Sources */,
-				1CBD6FBDCD35C4D6A02C09F7331B8882 /* SceneTargetType.swift in Sources */,
-				88E46FC3A1FBDF31B8972D8A1D5434A0 /* TViewController.swift in Sources */,
-				0A53221FE69F54FD22BC5DC10159EF0B /* YLRefreshKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		33EDCBB4CB67E422A0F71B3D836C5773 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -743,6 +726,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D7CE937DE416C7FC4D81315CED0818 /* Pods-YLRefreshKit-Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D602E7D6690C19F72408A59D3F68B0BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CE508F92CADB38DC932341D8D2CE56 /* AutoRefreshable.swift in Sources */,
+				D291CB4AD0224161531188A3D901A936 /* DataSourceType.swift in Sources */,
+				AB0CA00B1E501F6BBCCD17FA26C2BB6F /* NetworkManagerType.swift in Sources */,
+				08FA4C58268FE77773985F31847245AD /* Refreshable.swift in Sources */,
+				BD87C9781ADF2451924AAC799483113A /* RefreshAction.swift in Sources */,
+				7FAB2C14658410B8559FE36DC1FF677F /* RefreshOperator.swift in Sources */,
+				5ED97E9691A8A9CCC14E53C4C3E7446F /* RefreshState.swift in Sources */,
+				069CFBF8A9E7870A552ADE99A4EE3417 /* SceneType.swift in Sources */,
+				E6D094BE6B9A990FC666DF7CC42066F4 /* TViewController.swift in Sources */,
+				11736CFD59F64EAC35E121652AD9E60C /* YLRefreshKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,7 +906,7 @@
 		};
 		4D637D59D7781431D7BDB6354AEB31A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48D0F74C900FFDF28C1A00C7D686D0E9 /* YLRefreshKit.release.xcconfig */;
+			baseConfigurationReference = 96F5F7518A48957A96E448D42BF4A245 /* YLRefreshKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1092,7 +1092,7 @@
 		};
 		8FA2364A6DF5784B8AD4132677BB38D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71E028CA52DEF7478543DE5634863CDF /* YLRefreshKit.debug.xcconfig */;
+			baseConfigurationReference = C7B5530E399A1FC92D98487B4D4006E3 /* YLRefreshKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";

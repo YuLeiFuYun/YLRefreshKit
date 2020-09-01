@@ -10,5 +10,5 @@ import YLExtensions
 public protocol DataSourceType {
     associatedtype Model: ModelType
     var model: Model? { get set }
-    var targetInfo: Any? { get set }
+    var sceneInfo: Any? { get set }
 }

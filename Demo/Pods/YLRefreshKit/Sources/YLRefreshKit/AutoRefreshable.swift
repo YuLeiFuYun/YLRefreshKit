@@ -18,7 +18,7 @@ extension UIScrollView: AutoRefreshable {
     public func setAutoRefresh<DS: DataSourceType, NM: NetworkManagerType>(
         refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>
     ) where DS.Model == NM.Model {
-        if refreshStateMachine.operator.target.isRefreshable {
+        if refreshStateMachine.operator.scene.isRefreshable {
             configRefreshHeader(container: self) { [unowned self] in
                 refreshStateMachine.trigger(.pullToRefresh) {
                     switch refreshStateMachine.currentState {

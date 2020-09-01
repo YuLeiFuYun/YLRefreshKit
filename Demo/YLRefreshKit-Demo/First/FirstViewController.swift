@@ -17,9 +17,9 @@ class FirstViewController: TViewController<FirstViewModel, NetworkManager<EmojiM
 
 extension FirstViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let viewController = Target.second(page: 1).viewController as? SecondViewController else { return }
+        guard let viewController = Scene.second(page: 1).viewController as? SecondViewController else { return }
         // 给 target 传递一些信息
-        viewController.refreshStateMachine.operator.dataSource.targetInfo = "some info"
+        viewController.refreshStateMachine.operator.dataSource.sceneInfo = "some info"
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

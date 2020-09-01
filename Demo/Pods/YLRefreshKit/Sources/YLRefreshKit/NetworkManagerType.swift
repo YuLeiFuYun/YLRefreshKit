@@ -8,11 +8,11 @@
 import YLExtensions
 
 public protocol NetworkManagerType {
-    associatedtype Target: SceneTargetType
+    associatedtype Scene: SceneType
     associatedtype Model: ModelType
     associatedtype E: Error
     associatedtype R
     
     @discardableResult
-    func request(target: Target, completion: @escaping (Result<Model, E>) -> Void) -> R
+    func request(target: Scene, completion: @escaping (Result<Model, E>) -> Void) -> R
 }
