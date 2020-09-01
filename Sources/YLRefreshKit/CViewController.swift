@@ -9,26 +9,26 @@ import UIKit
 import YLExtensions
 import YLStateMachine
 
-class CViewController<DS: DataSourceType, NM: NetworkManagerType, RO: RefreshOperator<DS, NM>>: UIViewController, Refreshable where DS.Model == NM.Model {
+open class CViewController<DS: DataSourceType, NM: NetworkManagerType, RO: RefreshOperator<DS, NM>>: UIViewController, Refreshable where DS.Model == NM.Model {
     
-    var refreshableView: UIScrollView? = UICollectionView()
-    var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>!
+    public var refreshableView: UIScrollView? = UICollectionView()
+    public var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>!
     
-    convenience init(refreshOperator: RO) {
+    public convenience init(refreshOperator: RO) {
         self.init()
         
         refreshStateMachine = StateMachine(operator: refreshOperator)
         bindRefreshStateMachine()
     }
     
-    convenience init(refreshOperator: RO, afterRefreshed: @escaping () -> Void) {
+    public convenience init(refreshOperator: RO, afterRefreshed: @escaping () -> Void) {
         self.init()
         
         refreshStateMachine = StateMachine(operator: refreshOperator)
         bindRefreshStateMachine(afterRefreshed)
     }
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         guard let collection = refreshableView as? UICollectionView else { return }
