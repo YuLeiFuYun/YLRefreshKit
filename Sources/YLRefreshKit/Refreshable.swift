@@ -13,7 +13,7 @@ public protocol Refreshable {
     associatedtype NM: NetworkManagerType where DS.Model == NM.Model
     
     var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>! { get set }
-    var refreableView: UIScrollView? { get set }
+    var refreshableView: UIScrollView? { get set }
     
     func bindRefreshStateMachine()
     func bindRefreshStateMachine(_ completion: @escaping () -> Void)
@@ -27,10 +27,10 @@ extension Refreshable where Self: UIViewController {
                 !self.refreshStateMachine.currentState.isError
             else { return }
 
-            if let tableView = self.refreableView as? UITableView {
+            if let tableView = self.refreshableView as? UITableView {
                 tableView.separatorStyle = .singleLine
                 tableView.reloadData()
-            } else if let collectionView = self.refreableView as? UICollectionView {
+            } else if let collectionView = self.refreshableView as? UICollectionView {
                 collectionView.reloadData()
             }
         }
@@ -43,10 +43,10 @@ extension Refreshable where Self: UIViewController {
                 !self.refreshStateMachine.currentState.isError
             else { return }
 
-            if let tableView = self.refreableView as? UITableView {
+            if let tableView = self.refreshableView as? UITableView {
                 tableView.separatorStyle = .singleLine
                 tableView.reloadData()
-            } else if let collectionView = self.refreableView as? UICollectionView {
+            } else if let collectionView = self.refreshableView as? UICollectionView {
                 collectionView.reloadData()
             }
             

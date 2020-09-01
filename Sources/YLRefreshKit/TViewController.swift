@@ -11,7 +11,7 @@ import YLStateMachine
 
 open class TViewController<DS: DataSourceType, NM: NetworkManagerType, RO: RefreshOperator<DS, NM>>: UIViewController, Refreshable where DS.Model == NM.Model {
     
-    public var refreableView: UIScrollView? = UITableView()
+    public var refreshableView: UIScrollView? = UITableView()
     public var refreshStateMachine: StateMachine<RefreshOperator<DS, NM>>!
     
     public convenience init(refreshOperator: RO) {
