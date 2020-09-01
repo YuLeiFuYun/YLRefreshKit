@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "YLRefreshKit"
-  s.version      = "2.1.2"
+  s.version      = "2.1.3"
   s.summary      = "Consolidate and automate refresh operations."
   s.homepage     = "https://github.com/YuLeiFuYun/YLRefreshKit"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
