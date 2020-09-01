@@ -11,8 +11,8 @@ class FirstViewController: TViewController<FirstViewModel, NetworkManager<EmojiM
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refreableView?.delegate = self
-        refreableView?.setAutoRefresh(refreshStateMachine: refreshStateMachine)
+        refreshableView?.delegate = self
+        refreshableView?.setAutoRefresh(refreshStateMachine: refreshStateMachine)
     }
 }
 

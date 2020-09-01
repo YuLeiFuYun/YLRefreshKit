@@ -11,6 +11,6 @@ class SecondViewController: TViewController<SecondViewModel, NetworkManager<Numb
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refreableView?.setAutoRefresh(refreshStateMachine: refreshStateMachine)
+        refreshableView?.setAutoRefresh(refreshStateMachine: refreshStateMachine)
     }
 }

@@ -189,7 +189,7 @@ class CustomRefreshOperator<DS: DataSourceType, NM: NetworkManagerType>: Refresh
 接下来，创建你的 view controller：
 
 ```swift
-// 如果是一个 table view 页面，请继承 TViewController：
+// 如果是一个 table view 页面，请继承 TViewController（collection view 页面请继承 CViewController）：
 import YLRefreshKit
 
 class FirstViewController: TViewController<SomeViewModel, NetworkManager<SomeModel>, CustomRefreshOperator<SomeViewModel, NetworkManager<SomeModel>>> { 
@@ -204,12 +204,15 @@ class FirstViewController: TViewController<SomeViewModel, NetworkManager<SomeMod
         
         // 如果要进行页面跳转
         tableView!.delegate = self
+        
+        // 设置自动刷新
+        refreshableView.setAutoRefresh(refreshStateMachine: refreshStateMachine)
     }
 }
 
 extension FirstViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let refreshOperator = CustomRefreshOperator(dataSource: FirstViewModel(), networkManager: NetworkManager<FirstModel>(), target: SomeTarget.first(page: 1))
+        let refreshOperator = CustomRefreshOperator(dataSource: SecondViewModel(), networkManager: NetworkManager<SecondModel>(), target: SomeTarget.second(page: 1))
         // 创建 Controller
         let secondViewController = SecondViewController(refreshOperator: refreshOperator)
         // 如果你想在刷新完成后进行一些处理的话
@@ -233,9 +236,15 @@ extension UIScrollView {
         ...
     }
 }
+// 之后在 view controller 中调用
+override func viewDidLoad() {
+    super.viewDidLoad()
+    ...
+    refreshableView.customAutoRefresh(refreshStateMachine: refreshStateMachine)
+}
 ```
 
-然后，创建一个 target 让它遵循并实现 TargetType 协议：
+接着，创建一个 target 让它遵循并实现 TargetType 协议：
 
 ```swift
 import YLRefreshKit
