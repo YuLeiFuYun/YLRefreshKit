@@ -22,7 +22,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '13.0'
 use_frameworks!
 
-target 'MyApp' do
+scene 'MyApp' do
   # your other pod
   # ...
   pod 'YLRefreshKit'
@@ -77,13 +77,15 @@ extension Something {
 
 ```swift
 struct NetworkManager<SomeModel>: NetworkManagerType {
-    // 可以是这样
-    func request(target: Target, completion: @escaping (Result<Model, Error>) -> Void) {
+    // 需要一个遵循 SceneType 协议的类型，假设 Scene 这个类型满足要求(SceneType 的介绍在下面)
+    // 一个遵循 Error 协议的类型
+    // 返回值是可选的，它可以是任何类型，以 Somethig 来称呼它吧
+    func request(target: Scene, completion: @escaping (Result<SomeModel, SomeError>) -> Void) {
         ...
     }
     
     // 也可以是这样
-    func request(target: Target, completion: @escaping (Result<Model, Error>) -> Void) -> <#something#> {
+    func request(target: Scene, completion: @escaping (Result<SomeModel, SomeError>) -> Void) -> Something {
         ...
     }
 }
@@ -102,7 +104,7 @@ class TViewModel<Model: ModelType>:
 {
     // DataSourceType 的要求
     var model: Model?
-    var targetInfo: Any?
+    var sceneInfo: Any?
     
     func numberOfSections(in tableView: UITableView) -> Int {
         model == nil ? 0 : model!.data!.count
@@ -166,24 +168,24 @@ class FirstViewController: TViewController<SomeViewModel, NetworkManager<SomeMod
 
 extension FirstViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let viewController = Target.second(page: 1).viewController as? SecondViewController else { return }
-        // 给 target 传递一些信息
-        viewController.refreshStateMachine.operator.dataSource.targetInfo = "some info"
+        guard let viewController = scene.second(page: 1).viewController as? SecondViewController else { return }
+        // 给 scene 传递一些信息
+        viewController.refreshStateMachine.operator.dataSource.sceneInfo = "some info"
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
 
-// 或者，如果你的 controller 比较复杂，请参考 TViewController 页面进行自定义
+// 或者，如果你的 controller 比较复杂，请参考 TViewController.swift 页面进行自定义
 // 同时，如果你希望自定义 table view 的 header 或 footer，请参考 AutoRefreshable.swift 页面
 ```
 
-然后，创建一个 target 让它遵循并实现 SceneTargetType 协议：
+然后，创建一个 scene 让它遵循并实现 SceneType 协议：
 
 ```swift
 import YLRefreshKit
 
-enum SomeTarget: SceneTargetType {
+enum SomeScene: SceneType {
     case first(page: Int)
     case second(page: Int)
     ...
@@ -195,21 +197,21 @@ enum SomeTarget: SceneTargetType {
         }
     }
     
-    // 返回与 target 对应的 viewController
+    // 返回与 scene 对应的 viewController
     var viewController: UIViewController {
         switch self {
         case .first:
-            let refreshOperator = CustomRefreshOperator(dataSource: FirstViewModel(), networkManager: NetworkManager<FirstModel>(), target: SomeTarget.first(page: 1))
+            let refreshOperator = CustomRefreshOperator(dataSource: FirstViewModel(), networkManager: NetworkManager<FirstModel>(), scene: SomeScene.first(page: 1))
             return FirstViewController(refreshOperator: refreshOperator)
         case .second:
             ...
         }
     }
     
-    // 更新 target
-    mutating func update(with action: RefreshAction, targetInfo: Any?) {
+    // 更新 scene
+    mutating func update(with action: RefreshAction, sceneInfo: Any?) {
         guard isRefreshable else { return }
-        print("targetInfo: \(String(describing: targetInfo))")
+        print("sceneInfo: \(String(describing: sceneInfo))")
         
         switch action {
         case .pullToRefresh:
