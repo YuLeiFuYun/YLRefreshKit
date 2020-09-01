@@ -7,16 +7,16 @@
 
 import YLStateMachine
 
-public protocol SceneTargetType: Hashable {
+public protocol SceneType: Hashable {
     /// 是否能进行下拉刷新。注意，不是指是否遵循 Refreshable 协议。
     var isRefreshable: Bool { get }
     /// 与 target 对应的 viewController
     var viewController: UIViewController { get }
     /// 更新 target
-    mutating func update(with action: RefreshAction, targetInfo: Any?)
+    mutating func update(with action: RefreshAction, sceneInfo: Any?)
 }
 
-extension SceneTargetType {
+extension SceneType {
     public var isRefreshable: Bool { true }
-    public mutating func update(with action: RefreshAction, targetInfo: Any?) { }
+    public mutating func update(with action: RefreshAction, sceneInfo: Any?) { }
 }

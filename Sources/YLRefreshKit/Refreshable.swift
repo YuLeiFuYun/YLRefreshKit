@@ -47,7 +47,6 @@ extension Refreshable where Self: UIViewController {
             
             self.collectionView?.reloadData()
             
-            
             completion()
         }
     }
