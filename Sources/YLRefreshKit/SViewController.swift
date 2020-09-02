@@ -8,7 +8,6 @@
 import UIKit
 import YLExtensions
 import YLStateMachine
-import YLRefreshKit
 
 open class SViewController<DS: DataSourceType, NM: NetworkManagerType, RO: RefreshOperator<DS, NM>>: UIViewController, Refreshable where DS.Model == NM.Model {
     
