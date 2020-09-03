@@ -8,74 +8,75 @@
 
 /* Begin PBXBuildFile section */
 		0046C3B105F119A808855A9628592C94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
-		02650295F3477CE7A5BBFB70B3F5AB47 /* ElasticRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66185AA1D2CE9818BFA92325602CAAC /* ElasticRefreshHeader.swift */; };
-		063BF44AA7EF94A10826E85493CFD1B2 /* Left.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63E5C8FA40BE8262594E56ECF6699D4 /* Left.swift */; };
-		18634DBF6DFD9AB51AC88E3404426B96 /* YLExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3E1C5C6E2E3435A4996CACEE485810 /* YLExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C8DFBE99A1E8EA58F6A2BC1AC54D1B8 /* OperatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC17ED3AB10C61B6F84D98423B8D6F /* OperatorType.swift */; };
-		1CC1270401372751BD953942FB3BAC36 /* UICollectionView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B7308912CB99FE46B2FF6FE6123814 /* UICollectionView+Ex.swift */; };
-		2238A0862B9F7BBFC3A926ACC0C8819E /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E06966CC0BD55F3EA3082FE3C501E2 /* arrow_down@3x.png */; };
-		280B914E36B678794713C1BE066C0372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
-		2A1C28B5017A52E9D5A3CBD2555BA6D4 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A7454AC7219AA50598CAC705B2A26 /* StateMachine.swift */; };
-		2AFE535AA4C6427EEFC4472017C190A3 /* failure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 886334A20033451D257989F03CB6FA28 /* failure@3x.png */; };
-		2B14904267CB8F6523AA62344A76CFFA /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABB1ADFB616BE664122109AE975C30 /* PullToRefresh.swift */; };
-		357342DBD6218A13BF82440EF8E277C6 /* YLPullToRefreshKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8FB5DFCBD6583882F28A3050D1583B /* YLPullToRefreshKit.framework */; };
-		408B4D8DEAB927BDCDA7849B74996B72 /* YLExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AD36EFE639CF3803004378A38F4F1 /* YLExtensions-dummy.m */; };
-		4740AB27614DE91473FCC56429B08F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
-		4DD4D4306CCD70C26D5D91719A27E3A6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62EFE68A4C179DD449D614AD4B65C30 /* Utils.swift */; };
-		54E981C50384EBDD8A961F4B146F2E29 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B6F132AC08E740F971DA290BB128A2 /* CViewController.swift */; };
-		551DF69069C07F30793D3D8902AE4F74 /* YLRefreshKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 672117975AD810F08FC37CDC682A42BA /* YLRefreshKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56206A49DF2B263584F258EA6925A452 /* YLStateMachine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FCBE37D400AD273AF6C4E6D25A4F57 /* YLStateMachine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5818DB071B8A8F634C79EC9656B4CACA /* YLStateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7DC475074EEE5FC54F60C6A3BD51A2 /* YLStateMachine.framework */; };
-		61DD69648D0221BF724EEECD94E216D4 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05509F7753834DAE728974E4DF9725FD /* Footer.swift */; };
-		6B957D5652B98F139FC50CA708A2525A /* arrow_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85CBD161B31BF60DCA49622999A8E43C /* arrow_left@3x.png */; };
-		752B8239385A15206E49719B284494D6 /* NetworkManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206369238E7A5261C756D4B23C7053 /* NetworkManagerType.swift */; };
-		78B5BB2E05B3F75B10DDDDC9DD2D8EC7 /* YLRefreshKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA235CE5166ED1BF41E0B39F6F797470 /* YLRefreshKit-dummy.m */; };
+		02650295F3477CE7A5BBFB70B3F5AB47 /* ElasticRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E67289E03FD684C7F263B0AF3C6B85 /* ElasticRefreshHeader.swift */; };
+		05129DF525220DCEBFAF90C2E80AC170 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731EA506B1423E3DD24664191785585 /* StateMachine.swift */; };
+		063BF44AA7EF94A10826E85493CFD1B2 /* Left.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8FF1B33CD1E3CB2A2606FD70C9247 /* Left.swift */; };
+		18634DBF6DFD9AB51AC88E3404426B96 /* YLExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9ED362A1C126F8658D1340ACE7AADB /* YLExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CADA545AB604BB4C3797517E45F8ACF /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81A3F0A2A8A062032E8BF9B344F66E /* CViewController.swift */; };
+		1CC1270401372751BD953942FB3BAC36 /* UICollectionView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D805556B66BEFE63B90E2C49247A9 /* UICollectionView+Ex.swift */; };
+		1FB889EF4F720525AE3DF61232D82649 /* OperatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D896C961F72DE9D719D4D666925075 /* OperatorType.swift */; };
+		2238A0862B9F7BBFC3A926ACC0C8819E /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7360258FB530A6D33EAC3401887882D /* arrow_down@3x.png */; };
+		2AFE535AA4C6427EEFC4472017C190A3 /* failure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F367B0F016FEE04421F54AFB0BE9EC8 /* failure@3x.png */; };
+		2B14904267CB8F6523AA62344A76CFFA /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1BE305B4F1D4A03FC4BA4EE644B5A9 /* PullToRefresh.swift */; };
+		2F9459ED55E77235CC5671B9A6C1320A /* StateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5AC4E98259B64C3F7EB4D10A31511 /* StateType.swift */; };
+		408B4D8DEAB927BDCDA7849B74996B72 /* YLExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 203675E9168BBEF8FCEA113796E948FB /* YLExtensions-dummy.m */; };
+		47C6CB59778A45BDEB6D5DD10E1058A1 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F5E6479C9468F925631A418A04D3F5 /* Refreshable.swift */; };
+		4DD4D4306CCD70C26D5D91719A27E3A6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CF1BE5ABF71AC26AF8E04D7360E22 /* Utils.swift */; };
+		5F2E546F8AB1AA4B1F20D546F5D7EDC6 /* SViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A01104EDD0889BDA8460EDDCBF5ED /* SViewController.swift */; };
+		61DD69648D0221BF724EEECD94E216D4 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0494C283159B579963416528E4216B /* Footer.swift */; };
+		6B957D5652B98F139FC50CA708A2525A /* arrow_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A0C841660AC32694935976ACC45317 /* arrow_left@3x.png */; };
 		79D7CE937DE416C7FC4D81315CED0818 /* Pods-YLRefreshKit-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 641D7D91AC3CA296FAEF8B59DD5FA113 /* Pods-YLRefreshKit-Demo-dummy.m */; };
-		7E380C08F2AF57359D5D305D67F757AB /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46DEF405CDE6A295C09505E10374955B /* arrow_right@3x.png */; };
-		83259813B3951731A99E9B6A100FDB98 /* YLPullToRefreshKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4372D778E3F113B910039B39BDC49B7 /* YLPullToRefreshKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83FC5FB37A4982D038985027CDBA809E /* RefreshState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7672A19A6CB67881DA60EA6C7350E03 /* RefreshState.swift */; };
-		856A2C855F7065EC3B6E54DB3FA8BFDE /* YLExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE53AD04B1229C24654F930B7E7C47B /* YLExtensions.framework */; };
-		862E7322F035FF99802C9A041E448854 /* AutoRefreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7D0DBE76A818D1FF592E495CD4DB9 /* AutoRefreshable.swift */; };
-		8652D9441B750D88795C6586A977F546 /* DataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E88114C8FE18B1152D412008A1D2B /* DataSourceType.swift */; };
+		7E380C08F2AF57359D5D305D67F757AB /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9772D93C1103976898567B4785A8518D /* arrow_right@3x.png */; };
+		83259813B3951731A99E9B6A100FDB98 /* YLPullToRefreshKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1439200197E515FF8733257E32B2204E /* YLPullToRefreshKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841CE5C266E2A970673C216D042CA15F /* YLStateMachine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DE3569EBA36226B95255C53510015 /* YLStateMachine-dummy.m */; };
+		916EF72BDF9DD2987AD21B4DFC04E086 /* RefreshState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A71EA6D8D6FDC5416F2CAFD8C94AEB /* RefreshState.swift */; };
 		917EBE9381A85A7769FEE190A419266F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
-		93C0A6083F14CCC025AAA706823EDBDB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86C0C0BB02A1CB239480A80C6A7B91 /* Header.swift */; };
-		A8E1CD179A1040DC79355719A13845C1 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4102DB9CE097ABA31CE98B6FDEAF80DF /* Pageable.swift */; };
-		B030F7D750F5E65636DB97A42FD62014 /* Right.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B6E221729690B6F2DEF7C94F0BD3B /* Right.swift */; };
-		B97AEDC2FB9F0F7843D559D4AF73E01C /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E20C8120B9F289876D766B182940F2D /* Localize.strings */; };
-		B98A3A9890CD33AE1EF212F254A5019A /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3E99842E0354B487C0FFB3709B5921 /* success@3x.png */; };
-		BC2BCE16CB9F23A660C8149CF00DF4C9 /* YLPullToRefreshKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A83510F69C9C5AFAA31EB888BE0146C /* YLPullToRefreshKit-dummy.m */; };
-		C50E375D0347EF9EC4AB41845F0E3987 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD02E96608EF5E872AB7D1E7C2A96A /* Configurable.swift */; };
-		C6F2CC472E6374807F1FE76901E62DA1 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A87AE1AD9F680FE3351BDD0A561E3 /* TViewController.swift */; };
-		CCE917A4641A3E8611BF2B010AAEF5BA /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763D4F598ACA507FC6CE9229FCCDC01 /* ActionType.swift */; };
-		CE52D4DC149642DF3F0571AAB4365B07 /* RefreshAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890485F6701B0A102A55BB7CBC80F031 /* RefreshAction.swift */; };
-		D1CCD93FD53EE2382BE916EB825AFDC1 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1B72D9BA7CC91A3FEC237820CD048 /* ModelType.swift */; };
+		93C0A6083F14CCC025AAA706823EDBDB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE112FD4844192EF9538276BBB1DF1 /* Header.swift */; };
+		9D0FD4E5CBB47D56BC1A7F9D4EAD3765 /* RefreshAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F9214261A6759D20ADCB198D33A47D /* RefreshAction.swift */; };
+		A4ED068C9DA0484A3175ADD5BCDEC99B /* AutoRefreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FD6B921C5FE715B1EA476DE73F0124 /* AutoRefreshable.swift */; };
+		A7CE107585A011E093F613A57201953F /* NetworkManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F8AC35D3270F568E4864051B5AFBB0 /* NetworkManagerType.swift */; };
+		A8E1CD179A1040DC79355719A13845C1 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566E4FEC08AB0860E3321DFC0012C397 /* Pageable.swift */; };
+		B030F7D750F5E65636DB97A42FD62014 /* Right.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8388C67BD3D581908A1BCDDC7044E6 /* Right.swift */; };
+		B2321F133EEA26B02132AE238A4BB3BB /* YLStateMachine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAE1739E24CEE9B8B0D7F438E990235 /* YLStateMachine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B554F7A2FEAB77C2E6B901AF713EA532 /* YLRefreshKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6966838831BAF63872C873D091DD77B8 /* YLRefreshKit-dummy.m */; };
+		B97AEDC2FB9F0F7843D559D4AF73E01C /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = C95083FB807ADA9F033D42C0BC5149B9 /* Localize.strings */; };
+		B98A3A9890CD33AE1EF212F254A5019A /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FB8C7BAD27F5F6C9E191C0FCDCD249 /* success@3x.png */; };
+		BC2BCE16CB9F23A660C8149CF00DF4C9 /* YLPullToRefreshKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D0369748F78A8683D983629F0BDB26 /* YLPullToRefreshKit-dummy.m */; };
+		C033DBA9578C1525942C8C030FA08EF1 /* YLStateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7DC475074EEE5FC54F60C6A3BD51A2 /* YLStateMachine.framework */; };
+		C50E375D0347EF9EC4AB41845F0E3987 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BDAB752C7C534FA8DA4150E7B22B6 /* Configurable.swift */; };
+		D015489276465A574DA94957E16DAE52 /* YLExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE53AD04B1229C24654F930B7E7C47B /* YLExtensions.framework */; };
+		D13CA8D51D42042E1C8436047C855665 /* YLPullToRefreshKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8FB5DFCBD6583882F28A3050D1583B /* YLPullToRefreshKit.framework */; };
+		D1CCD93FD53EE2382BE916EB825AFDC1 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E49D4C301CCD67F5ED5BDE78588858 /* ModelType.swift */; };
 		D29DF4986F7AE68DDC45C8BBF5209B4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
-		D2A1C8A2DF2AAE8123DEA1816C5E58AE /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA9412483265126DF18C6785FB9DE3 /* Refreshable.swift */; };
-		D3468A5233EC42977D68F6B8BC30D3C1 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C955B0DF00AD3AAE17D0CB53CC90243 /* TargetType.swift */; };
-		D4CCAF6EFC8F9BCE951211548011DDFB /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C67F583F44E4BD481E7DC8583A7E631 /* UITableView+Ex.swift */; };
-		D5D43F86DBEF1DA01C5D41BC1607F3C8 /* StateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9D484C633476922817A9634E4DD2A /* StateType.swift */; };
+		D4CCAF6EFC8F9BCE951211548011DDFB /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C737DB085DC14D4CC7ABF46C9FF2A4 /* UITableView+Ex.swift */; };
+		DC7827858F28B3DCA356C89C4FB3EFB8 /* RefreshOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809345BFDFF2729FC008C4BF749DE621 /* RefreshOperator.swift */; };
+		DF65D541A3A032F6D58F7D5D959F1FBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
+		DFDAEE8294B362373D99770CE91E9260 /* DataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624129B2AA39042EB3E66E70939C4ED /* DataSourceType.swift */; };
 		E06B3E94EB343FE1953ACA6300324A85 /* Pods-YLRefreshKit-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA5E7821B2DB7E3AE86E0584913E378 /* Pods-YLRefreshKit-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0FB58A174CD2481783061230A849196 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FBCE6D50E0727C0BC448BD0C3A55D /* ReusableView.swift */; };
-		E1F9C3FA997E042AE53F0966BFF4D517 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC0C196FD3604BC6435B76F3118819 /* NibView.swift */; };
-		ED46FB61F1DBD8459B979CE99DAE4E4D /* YLStateMachine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D4F472C3CECD977152B213FEEB754 /* YLStateMachine-dummy.m */; };
-		FF7EA9D99465399E31BCA50EA79D1B16 /* RefreshOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E9260384D496EDF393DBCC9D0A3439 /* RefreshOperator.swift */; };
-		FFC84D024357590F216E7ADC602009E3 /* ElasticRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8054FE9248597EF647B09EC822450 /* ElasticRefreshControl.swift */; };
+		E0FB58A174CD2481783061230A849196 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8919D4103C923DECA0EB58C83828C /* ReusableView.swift */; };
+		E1F9C3FA997E042AE53F0966BFF4D517 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06CA88F864E68E641E26A0E6043B5E /* NibView.swift */; };
+		E3A8259212D04E244A37F263B4F41C7A /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1687ED74196CB85DE9BC13299140B0 /* ActionType.swift */; };
+		E40B7AB43051011373039163D27589B1 /* YLRefreshKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9890C89EDA275DFC0F957AD98D21DC19 /* YLRefreshKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E731D2E53903510070A3C5B225E835CF /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84618A809CF16678E8FF275DAA5C07 /* TViewController.swift */; };
+		F84845B1B58A20FD14824F83D7295A6E /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3318342625718C287F3C9DF608BB4 /* TargetType.swift */; };
+		FBC89E5A28AF0A67CF3868A2B236D42D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */; };
+		FFC84D024357590F216E7ADC602009E3 /* ElasticRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA40D07E2B0CA77C68FECE922B203F99 /* ElasticRefreshControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1FDFD8C1AE4948CEF92474B49440A4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64F387DAF09FDD74F5A0EA122E07B6F0;
+			remoteInfo = YLStateMachine;
+		};
 		2F57013A5B70C86CA4D7A56EE8A50966 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1FC871DFBE9897E0D3CBE33FCD1D5C05;
 			remoteInfo = YLPullToRefreshKit;
-		};
-		6489B71E733AE863E190B29570CD95AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64F387DAF09FDD74F5A0EA122E07B6F0;
-			remoteInfo = YLStateMachine;
 		};
 		65CFE8254C4F249794CEA3018B13899A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -84,19 +85,19 @@
 			remoteGlobalIDString = ECCB4B0F4C41DB71CE268489E09DB30B;
 			remoteInfo = YLExtensions;
 		};
+		687922D40BE8DD11C6013C7617E3D36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC871DFBE9897E0D3CBE33FCD1D5C05;
+			remoteInfo = YLPullToRefreshKit;
+		};
 		6F1C13F2B7F3762D3F3EA1FE144D7490 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CD96FB10BA1FBBA6CAED0A72EAEA4F6D;
 			remoteInfo = YLRefreshKit;
-		};
-		8C5A45EF9F20643FCEB0F96EC4B14A4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ECCB4B0F4C41DB71CE268489E09DB30B;
-			remoteInfo = YLExtensions;
 		};
 		A7A677AFCC245B13F8F65B55D80C22B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -105,111 +106,109 @@
 			remoteGlobalIDString = 64F387DAF09FDD74F5A0EA122E07B6F0;
 			remoteInfo = YLStateMachine;
 		};
-		FA3BEE750A20EBACE0C0F7F9B3E50F96 /* PBXContainerItemProxy */ = {
+		E8D5FEABDA89BF3E5F1F26B14EF5F043 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1FC871DFBE9897E0D3CBE33FCD1D5C05;
-			remoteInfo = YLPullToRefreshKit;
+			remoteGlobalIDString = ECCB4B0F4C41DB71CE268489E09DB30B;
+			remoteInfo = YLExtensions;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0002B27E8B03AB97DBA53E38F84BD41F /* YLRefreshKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.debug.xcconfig; sourceTree = "<group>"; };
-		05509F7753834DAE728974E4DF9725FD /* Footer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Footer.swift; path = Sources/PullToRefreshKit/Classes/Footer.swift; sourceTree = "<group>"; };
+		001D805556B66BEFE63B90E2C49247A9 /* UICollectionView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Ex.swift"; path = "Sources/YLExtensions/UICollectionView+Ex.swift"; sourceTree = "<group>"; };
+		04D8FF1B33CD1E3CB2A2606FD70C9247 /* Left.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Left.swift; path = Sources/PullToRefreshKit/Classes/Left.swift; sourceTree = "<group>"; };
 		0BE53AD04B1229C24654F930B7E7C47B /* YLExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB8BEFF7088698EFBC98D79DAC82A93 /* YLStateMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLStateMachine.debug.xcconfig; sourceTree = "<group>"; };
-		0D3E1C5C6E2E3435A4996CACEE485810 /* YLExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLExtensions-umbrella.h"; sourceTree = "<group>"; };
-		13E1B72D9BA7CC91A3FEC237820CD048 /* ModelType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelType.swift; path = Sources/YLExtensions/ModelType.swift; sourceTree = "<group>"; };
-		14C543E6DEFD39CD908CFA24FE8E130D /* YLExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLExtensions.modulemap; sourceTree = "<group>"; };
+		10AA3D029082782FB6FCFB11815F778C /* YLExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLExtensions.modulemap; sourceTree = "<group>"; };
+		1439200197E515FF8733257E32B2204E /* YLPullToRefreshKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLPullToRefreshKit-umbrella.h"; sourceTree = "<group>"; };
+		1731EA506B1423E3DD24664191785585 /* StateMachine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateMachine.swift; path = Sources/YLStateMachine/StateMachine.swift; sourceTree = "<group>"; };
+		17F8919D4103C923DECA0EB58C83828C /* ReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusableView.swift; path = Sources/YLExtensions/ReusableView.swift; sourceTree = "<group>"; };
 		1A7DC475074EEE5FC54F60C6A3BD51A2 /* YLStateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLStateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C6E88114C8FE18B1152D412008A1D2B /* DataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceType.swift; path = Sources/YLRefreshKit/DataSourceType.swift; sourceTree = "<group>"; };
+		1C8DE3569EBA36226B95255C53510015 /* YLStateMachine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLStateMachine-dummy.m"; sourceTree = "<group>"; };
+		203675E9168BBEF8FCEA113796E948FB /* YLExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLExtensions-dummy.m"; sourceTree = "<group>"; };
+		22F9214261A6759D20ADCB198D33A47D /* RefreshAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshAction.swift; path = Sources/YLRefreshKit/RefreshAction.swift; sourceTree = "<group>"; };
 		231C6E221E52940D8E2216D044BE7588 /* Pods-YLRefreshKit-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLRefreshKit-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		26B6F132AC08E740F971DA290BB128A2 /* CViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CViewController.swift; path = Sources/YLRefreshKit/CViewController.swift; sourceTree = "<group>"; };
-		26E06966CC0BD55F3EA3082FE3C501E2 /* arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_down@3x.png"; sourceTree = "<group>"; };
-		2711D4F32A1372CDDE1775326850EFB7 /* YLRefreshKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.release.xcconfig; sourceTree = "<group>"; };
+		2381976EA35583E578DF5CE93A076E5E /* YLRefreshKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-prefix.pch"; sourceTree = "<group>"; };
+		2382C70BE97569A7291A20DB7C9A1BD6 /* YLPullToRefreshKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLPullToRefreshKit-Info.plist"; sourceTree = "<group>"; };
+		238E914290FA924539D95BDFC12E99D6 /* YLStateMachine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLStateMachine-prefix.pch"; sourceTree = "<group>"; };
 		29D68A8931B7BFE07E838546953C03BA /* Pods_YLRefreshKit_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLRefreshKit_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0494C283159B579963416528E4216B /* Footer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Footer.swift; path = Sources/PullToRefreshKit/Classes/Footer.swift; sourceTree = "<group>"; };
 		2AA5E7821B2DB7E3AE86E0584913E378 /* Pods-YLRefreshKit-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YLRefreshKit-Demo-umbrella.h"; sourceTree = "<group>"; };
-		2B59A40393EC2ED490F8E6BB16F0B369 /* YLStateMachine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLStateMachine-prefix.pch"; sourceTree = "<group>"; };
-		32A9D484C633476922817A9634E4DD2A /* StateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateType.swift; path = Sources/YLStateMachine/StateType.swift; sourceTree = "<group>"; };
+		2F06CA88F864E68E641E26A0E6043B5E /* NibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = Sources/YLExtensions/NibView.swift; sourceTree = "<group>"; };
+		324B52CD743CA287FDFB452DCE7872A4 /* YLRefreshKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLRefreshKit.modulemap; sourceTree = "<group>"; };
+		32E3318342625718C287F3C9DF608BB4 /* TargetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetType.swift; path = Sources/YLRefreshKit/TargetType.swift; sourceTree = "<group>"; };
+		3391F5B8651099DB1189FDC2763EBF70 /* YLStateMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLStateMachine.release.xcconfig; sourceTree = "<group>"; };
 		345A0F4DE78C49DED72B7EE5F75580B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3C67F583F44E4BD481E7DC8583A7E631 /* UITableView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Ex.swift"; path = "Sources/YLExtensions/UITableView+Ex.swift"; sourceTree = "<group>"; };
-		3CBC0C196FD3604BC6435B76F3118819 /* NibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = Sources/YLExtensions/NibView.swift; sourceTree = "<group>"; };
-		405EC11745001E57603CD0E751D5FA76 /* YLPullToRefreshKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLPullToRefreshKit.modulemap; sourceTree = "<group>"; };
-		4102DB9CE097ABA31CE98B6FDEAF80DF /* Pageable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pageable.swift; path = Sources/YLExtensions/Pageable.swift; sourceTree = "<group>"; };
-		43BD02E96608EF5E872AB7D1E7C2A96A /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Sources/YLExtensions/Configurable.swift; sourceTree = "<group>"; };
-		46DEF405CDE6A295C09505E10374955B /* arrow_right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_right@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_right@3x.png"; sourceTree = "<group>"; };
-		49D8054FE9248597EF647B09EC822450 /* ElasticRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticRefreshControl.swift; path = Sources/PullToRefreshKit/Classes/ElasticRefreshControl.swift; sourceTree = "<group>"; };
-		4A83510F69C9C5AFAA31EB888BE0146C /* YLPullToRefreshKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLPullToRefreshKit-dummy.m"; sourceTree = "<group>"; };
-		4D3D4F472C3CECD977152B213FEEB754 /* YLStateMachine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLStateMachine-dummy.m"; sourceTree = "<group>"; };
-		52FCBE37D400AD273AF6C4E6D25A4F57 /* YLStateMachine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLStateMachine-umbrella.h"; sourceTree = "<group>"; };
-		538B6E221729690B6F2DEF7C94F0BD3B /* Right.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Right.swift; path = Sources/PullToRefreshKit/Classes/Right.swift; sourceTree = "<group>"; };
-		5CF4CE1D183F5A349D893C85C9C1DE5A /* YLExtensions-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLExtensions-Info.plist"; sourceTree = "<group>"; };
-		5FD85DB5C4FC8B7C65DC1B3D9295D60F /* YLStateMachine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLStateMachine.modulemap; sourceTree = "<group>"; };
-		6190B71B631883E350A81534347543EE /* YLRefreshKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLRefreshKit-Info.plist"; sourceTree = "<group>"; };
+		3AC5AC4E98259B64C3F7EB4D10A31511 /* StateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateType.swift; path = Sources/YLStateMachine/StateType.swift; sourceTree = "<group>"; };
+		4624129B2AA39042EB3E66E70939C4ED /* DataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceType.swift; path = Sources/YLRefreshKit/DataSourceType.swift; sourceTree = "<group>"; };
+		492E6E66BB8166C355F21AAF3455E2DC /* YLRefreshKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.debug.xcconfig; sourceTree = "<group>"; };
+		4AE201CBE48F25F325455853D977C110 /* YLExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLExtensions.release.xcconfig; sourceTree = "<group>"; };
+		4C8CDC7AD8A2CAB13B8CC8E681C791BD /* YLPullToRefreshKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLPullToRefreshKit.release.xcconfig; sourceTree = "<group>"; };
+		4F6FA62FF07F2C9EFD7F918372222FDB /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = "zh-Hans.lproj/Localize.strings"; sourceTree = "<group>"; };
+		51A71EA6D8D6FDC5416F2CAFD8C94AEB /* RefreshState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshState.swift; path = Sources/YLRefreshKit/RefreshState.swift; sourceTree = "<group>"; };
+		5522F588A0B66846443935361BC91B5A /* YLRefreshKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLRefreshKit-Info.plist"; sourceTree = "<group>"; };
+		566E4FEC08AB0860E3321DFC0012C397 /* Pageable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pageable.swift; path = Sources/YLExtensions/Pageable.swift; sourceTree = "<group>"; };
+		5823A47A15343BF46C192B00039166C8 /* YLExtensions-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLExtensions-Info.plist"; sourceTree = "<group>"; };
+		59E49D4C301CCD67F5ED5BDE78588858 /* ModelType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelType.swift; path = Sources/YLExtensions/ModelType.swift; sourceTree = "<group>"; };
+		5D8388C67BD3D581908A1BCDDC7044E6 /* Right.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Right.swift; path = Sources/PullToRefreshKit/Classes/Right.swift; sourceTree = "<group>"; };
+		5E0233C12D22019826A0AA49F745547A /* YLRefreshKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLRefreshKit.release.xcconfig; sourceTree = "<group>"; };
+		5F367B0F016FEE04421F54AFB0BE9EC8 /* failure@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "failure@3x.png"; path = "Sources/PullToRefreshKit/Assets/failure@3x.png"; sourceTree = "<group>"; };
+		61F5E6479C9468F925631A418A04D3F5 /* Refreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Refreshable.swift; path = Sources/YLRefreshKit/Refreshable.swift; sourceTree = "<group>"; };
 		641D7D91AC3CA296FAEF8B59DD5FA113 /* Pods-YLRefreshKit-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YLRefreshKit-Demo-dummy.m"; sourceTree = "<group>"; };
 		669DABF584BD61E86AD45A6FA19D044A /* Pods-YLRefreshKit-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLRefreshKit-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		672117975AD810F08FC37CDC682A42BA /* YLRefreshKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-umbrella.h"; sourceTree = "<group>"; };
-		67E9260384D496EDF393DBCC9D0A3439 /* RefreshOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshOperator.swift; path = Sources/YLRefreshKit/RefreshOperator.swift; sourceTree = "<group>"; };
-		6C955B0DF00AD3AAE17D0CB53CC90243 /* TargetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetType.swift; path = Sources/YLRefreshKit/TargetType.swift; sourceTree = "<group>"; };
+		6966838831BAF63872C873D091DD77B8 /* YLRefreshKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRefreshKit-dummy.m"; sourceTree = "<group>"; };
+		6B9ED362A1C126F8658D1340ACE7AADB /* YLExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLExtensions-umbrella.h"; sourceTree = "<group>"; };
+		6BECC1AB898C06253F3F9CAA80F2978F /* YLStateMachine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLStateMachine.modulemap; sourceTree = "<group>"; };
+		73C55B9272CEC35054E2EA3821FE6D20 /* YLExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLExtensions-prefix.pch"; sourceTree = "<group>"; };
+		73FB8C7BAD27F5F6C9E191C0FCDCD249 /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "success@3x.png"; path = "Sources/PullToRefreshKit/Assets/success@3x.png"; sourceTree = "<group>"; };
+		75FD6B921C5FE715B1EA476DE73F0124 /* AutoRefreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoRefreshable.swift; path = Sources/YLRefreshKit/AutoRefreshable.swift; sourceTree = "<group>"; };
+		765488245DA4FE8BD51E7125BD887782 /* YLStateMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLStateMachine.debug.xcconfig; sourceTree = "<group>"; };
 		76C2F3DE5B9ADAAF6A3F429B43A4DF9B /* YLStateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLStateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		783603390F3434D4CC3C4407853AA94E /* YLStateMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLStateMachine.release.xcconfig; sourceTree = "<group>"; };
+		774A01104EDD0889BDA8460EDDCBF5ED /* SViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SViewController.swift; path = Sources/YLRefreshKit/SViewController.swift; sourceTree = "<group>"; };
+		77D896C961F72DE9D719D4D666925075 /* OperatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorType.swift; path = Sources/YLStateMachine/OperatorType.swift; sourceTree = "<group>"; };
+		7E7D9D58EA0414303E5A22C9A2BE72A9 /* YLPullToRefreshKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLPullToRefreshKit-prefix.pch"; sourceTree = "<group>"; };
+		809345BFDFF2729FC008C4BF749DE621 /* RefreshOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshOperator.swift; path = Sources/YLRefreshKit/RefreshOperator.swift; sourceTree = "<group>"; };
 		859BB4B934F06E4CAEAD44AFE4DC97C0 /* Pods-YLRefreshKit-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLRefreshKit-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		85CBD161B31BF60DCA49622999A8E43C /* arrow_left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_left@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_left@3x.png"; sourceTree = "<group>"; };
-		886334A20033451D257989F03CB6FA28 /* failure@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "failure@3x.png"; path = "Sources/PullToRefreshKit/Assets/failure@3x.png"; sourceTree = "<group>"; };
-		890485F6701B0A102A55BB7CBC80F031 /* RefreshAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshAction.swift; path = Sources/YLRefreshKit/RefreshAction.swift; sourceTree = "<group>"; };
-		9A5A7454AC7219AA50598CAC705B2A26 /* StateMachine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateMachine.swift; path = Sources/YLStateMachine/StateMachine.swift; sourceTree = "<group>"; };
-		9ABC17ED3AB10C61B6F84D98423B8D6F /* OperatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorType.swift; path = Sources/YLStateMachine/OperatorType.swift; sourceTree = "<group>"; };
-		9B5A0C72BB212BB1BBF294A81E6A8DB9 /* YLExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLExtensions.release.xcconfig; sourceTree = "<group>"; };
+		87D0369748F78A8683D983629F0BDB26 /* YLPullToRefreshKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLPullToRefreshKit-dummy.m"; sourceTree = "<group>"; };
+		8FD1BCD404B76CBFEF947C16AAF3375B /* YLExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLExtensions.debug.xcconfig; sourceTree = "<group>"; };
+		91E67289E03FD684C7F263B0AF3C6B85 /* ElasticRefreshHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticRefreshHeader.swift; path = Sources/PullToRefreshKit/Classes/ElasticRefreshHeader.swift; sourceTree = "<group>"; };
+		9772D93C1103976898567B4785A8518D /* arrow_right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_right@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_right@3x.png"; sourceTree = "<group>"; };
+		9890C89EDA275DFC0F957AD98D21DC19 /* YLRefreshKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-umbrella.h"; sourceTree = "<group>"; };
+		98A0C841660AC32694935976ACC45317 /* arrow_left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_left@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_left@3x.png"; sourceTree = "<group>"; };
+		98B9F986EC5AA54F4773B9B75C4257BB /* YLPullToRefreshKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLPullToRefreshKit.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0EE82A660D4C2108F529109089F18A /* Pods-YLRefreshKit-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YLRefreshKit-Demo.modulemap"; sourceTree = "<group>"; };
-		A3F19B8A884517DCC9BD28E932C7CE34 /* YLRefreshKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLRefreshKit-prefix.pch"; sourceTree = "<group>"; };
-		A4ABB1ADFB616BE664122109AE975C30 /* PullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToRefresh.swift; path = Sources/PullToRefreshKit/Classes/PullToRefresh.swift; sourceTree = "<group>"; };
-		A4B7308912CB99FE46B2FF6FE6123814 /* UICollectionView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Ex.swift"; path = "Sources/YLExtensions/UICollectionView+Ex.swift"; sourceTree = "<group>"; };
 		A681AA16B177FBBDB1814135663A3323 /* Pods-YLRefreshKit-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLRefreshKit-Demo-frameworks.sh"; sourceTree = "<group>"; };
-		A70DF8ABEE8C423380B43CC3C6B62DAE /* YLExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLExtensions-prefix.pch"; sourceTree = "<group>"; };
-		A763D4F598ACA507FC6CE9229FCCDC01 /* ActionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionType.swift; path = Sources/YLStateMachine/ActionType.swift; sourceTree = "<group>"; };
-		A91FBCE6D50E0727C0BC448BD0C3A55D /* ReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusableView.swift; path = Sources/YLExtensions/ReusableView.swift; sourceTree = "<group>"; };
-		AA235CE5166ED1BF41E0B39F6F797470 /* YLRefreshKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLRefreshKit-dummy.m"; sourceTree = "<group>"; };
-		AA3E99842E0354B487C0FFB3709B5921 /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "success@3x.png"; path = "Sources/PullToRefreshKit/Assets/success@3x.png"; sourceTree = "<group>"; };
+		AA40D07E2B0CA77C68FECE922B203F99 /* ElasticRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticRefreshControl.swift; path = Sources/PullToRefreshKit/Classes/ElasticRefreshControl.swift; sourceTree = "<group>"; };
+		AC95B98454A3EAE6DDD042EB0ECB468F /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = Base.lproj/Localize.strings; sourceTree = "<group>"; };
 		ADB30C9961B6EBCE933A7FBD4FF3923B /* Pods-YLRefreshKit-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLRefreshKit-Demo-Info.plist"; sourceTree = "<group>"; };
-		AE2A87AE1AD9F680FE3351BDD0A561E3 /* TViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TViewController.swift; path = Sources/YLRefreshKit/TViewController.swift; sourceTree = "<group>"; };
-		AE86C0C0BB02A1CB239480A80C6A7B91 /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Header.swift; path = Sources/PullToRefreshKit/Classes/Header.swift; sourceTree = "<group>"; };
-		AF00AFAC9F157472820E5235B9A3C2D3 /* YLRefreshKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLRefreshKit.modulemap; sourceTree = "<group>"; };
-		AFB7D0DBE76A818D1FF592E495CD4DB9 /* AutoRefreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoRefreshable.swift; path = Sources/YLRefreshKit/AutoRefreshable.swift; sourceTree = "<group>"; };
+		AF3CF1BE5ABF71AC26AF8E04D7360E22 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/PullToRefreshKit/Classes/Utils.swift; sourceTree = "<group>"; };
 		B2AD6FCB420EA2033DBBB9AEB1DBB34C /* YLRefreshKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLRefreshKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B66185AA1D2CE9818BFA92325602CAAC /* ElasticRefreshHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticRefreshHeader.swift; path = Sources/PullToRefreshKit/Classes/ElasticRefreshHeader.swift; sourceTree = "<group>"; };
 		B683297C9598F98F0590F416571166F6 /* YLPullToRefreshKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLPullToRefreshKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA0571EE532FEF390C8967B1D233352C /* YLPullToRefreshKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLPullToRefreshKit-Info.plist"; sourceTree = "<group>"; };
-		BA2BAF5E97278086565414218A6B66BE /* YLPullToRefreshKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLPullToRefreshKit.debug.xcconfig; sourceTree = "<group>"; };
-		C354C1AF6F5EA97887F5FCC4FE10FFA8 /* YLPullToRefreshKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLPullToRefreshKit-prefix.pch"; sourceTree = "<group>"; };
-		C62EFE68A4C179DD449D614AD4B65C30 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/PullToRefreshKit/Classes/Utils.swift; sourceTree = "<group>"; };
-		C7391A806474FD0311AC154A82091A3B /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = en.lproj/Localize.strings; sourceTree = "<group>"; };
-		CAA9DCDD4B2E8BEBEDE5D589498FFEE4 /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = Base.lproj/Localize.strings; sourceTree = "<group>"; };
-		D5BA9412483265126DF18C6785FB9DE3 /* Refreshable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Refreshable.swift; path = Sources/YLRefreshKit/Refreshable.swift; sourceTree = "<group>"; };
-		D6B9AB79945541310865D66B884AA668 /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = "zh-Hans.lproj/Localize.strings"; sourceTree = "<group>"; };
-		D7672A19A6CB67881DA60EA6C7350E03 /* RefreshState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshState.swift; path = Sources/YLRefreshKit/RefreshState.swift; sourceTree = "<group>"; };
-		D8A5CC81EAD06E5323E9EA7CD21D65BB /* YLPullToRefreshKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLPullToRefreshKit.release.xcconfig; sourceTree = "<group>"; };
+		BA686C13FF092CEC66D3816939EFB263 /* YLStateMachine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLStateMachine-Info.plist"; sourceTree = "<group>"; };
+		BAAE1739E24CEE9B8B0D7F438E990235 /* YLStateMachine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLStateMachine-umbrella.h"; sourceTree = "<group>"; };
+		BC1BE305B4F1D4A03FC4BA4EE644B5A9 /* PullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToRefresh.swift; path = Sources/PullToRefreshKit/Classes/PullToRefresh.swift; sourceTree = "<group>"; };
+		C1BE112FD4844192EF9538276BBB1DF1 /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Header.swift; path = Sources/PullToRefreshKit/Classes/Header.swift; sourceTree = "<group>"; };
+		C1E0B8F8ABD66A5158ED2AF562843A1C /* YLPullToRefreshKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLPullToRefreshKit.modulemap; sourceTree = "<group>"; };
+		C6F8AC35D3270F568E4864051B5AFBB0 /* NetworkManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManagerType.swift; path = Sources/YLRefreshKit/NetworkManagerType.swift; sourceTree = "<group>"; };
+		CB5BDAB752C7C534FA8DA4150E7B22B6 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Sources/YLExtensions/Configurable.swift; sourceTree = "<group>"; };
+		CD84618A809CF16678E8FF275DAA5C07 /* TViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TViewController.swift; path = Sources/YLRefreshKit/TViewController.swift; sourceTree = "<group>"; };
+		DB1687ED74196CB85DE9BC13299140B0 /* ActionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionType.swift; path = Sources/YLStateMachine/ActionType.swift; sourceTree = "<group>"; };
 		DE8FB5DFCBD6583882F28A3050D1583B /* YLPullToRefreshKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLPullToRefreshKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4372D778E3F113B910039B39BDC49B7 /* YLPullToRefreshKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLPullToRefreshKit-umbrella.h"; sourceTree = "<group>"; };
-		E63E5C8FA40BE8262594E56ECF6699D4 /* Left.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Left.swift; path = Sources/PullToRefreshKit/Classes/Left.swift; sourceTree = "<group>"; };
+		E7360258FB530A6D33EAC3401887882D /* arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "Sources/PullToRefreshKit/Assets/arrow_down@3x.png"; sourceTree = "<group>"; };
 		E953B8DC59988C9FDCC37439708B1A3E /* Pods-YLRefreshKit-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YLRefreshKit-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EA489F8B76D7525C2243A030DF0EB549 /* YLExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLExtensions.debug.xcconfig; sourceTree = "<group>"; };
-		F22AD36EFE639CF3803004378A38F4F1 /* YLExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLExtensions-dummy.m"; sourceTree = "<group>"; };
-		F27BD37557B51BDA048676F49933EF80 /* YLStateMachine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YLStateMachine-Info.plist"; sourceTree = "<group>"; };
-		F5206369238E7A5261C756D4B23C7053 /* NetworkManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManagerType.swift; path = Sources/YLRefreshKit/NetworkManagerType.swift; sourceTree = "<group>"; };
+		F9C737DB085DC14D4CC7ABF46C9FF2A4 /* UITableView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Ex.swift"; path = "Sources/YLExtensions/UITableView+Ex.swift"; sourceTree = "<group>"; };
+		FA722F60D4E22A688CA07AD8C87D9CCB /* Localize.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localize.strings; path = en.lproj/Localize.strings; sourceTree = "<group>"; };
 		FA9A2815A56B7B442690AFCC6E5130B8 /* YLExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB81A3F0A2A8A062032E8BF9B344F66E /* CViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CViewController.swift; path = Sources/YLRefreshKit/CViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		08C3982731B8563A22435C9E214927E4 /* Frameworks */ = {
+		1485CAC2DC285CE90FC377CB90EC23EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4740AB27614DE91473FCC56429B08F44 /* Foundation.framework in Frameworks */,
-				856A2C855F7065EC3B6E54DB3FA8BFDE /* YLExtensions.framework in Frameworks */,
-				357342DBD6218A13BF82440EF8E277C6 /* YLPullToRefreshKit.framework in Frameworks */,
-				5818DB071B8A8F634C79EC9656B4CACA /* YLStateMachine.framework in Frameworks */,
+				FBC89E5A28AF0A67CF3868A2B236D42D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,11 +220,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFFFEC3EC3AA833B93BCA5DF6AD46CB0 /* Frameworks */ = {
+		D8FB1647B1D33AD5EC723305BBBF25F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280B914E36B678794713C1BE066C0372 /* Foundation.framework in Frameworks */,
+				DF65D541A3A032F6D58F7D5D959F1FBE /* Foundation.framework in Frameworks */,
+				D015489276465A574DA94957E16DAE52 /* YLExtensions.framework in Frameworks */,
+				D13CA8D51D42042E1C8436047C855665 /* YLPullToRefreshKit.framework in Frameworks */,
+				C033DBA9578C1525942C8C030FA08EF1 /* YLStateMachine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,66 +250,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2616FC69FA94DD777DDAC081E5AC9DA6 /* YLPullToRefreshKit */ = {
+		101E4990055253B896D28303524F4FCE /* YLExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				49D8054FE9248597EF647B09EC822450 /* ElasticRefreshControl.swift */,
-				B66185AA1D2CE9818BFA92325602CAAC /* ElasticRefreshHeader.swift */,
-				05509F7753834DAE728974E4DF9725FD /* Footer.swift */,
-				AE86C0C0BB02A1CB239480A80C6A7B91 /* Header.swift */,
-				E63E5C8FA40BE8262594E56ECF6699D4 /* Left.swift */,
-				A4ABB1ADFB616BE664122109AE975C30 /* PullToRefresh.swift */,
-				538B6E221729690B6F2DEF7C94F0BD3B /* Right.swift */,
-				C62EFE68A4C179DD449D614AD4B65C30 /* Utils.swift */,
-				D28ADB9E3ABE356BDDBCB7B096857805 /* Resources */,
-				6CC408E1F8C5DD25F5C2924E53F74482 /* Support Files */,
+				CB5BDAB752C7C534FA8DA4150E7B22B6 /* Configurable.swift */,
+				59E49D4C301CCD67F5ED5BDE78588858 /* ModelType.swift */,
+				2F06CA88F864E68E641E26A0E6043B5E /* NibView.swift */,
+				566E4FEC08AB0860E3321DFC0012C397 /* Pageable.swift */,
+				17F8919D4103C923DECA0EB58C83828C /* ReusableView.swift */,
+				001D805556B66BEFE63B90E2C49247A9 /* UICollectionView+Ex.swift */,
+				F9C737DB085DC14D4CC7ABF46C9FF2A4 /* UITableView+Ex.swift */,
+				45E0B25640FE1E1ADA8F3DAB9FEBB4BE /* Support Files */,
 			);
-			path = YLPullToRefreshKit;
+			path = YLExtensions;
 			sourceTree = "<group>";
 		};
-		393C5B89C6801946712E5E0F8E8620F1 /* YLRefreshKit */ = {
+		1AFC13809BC071DB5ED427AD6A0E886C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AFB7D0DBE76A818D1FF592E495CD4DB9 /* AutoRefreshable.swift */,
-				26B6F132AC08E740F971DA290BB128A2 /* CViewController.swift */,
-				1C6E88114C8FE18B1152D412008A1D2B /* DataSourceType.swift */,
-				F5206369238E7A5261C756D4B23C7053 /* NetworkManagerType.swift */,
-				D5BA9412483265126DF18C6785FB9DE3 /* Refreshable.swift */,
-				890485F6701B0A102A55BB7CBC80F031 /* RefreshAction.swift */,
-				67E9260384D496EDF393DBCC9D0A3439 /* RefreshOperator.swift */,
-				D7672A19A6CB67881DA60EA6C7350E03 /* RefreshState.swift */,
-				6C955B0DF00AD3AAE17D0CB53CC90243 /* TargetType.swift */,
-				AE2A87AE1AD9F680FE3351BDD0A561E3 /* TViewController.swift */,
-				453E4374ACE527D5916007DEA7D88016 /* Support Files */,
-			);
-			path = YLRefreshKit;
-			sourceTree = "<group>";
-		};
-		3B0BECCF5E183CF89C631C2845C98C78 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5FD85DB5C4FC8B7C65DC1B3D9295D60F /* YLStateMachine.modulemap */,
-				4D3D4F472C3CECD977152B213FEEB754 /* YLStateMachine-dummy.m */,
-				F27BD37557B51BDA048676F49933EF80 /* YLStateMachine-Info.plist */,
-				2B59A40393EC2ED490F8E6BB16F0B369 /* YLStateMachine-prefix.pch */,
-				52FCBE37D400AD273AF6C4E6D25A4F57 /* YLStateMachine-umbrella.h */,
-				0CB8BEFF7088698EFBC98D79DAC82A93 /* YLStateMachine.debug.xcconfig */,
-				783603390F3434D4CC3C4407853AA94E /* YLStateMachine.release.xcconfig */,
+				324B52CD743CA287FDFB452DCE7872A4 /* YLRefreshKit.modulemap */,
+				6966838831BAF63872C873D091DD77B8 /* YLRefreshKit-dummy.m */,
+				5522F588A0B66846443935361BC91B5A /* YLRefreshKit-Info.plist */,
+				2381976EA35583E578DF5CE93A076E5E /* YLRefreshKit-prefix.pch */,
+				9890C89EDA275DFC0F957AD98D21DC19 /* YLRefreshKit-umbrella.h */,
+				492E6E66BB8166C355F21AAF3455E2DC /* YLRefreshKit.debug.xcconfig */,
+				5E0233C12D22019826A0AA49F745547A /* YLRefreshKit.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/YLStateMachine";
+			path = "../Target Support Files/YLRefreshKit";
 			sourceTree = "<group>";
 		};
-		3E9968587C187848C0155057EF9F46E4 /* YLStateMachine */ = {
+		2705E14A25ACCEAE0FC0FA3A6C129766 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A763D4F598ACA507FC6CE9229FCCDC01 /* ActionType.swift */,
-				9ABC17ED3AB10C61B6F84D98423B8D6F /* OperatorType.swift */,
-				9A5A7454AC7219AA50598CAC705B2A26 /* StateMachine.swift */,
-				32A9D484C633476922817A9634E4DD2A /* StateType.swift */,
-				3B0BECCF5E183CF89C631C2845C98C78 /* Support Files */,
+				E7360258FB530A6D33EAC3401887882D /* arrow_down@3x.png */,
+				98A0C841660AC32694935976ACC45317 /* arrow_left@3x.png */,
+				9772D93C1103976898567B4785A8518D /* arrow_right@3x.png */,
+				5F367B0F016FEE04421F54AFB0BE9EC8 /* failure@3x.png */,
+				C95083FB807ADA9F033D42C0BC5149B9 /* Localize.strings */,
+				73FB8C7BAD27F5F6C9E191C0FCDCD249 /* success@3x.png */,
 			);
-			path = YLStateMachine;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		41F2AFAF554D151E002707273FF4DEAE /* Products */ = {
@@ -322,49 +305,91 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		453E4374ACE527D5916007DEA7D88016 /* Support Files */ = {
+		45E0B25640FE1E1ADA8F3DAB9FEBB4BE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AF00AFAC9F157472820E5235B9A3C2D3 /* YLRefreshKit.modulemap */,
-				AA235CE5166ED1BF41E0B39F6F797470 /* YLRefreshKit-dummy.m */,
-				6190B71B631883E350A81534347543EE /* YLRefreshKit-Info.plist */,
-				A3F19B8A884517DCC9BD28E932C7CE34 /* YLRefreshKit-prefix.pch */,
-				672117975AD810F08FC37CDC682A42BA /* YLRefreshKit-umbrella.h */,
-				0002B27E8B03AB97DBA53E38F84BD41F /* YLRefreshKit.debug.xcconfig */,
-				2711D4F32A1372CDDE1775326850EFB7 /* YLRefreshKit.release.xcconfig */,
+				10AA3D029082782FB6FCFB11815F778C /* YLExtensions.modulemap */,
+				203675E9168BBEF8FCEA113796E948FB /* YLExtensions-dummy.m */,
+				5823A47A15343BF46C192B00039166C8 /* YLExtensions-Info.plist */,
+				73C55B9272CEC35054E2EA3821FE6D20 /* YLExtensions-prefix.pch */,
+				6B9ED362A1C126F8658D1340ACE7AADB /* YLExtensions-umbrella.h */,
+				8FD1BCD404B76CBFEF947C16AAF3375B /* YLExtensions.debug.xcconfig */,
+				4AE201CBE48F25F325455853D977C110 /* YLExtensions.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/YLRefreshKit";
+			path = "../Target Support Files/YLExtensions";
 			sourceTree = "<group>";
 		};
-		6CC408E1F8C5DD25F5C2924E53F74482 /* Support Files */ = {
+		63F55B277EE2FE9FFDEDD324FE107D4E /* YLStateMachine */ = {
 			isa = PBXGroup;
 			children = (
-				405EC11745001E57603CD0E751D5FA76 /* YLPullToRefreshKit.modulemap */,
-				4A83510F69C9C5AFAA31EB888BE0146C /* YLPullToRefreshKit-dummy.m */,
-				BA0571EE532FEF390C8967B1D233352C /* YLPullToRefreshKit-Info.plist */,
-				C354C1AF6F5EA97887F5FCC4FE10FFA8 /* YLPullToRefreshKit-prefix.pch */,
-				E4372D778E3F113B910039B39BDC49B7 /* YLPullToRefreshKit-umbrella.h */,
-				BA2BAF5E97278086565414218A6B66BE /* YLPullToRefreshKit.debug.xcconfig */,
-				D8A5CC81EAD06E5323E9EA7CD21D65BB /* YLPullToRefreshKit.release.xcconfig */,
+				DB1687ED74196CB85DE9BC13299140B0 /* ActionType.swift */,
+				77D896C961F72DE9D719D4D666925075 /* OperatorType.swift */,
+				1731EA506B1423E3DD24664191785585 /* StateMachine.swift */,
+				3AC5AC4E98259B64C3F7EB4D10A31511 /* StateType.swift */,
+				9FF3BDA0849020ECE46C90D9148CDEFA /* Support Files */,
+			);
+			path = YLStateMachine;
+			sourceTree = "<group>";
+		};
+		76D689B9CCF70B9171A24B87A03E1D34 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1E0B8F8ABD66A5158ED2AF562843A1C /* YLPullToRefreshKit.modulemap */,
+				87D0369748F78A8683D983629F0BDB26 /* YLPullToRefreshKit-dummy.m */,
+				2382C70BE97569A7291A20DB7C9A1BD6 /* YLPullToRefreshKit-Info.plist */,
+				7E7D9D58EA0414303E5A22C9A2BE72A9 /* YLPullToRefreshKit-prefix.pch */,
+				1439200197E515FF8733257E32B2204E /* YLPullToRefreshKit-umbrella.h */,
+				98B9F986EC5AA54F4773B9B75C4257BB /* YLPullToRefreshKit.debug.xcconfig */,
+				4C8CDC7AD8A2CAB13B8CC8E681C791BD /* YLPullToRefreshKit.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YLPullToRefreshKit";
 			sourceTree = "<group>";
 		};
-		AF4AC49F5E3B7A4E66D795B808F624BF /* YLExtensions */ = {
+		9FF3BDA0849020ECE46C90D9148CDEFA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				43BD02E96608EF5E872AB7D1E7C2A96A /* Configurable.swift */,
-				13E1B72D9BA7CC91A3FEC237820CD048 /* ModelType.swift */,
-				3CBC0C196FD3604BC6435B76F3118819 /* NibView.swift */,
-				4102DB9CE097ABA31CE98B6FDEAF80DF /* Pageable.swift */,
-				A91FBCE6D50E0727C0BC448BD0C3A55D /* ReusableView.swift */,
-				A4B7308912CB99FE46B2FF6FE6123814 /* UICollectionView+Ex.swift */,
-				3C67F583F44E4BD481E7DC8583A7E631 /* UITableView+Ex.swift */,
-				D17F55B671A11A2ECF9BB80B76CA3C9D /* Support Files */,
+				6BECC1AB898C06253F3F9CAA80F2978F /* YLStateMachine.modulemap */,
+				1C8DE3569EBA36226B95255C53510015 /* YLStateMachine-dummy.m */,
+				BA686C13FF092CEC66D3816939EFB263 /* YLStateMachine-Info.plist */,
+				238E914290FA924539D95BDFC12E99D6 /* YLStateMachine-prefix.pch */,
+				BAAE1739E24CEE9B8B0D7F438E990235 /* YLStateMachine-umbrella.h */,
+				765488245DA4FE8BD51E7125BD887782 /* YLStateMachine.debug.xcconfig */,
+				3391F5B8651099DB1189FDC2763EBF70 /* YLStateMachine.release.xcconfig */,
 			);
-			path = YLExtensions;
+			name = "Support Files";
+			path = "../Target Support Files/YLStateMachine";
+			sourceTree = "<group>";
+		};
+		AB623A8B24EC9B39BA867E9B83405D40 /* YLRefreshKit */ = {
+			isa = PBXGroup;
+			children = (
+				75FD6B921C5FE715B1EA476DE73F0124 /* AutoRefreshable.swift */,
+				FB81A3F0A2A8A062032E8BF9B344F66E /* CViewController.swift */,
+				4624129B2AA39042EB3E66E70939C4ED /* DataSourceType.swift */,
+				C6F8AC35D3270F568E4864051B5AFBB0 /* NetworkManagerType.swift */,
+				61F5E6479C9468F925631A418A04D3F5 /* Refreshable.swift */,
+				22F9214261A6759D20ADCB198D33A47D /* RefreshAction.swift */,
+				809345BFDFF2729FC008C4BF749DE621 /* RefreshOperator.swift */,
+				51A71EA6D8D6FDC5416F2CAFD8C94AEB /* RefreshState.swift */,
+				774A01104EDD0889BDA8460EDDCBF5ED /* SViewController.swift */,
+				32E3318342625718C287F3C9DF608BB4 /* TargetType.swift */,
+				CD84618A809CF16678E8FF275DAA5C07 /* TViewController.swift */,
+				1AFC13809BC071DB5ED427AD6A0E886C /* Support Files */,
+			);
+			path = YLRefreshKit;
+			sourceTree = "<group>";
+		};
+		ABDD093EA87A44F90D45538D2040CADF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				101E4990055253B896D28303524F4FCE /* YLExtensions */,
+				E594FCCE12E74A3810F27FFDE473F012 /* YLPullToRefreshKit */,
+				AB623A8B24EC9B39BA867E9B83405D40 /* YLRefreshKit */,
+				63F55B277EE2FE9FFDEDD324FE107D4E /* YLStateMachine */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C750BB75149B76300A33B7CA4DA5DCC6 /* Pods-YLRefreshKit-Demo */ = {
@@ -400,49 +425,27 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				CE98445871A65FD7ACE7C238B63EF7CD /* Frameworks */,
-				E7858F4747590D76443B49B77A4299AB /* Pods */,
+				ABDD093EA87A44F90D45538D2040CADF /* Pods */,
 				41F2AFAF554D151E002707273FF4DEAE /* Products */,
 				F8633811E5A70DD1700548BF68DEDD36 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D17F55B671A11A2ECF9BB80B76CA3C9D /* Support Files */ = {
+		E594FCCE12E74A3810F27FFDE473F012 /* YLPullToRefreshKit */ = {
 			isa = PBXGroup;
 			children = (
-				14C543E6DEFD39CD908CFA24FE8E130D /* YLExtensions.modulemap */,
-				F22AD36EFE639CF3803004378A38F4F1 /* YLExtensions-dummy.m */,
-				5CF4CE1D183F5A349D893C85C9C1DE5A /* YLExtensions-Info.plist */,
-				A70DF8ABEE8C423380B43CC3C6B62DAE /* YLExtensions-prefix.pch */,
-				0D3E1C5C6E2E3435A4996CACEE485810 /* YLExtensions-umbrella.h */,
-				EA489F8B76D7525C2243A030DF0EB549 /* YLExtensions.debug.xcconfig */,
-				9B5A0C72BB212BB1BBF294A81E6A8DB9 /* YLExtensions.release.xcconfig */,
+				AA40D07E2B0CA77C68FECE922B203F99 /* ElasticRefreshControl.swift */,
+				91E67289E03FD684C7F263B0AF3C6B85 /* ElasticRefreshHeader.swift */,
+				2A0494C283159B579963416528E4216B /* Footer.swift */,
+				C1BE112FD4844192EF9538276BBB1DF1 /* Header.swift */,
+				04D8FF1B33CD1E3CB2A2606FD70C9247 /* Left.swift */,
+				BC1BE305B4F1D4A03FC4BA4EE644B5A9 /* PullToRefresh.swift */,
+				5D8388C67BD3D581908A1BCDDC7044E6 /* Right.swift */,
+				AF3CF1BE5ABF71AC26AF8E04D7360E22 /* Utils.swift */,
+				2705E14A25ACCEAE0FC0FA3A6C129766 /* Resources */,
+				76D689B9CCF70B9171A24B87A03E1D34 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/YLExtensions";
-			sourceTree = "<group>";
-		};
-		D28ADB9E3ABE356BDDBCB7B096857805 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				26E06966CC0BD55F3EA3082FE3C501E2 /* arrow_down@3x.png */,
-				85CBD161B31BF60DCA49622999A8E43C /* arrow_left@3x.png */,
-				46DEF405CDE6A295C09505E10374955B /* arrow_right@3x.png */,
-				886334A20033451D257989F03CB6FA28 /* failure@3x.png */,
-				8E20C8120B9F289876D766B182940F2D /* Localize.strings */,
-				AA3E99842E0354B487C0FFB3709B5921 /* success@3x.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		E7858F4747590D76443B49B77A4299AB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AF4AC49F5E3B7A4E66D795B808F624BF /* YLExtensions */,
-				2616FC69FA94DD777DDAC081E5AC9DA6 /* YLPullToRefreshKit */,
-				393C5B89C6801946712E5E0F8E8620F1 /* YLRefreshKit */,
-				3E9968587C187848C0155057EF9F46E4 /* YLStateMachine */,
-			);
-			name = Pods;
+			path = YLPullToRefreshKit;
 			sourceTree = "<group>";
 		};
 		ECA96EB550F68E233962AC2CBBC306F5 /* iOS */ = {
@@ -464,19 +467,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1F6CD0EF10A68FBB64F240398E60ACF1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				551DF69069C07F30793D3D8902AE4F74 /* YLRefreshKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		319BE32C3193CEF001E35CF34D5C6D5B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18634DBF6DFD9AB51AC88E3404426B96 /* YLExtensions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F27DFE56E8C96BCFBC3B2952A3262BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2321F133EEA26B02132AE238A4BB3BB /* YLStateMachine-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,11 +491,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4C76BC681CA2629744C047BF3C8EFFD /* Headers */ = {
+		BB78C3DC39C6EF554F271D15D5BFCEBE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56206A49DF2B263584F258EA6925A452 /* YLStateMachine-umbrella.h in Headers */,
+				E40B7AB43051011373039163D27589B1 /* YLRefreshKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,12 +552,12 @@
 		};
 		64F387DAF09FDD74F5A0EA122E07B6F0 /* YLStateMachine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B99D1AFD21BFC41EDD8D44E0BA51FEE /* Build configuration list for PBXNativeTarget "YLStateMachine" */;
+			buildConfigurationList = BB0A0A12F86CB24F8B80096C7E5D9C51 /* Build configuration list for PBXNativeTarget "YLStateMachine" */;
 			buildPhases = (
-				A4C76BC681CA2629744C047BF3C8EFFD /* Headers */,
-				A2D9295065D969420A66EBBE857FBFB5 /* Sources */,
-				CFFFEC3EC3AA833B93BCA5DF6AD46CB0 /* Frameworks */,
-				AB2EFDACCA744E16974F2E86773F83AB /* Resources */,
+				7F27DFE56E8C96BCFBC3B2952A3262BA /* Headers */,
+				DED12FC2157E86B35C8BFD0769648ACD /* Sources */,
+				1485CAC2DC285CE90FC377CB90EC23EF /* Frameworks */,
+				BD58C1DACEB5AC1F34CBBBD2BDBDDA47 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -567,19 +570,19 @@
 		};
 		CD96FB10BA1FBBA6CAED0A72EAEA4F6D /* YLRefreshKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E493B020D3942DD182434AF67D048C1 /* Build configuration list for PBXNativeTarget "YLRefreshKit" */;
+			buildConfigurationList = F138C12A793AD4AF47CE91EAA7473CF3 /* Build configuration list for PBXNativeTarget "YLRefreshKit" */;
 			buildPhases = (
-				1F6CD0EF10A68FBB64F240398E60ACF1 /* Headers */,
-				64ECD45B90FE8AC33E261496E1523549 /* Sources */,
-				08C3982731B8563A22435C9E214927E4 /* Frameworks */,
-				89B6029E86024049B3FAF960131D36B2 /* Resources */,
+				BB78C3DC39C6EF554F271D15D5BFCEBE /* Headers */,
+				33CE82C32902F7E3806FFC3832E77131 /* Sources */,
+				D8FB1647B1D33AD5EC723305BBBF25F7 /* Frameworks */,
+				886006119A1C1B3E56E000AA8E5E7D82 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4A4B46CECAD3A16EDF898DF2F14BDDAD /* PBXTargetDependency */,
-				FBA8F89A4803D84C7A123E15F05EB872 /* PBXTargetDependency */,
-				B6728A967B5BA7EDC3216536FE1F4836 /* PBXTargetDependency */,
+				7602D69594FE0F7434038298A2D6C48D /* PBXTargetDependency */,
+				8E2CBDE3EE0796897B1F07F2885A24B2 /* PBXTargetDependency */,
+				2239475118B3DEBD5CC8F7C7863212FE /* PBXTargetDependency */,
 			);
 			name = YLRefreshKit;
 			productName = YLRefreshKit;
@@ -651,14 +654,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89B6029E86024049B3FAF960131D36B2 /* Resources */ = {
+		886006119A1C1B3E56E000AA8E5E7D82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB2EFDACCA744E16974F2E86773F83AB /* Resources */ = {
+		BD58C1DACEB5AC1F34CBBBD2BDBDDA47 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -697,21 +700,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64ECD45B90FE8AC33E261496E1523549 /* Sources */ = {
+		33CE82C32902F7E3806FFC3832E77131 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862E7322F035FF99802C9A041E448854 /* AutoRefreshable.swift in Sources */,
-				54E981C50384EBDD8A961F4B146F2E29 /* CViewController.swift in Sources */,
-				8652D9441B750D88795C6586A977F546 /* DataSourceType.swift in Sources */,
-				752B8239385A15206E49719B284494D6 /* NetworkManagerType.swift in Sources */,
-				D2A1C8A2DF2AAE8123DEA1816C5E58AE /* Refreshable.swift in Sources */,
-				CE52D4DC149642DF3F0571AAB4365B07 /* RefreshAction.swift in Sources */,
-				FF7EA9D99465399E31BCA50EA79D1B16 /* RefreshOperator.swift in Sources */,
-				83FC5FB37A4982D038985027CDBA809E /* RefreshState.swift in Sources */,
-				D3468A5233EC42977D68F6B8BC30D3C1 /* TargetType.swift in Sources */,
-				C6F2CC472E6374807F1FE76901E62DA1 /* TViewController.swift in Sources */,
-				78B5BB2E05B3F75B10DDDDC9DD2D8EC7 /* YLRefreshKit-dummy.m in Sources */,
+				A4ED068C9DA0484A3175ADD5BCDEC99B /* AutoRefreshable.swift in Sources */,
+				1CADA545AB604BB4C3797517E45F8ACF /* CViewController.swift in Sources */,
+				DFDAEE8294B362373D99770CE91E9260 /* DataSourceType.swift in Sources */,
+				A7CE107585A011E093F613A57201953F /* NetworkManagerType.swift in Sources */,
+				47C6CB59778A45BDEB6D5DD10E1058A1 /* Refreshable.swift in Sources */,
+				9D0FD4E5CBB47D56BC1A7F9D4EAD3765 /* RefreshAction.swift in Sources */,
+				DC7827858F28B3DCA356C89C4FB3EFB8 /* RefreshOperator.swift in Sources */,
+				916EF72BDF9DD2987AD21B4DFC04E086 /* RefreshState.swift in Sources */,
+				5F2E546F8AB1AA4B1F20D546F5D7EDC6 /* SViewController.swift in Sources */,
+				F84845B1B58A20FD14824F83D7295A6E /* TargetType.swift in Sources */,
+				E731D2E53903510070A3C5B225E835CF /* TViewController.swift in Sources */,
+				B554F7A2FEAB77C2E6B901AF713EA532 /* YLRefreshKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,32 +742,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2D9295065D969420A66EBBE857FBFB5 /* Sources */ = {
+		DED12FC2157E86B35C8BFD0769648ACD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE917A4641A3E8611BF2B010AAEF5BA /* ActionType.swift in Sources */,
-				1C8DFBE99A1E8EA58F6A2BC1AC54D1B8 /* OperatorType.swift in Sources */,
-				2A1C28B5017A52E9D5A3CBD2555BA6D4 /* StateMachine.swift in Sources */,
-				D5D43F86DBEF1DA01C5D41BC1607F3C8 /* StateType.swift in Sources */,
-				ED46FB61F1DBD8459B979CE99DAE4E4D /* YLStateMachine-dummy.m in Sources */,
+				E3A8259212D04E244A37F263B4F41C7A /* ActionType.swift in Sources */,
+				1FB889EF4F720525AE3DF61232D82649 /* OperatorType.swift in Sources */,
+				05129DF525220DCEBFAF90C2E80AC170 /* StateMachine.swift in Sources */,
+				2F9459ED55E77235CC5671B9A6C1320A /* StateType.swift in Sources */,
+				841CE5C266E2A970673C216D042CA15F /* YLStateMachine-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2239475118B3DEBD5CC8F7C7863212FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLStateMachine;
+			target = 64F387DAF09FDD74F5A0EA122E07B6F0 /* YLStateMachine */;
+			targetProxy = 1FDFD8C1AE4948CEF92474B49440A4A4 /* PBXContainerItemProxy */;
+		};
 		2A630E6FAD50180A81B1C02CED5775E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YLRefreshKit;
 			target = CD96FB10BA1FBBA6CAED0A72EAEA4F6D /* YLRefreshKit */;
 			targetProxy = 6F1C13F2B7F3762D3F3EA1FE144D7490 /* PBXContainerItemProxy */;
-		};
-		4A4B46CECAD3A16EDF898DF2F14BDDAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YLExtensions;
-			target = ECCB4B0F4C41DB71CE268489E09DB30B /* YLExtensions */;
-			targetProxy = 8C5A45EF9F20643FCEB0F96EC4B14A4C /* PBXContainerItemProxy */;
 		};
 		70C45018E5B8AE338583E6B7199909D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -771,23 +775,23 @@
 			target = 64F387DAF09FDD74F5A0EA122E07B6F0 /* YLStateMachine */;
 			targetProxy = A7A677AFCC245B13F8F65B55D80C22B3 /* PBXContainerItemProxy */;
 		};
+		7602D69594FE0F7434038298A2D6C48D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLExtensions;
+			target = ECCB4B0F4C41DB71CE268489E09DB30B /* YLExtensions */;
+			targetProxy = E8D5FEABDA89BF3E5F1F26B14EF5F043 /* PBXContainerItemProxy */;
+		};
+		8E2CBDE3EE0796897B1F07F2885A24B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLPullToRefreshKit;
+			target = 1FC871DFBE9897E0D3CBE33FCD1D5C05 /* YLPullToRefreshKit */;
+			targetProxy = 687922D40BE8DD11C6013C7617E3D36B /* PBXContainerItemProxy */;
+		};
 		A66425499FC0668258A5B99E07042A0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YLPullToRefreshKit;
 			target = 1FC871DFBE9897E0D3CBE33FCD1D5C05 /* YLPullToRefreshKit */;
 			targetProxy = 2F57013A5B70C86CA4D7A56EE8A50966 /* PBXContainerItemProxy */;
-		};
-		B6728A967B5BA7EDC3216536FE1F4836 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YLStateMachine;
-			target = 64F387DAF09FDD74F5A0EA122E07B6F0 /* YLStateMachine */;
-			targetProxy = 6489B71E733AE863E190B29570CD95AE /* PBXContainerItemProxy */;
-		};
-		FBA8F89A4803D84C7A123E15F05EB872 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YLPullToRefreshKit;
-			target = 1FC871DFBE9897E0D3CBE33FCD1D5C05 /* YLPullToRefreshKit */;
-			targetProxy = FA3BEE750A20EBACE0C0F7F9B3E50F96 /* PBXContainerItemProxy */;
 		};
 		FF1AA28FB3FF2850B72B863882D7DF28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -798,12 +802,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E20C8120B9F289876D766B182940F2D /* Localize.strings */ = {
+		C95083FB807ADA9F033D42C0BC5149B9 /* Localize.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CAA9DCDD4B2E8BEBEDE5D589498FFEE4 /* Localize.strings */,
-				C7391A806474FD0311AC154A82091A3B /* Localize.strings */,
-				D6B9AB79945541310865D66B884AA668 /* Localize.strings */,
+				AC95B98454A3EAE6DDD042EB0ECB468F /* Localize.strings */,
+				FA722F60D4E22A688CA07AD8C87D9CCB /* Localize.strings */,
+				4F6FA62FF07F2C9EFD7F918372222FDB /* Localize.strings */,
 			);
 			name = Localize.strings;
 			path = Sources/PullToRefreshKit/Assets;
@@ -812,42 +816,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0C5805B4CCFC500D0C22BE195B3E30C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CB8BEFF7088698EFBC98D79DAC82A93 /* YLStateMachine.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLStateMachine/YLStateMachine-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLStateMachine/YLStateMachine-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YLStateMachine/YLStateMachine.modulemap";
-				PRODUCT_MODULE_NAME = YLStateMachine;
-				PRODUCT_NAME = YLStateMachine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -908,9 +876,9 @@
 			};
 			name = Release;
 		};
-		345A5FB65E795ED81DE0A57B4D0F8680 /* Debug */ = {
+		16C16436F6C647266A848649A7500699 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0002B27E8B03AB97DBA53E38F84BD41F /* YLRefreshKit.debug.xcconfig */;
+			baseConfigurationReference = 3391F5B8651099DB1189FDC2763EBF70 /* YLStateMachine.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -922,8 +890,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLRefreshKit/YLRefreshKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YLStateMachine/YLStateMachine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLStateMachine/YLStateMachine-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -931,22 +899,23 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit.modulemap";
-				PRODUCT_MODULE_NAME = YLRefreshKit;
-				PRODUCT_NAME = YLRefreshKit;
+				MODULEMAP_FILE = "Target Support Files/YLStateMachine/YLStateMachine.modulemap";
+				PRODUCT_MODULE_NAME = YLStateMachine;
+				PRODUCT_NAME = YLStateMachine;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		76004A37ED36FF7EAE4A8D4E632378DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B5A0C72BB212BB1BBF294A81E6A8DB9 /* YLExtensions.release.xcconfig */;
+			baseConfigurationReference = 4AE201CBE48F25F325455853D977C110 /* YLExtensions.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -983,7 +952,7 @@
 		};
 		78ED91B24F223CDB8D6223AD02333376 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA2BAF5E97278086565414218A6B66BE /* YLPullToRefreshKit.debug.xcconfig */;
+			baseConfigurationReference = 98B9F986EC5AA54F4773B9B75C4257BB /* YLPullToRefreshKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1058,7 +1027,7 @@
 		};
 		8C8A18BA6C06780DED9656A45538D13B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8A5CC81EAD06E5323E9EA7CD21D65BB /* YLPullToRefreshKit.release.xcconfig */;
+			baseConfigurationReference = 4C8CDC7AD8A2CAB13B8CC8E681C791BD /* YLPullToRefreshKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1133,7 +1102,7 @@
 		};
 		9EE85D7AF85B7622AD8366792C5DA469 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA489F8B76D7525C2243A030DF0EB549 /* YLExtensions.debug.xcconfig */;
+			baseConfigurationReference = 8FD1BCD404B76CBFEF947C16AAF3375B /* YLExtensions.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1166,6 +1135,115 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B8357B0EB2D770876D3BD651AEE70F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765488245DA4FE8BD51E7125BD887782 /* YLStateMachine.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YLStateMachine/YLStateMachine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLStateMachine/YLStateMachine-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YLStateMachine/YLStateMachine.modulemap";
+				PRODUCT_MODULE_NAME = YLStateMachine;
+				PRODUCT_NAME = YLStateMachine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF19D4799496D0C5292E17C6EE7B3AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 492E6E66BB8166C355F21AAF3455E2DC /* YLRefreshKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YLRefreshKit/YLRefreshKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit.modulemap";
+				PRODUCT_MODULE_NAME = YLRefreshKit;
+				PRODUCT_NAME = YLRefreshKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9F2362990F67AEE49980B8B7DE6AA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0233C12D22019826A0AA49F745547A /* YLRefreshKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YLRefreshKit/YLRefreshKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit.modulemap";
+				PRODUCT_MODULE_NAME = YLRefreshKit;
+				PRODUCT_NAME = YLRefreshKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1231,80 +1309,6 @@
 			};
 			name = Debug;
 		};
-		EE229549379A6302119ACEE7DC9DB4C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 783603390F3434D4CC3C4407853AA94E /* YLStateMachine.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLStateMachine/YLStateMachine-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLStateMachine/YLStateMachine-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YLStateMachine/YLStateMachine.modulemap";
-				PRODUCT_MODULE_NAME = YLStateMachine;
-				PRODUCT_NAME = YLStateMachine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F704273DC8DBBE091BB8A7BD47199886 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2711D4F32A1372CDDE1775326850EFB7 /* YLRefreshKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLRefreshKit/YLRefreshKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YLRefreshKit/YLRefreshKit.modulemap";
-				PRODUCT_MODULE_NAME = YLRefreshKit;
-				PRODUCT_NAME = YLRefreshKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1313,15 +1317,6 @@
 			buildConfigurations = (
 				9D3CDEBD5454999AF63C0E18D5939327 /* Debug */,
 				7DB4B0D5CCC6553ED96807CAD88AA846 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E493B020D3942DD182434AF67D048C1 /* Build configuration list for PBXNativeTarget "YLRefreshKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				345A5FB65E795ED81DE0A57B4D0F8680 /* Debug */,
-				F704273DC8DBBE091BB8A7BD47199886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1344,20 +1339,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B99D1AFD21BFC41EDD8D44E0BA51FEE /* Build configuration list for PBXNativeTarget "YLStateMachine" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C5805B4CCFC500D0C22BE195B3E30C6 /* Debug */,
-				EE229549379A6302119ACEE7DC9DB4C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8E4634F00A785D71AC2F04C4F926A183 /* Build configuration list for PBXNativeTarget "YLExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9EE85D7AF85B7622AD8366792C5DA469 /* Debug */,
 				76004A37ED36FF7EAE4A8D4E632378DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0A0A12F86CB24F8B80096C7E5D9C51 /* Build configuration list for PBXNativeTarget "YLStateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8357B0EB2D770876D3BD651AEE70F62 /* Debug */,
+				16C16436F6C647266A848649A7500699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F138C12A793AD4AF47CE91EAA7473CF3 /* Build configuration list for PBXNativeTarget "YLRefreshKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF19D4799496D0C5292E17C6EE7B3AF9 /* Debug */,
+				D9F2362990F67AEE49980B8B7DE6AA4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

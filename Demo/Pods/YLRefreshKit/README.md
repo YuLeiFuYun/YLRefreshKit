@@ -108,7 +108,7 @@ extension Something {
 }
 ```
 
-接着，让 NetworkManager 遵循并实现 NetworkManagerType：
+接着，让 NetworkManager 遵循并实现 NetworkManagerType 协议：
 
 ```swift
 struct NetworkManager<SomeModel>: NetworkManagerType {
@@ -164,6 +164,32 @@ class TViewModel<Model: ModelType>:
 class SomeViewModel: TViewModel<SomeModel> {}
 ```
 
+创建一个遵循 NetworkManagerType 的 NetworkManager：
+
+```swift
+struct NetworkManager<Model: ModelType>: NetworkManagerType {
+    func request(target: Target, completion: @escaping (Result<Model, Error>) -> Void) {
+        switch target {
+        case .first:
+            ...
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                completion(.success(model as! Model))
+            }
+        case .second(let page):
+            ...
+            let nextPage = ...
+            let model = SecondModel(model: ..., nextPage: nextPage)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                completion(.success(model as! Model))
+            }
+            ...
+    }
+}
+```
+
+
+
 如果你需要进行错误处理或在刷新前后进行一些操作，请创建一个继承自 RefreshOperator 的子类并重写你需要的方法（如果没有这些需求，直接使用 RefreshOperator 即可）：
 
 ```swift
@@ -189,7 +215,7 @@ class CustomRefreshOperator<DS: DataSourceType, NM: NetworkManagerType>: Refresh
 接下来，创建你的 view controller：
 
 ```swift
-// 如果是一个 table view 页面，请继承 TViewController（collection view 页面请继承 CViewController）：
+// 如果是一个 table view 页面，请继承 TViewController（collection view 页面请继承 CViewController，scroll view 页面继承 SViewController）：
 import YLRefreshKit
 
 class FirstViewController: TViewController<SomeViewModel, NetworkManager<SomeModel>, CustomRefreshOperator<SomeViewModel, NetworkManager<SomeModel>>> { 
@@ -201,12 +227,12 @@ class FirstViewController: TViewController<SomeViewModel, NetworkManager<SomeMod
         // 或者，你想在页面添加一些 view
         ..
         view.addSubView(...)
-        
+        ...
         // 如果要进行页面跳转
-        tableView!.delegate = self
+        refreshableView!.delegate = self
         
         // 设置自动刷新
-        refreshableView.setAutoRefresh(refreshStateMachine: refreshStateMachine)
+        refreshableView!.setAutoRefresh(refreshStateMachine: refreshStateMachine)
     }
 }
 
@@ -240,7 +266,7 @@ extension UIScrollView {
 override func viewDidLoad() {
     super.viewDidLoad()
     ...
-    refreshableView.customAutoRefresh(refreshStateMachine: refreshStateMachine)
+    refreshableView!.customAutoRefresh(refreshStateMachine: refreshStateMachine)
 }
 ```
 

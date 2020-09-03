@@ -35,6 +35,8 @@ open class TViewController<DS: DataSourceType, NM: NetworkManagerType, RO: Refre
         
         tableView.frame = view.bounds
         tableView.separatorStyle = .none
+        // 防止出现多余的分割线
+        tableView.tableFooterView = UIView()
         tableView.dataSource = refreshStateMachine.operator.dataSource as? UITableViewDataSource
         
         if DS.Model.tCells != nil {

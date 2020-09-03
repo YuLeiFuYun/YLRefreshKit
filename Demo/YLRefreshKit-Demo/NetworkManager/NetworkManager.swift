@@ -12,7 +12,7 @@ enum Target: TargetType {
     case first(page: Int)
     case second(page: Int)
     
-    // 是否能进行下拉刷新。注意，不是指是否遵循 Refreshable 协议
+    // 是否能进行刷新操作。注意，不是指是否遵循 Refreshable 协议
     var isRefreshable: Bool {
         return true
     }
