@@ -32,6 +32,7 @@ extension UIScrollView: AutoRefreshable {
                         self.switchRefreshHeader(to: .normal(.success, 0.5))
                     default:
                         // 没有下一页了
+                        self.switchRefreshHeader(to: .normal(.success, 0.5))
                         self.switchRefreshFooter(to: .removed)
                     }
                 }
