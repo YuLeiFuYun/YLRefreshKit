@@ -40,9 +40,7 @@ open class RefreshOperator<
                 case .pullToRefresh:
                     self.dataSource.model = model
                 case .loadingMore:
-                    // 加载更多发生在最后一个 section 中
-                    let last = model.data!.count - 1
-                    self.dataSource.model!.data![last] += model.data!.last!
+                    self.dataSource.model![keyPath: model.pageablePropertyPath!] += model[keyPath: model.pageablePropertyPath!]
                 }
                 
                 // 传递刷新状态
