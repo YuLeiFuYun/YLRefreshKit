@@ -14,14 +14,13 @@ struct Emoji {
 }
 
 struct EmojiModel: ModelType {
-    let emojis: [Emoji]
+    var emojis: [Emoji]
     let nextPage: Int?
-    var data: [[Any]]?
-    
-    init(emojis: [Emoji], nextPage: Int?) {
-        self.emojis = emojis
-        self.nextPage = nextPage
-        data = [emojis]
+    var pageablePropertyPath: WritableKeyPath<EmojiModel, [Emoji]>? {
+        return \EmojiModel.emojis
+    }
+    var data: [[Any]] {
+        return [emojis]
     }
 }
 

@@ -8,14 +8,13 @@
 import YLExtensions
 
 struct NumberModel: ModelType {
-    let numbers: [Int]
+    var numbers: [Int]
     let nextPage: Int?
-    var data: [[Any]]?
-    
-    init(numbers: [Int], nextPage: Int?) {
-        self.numbers = numbers
-        self.nextPage = nextPage
-        data = [numbers]
+    var pageablePropertyPath: WritableKeyPath<NumberModel, [Int]>? {
+        return \NumberModel.numbers
+    }
+    var data: [[Any]] {
+        return [numbers]
     }
 }
 

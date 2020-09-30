@@ -18,16 +18,16 @@ class TViewModel<Model: ModelType>:
     var targetInfo: Any?
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        model == nil ? 0 : model!.data!.count
+        model == nil ? 0 : model!.data.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model == nil ? 0 : model!.data![section].count
+        model == nil ? 0 : model!.data[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, with: Model.tAll!)
-        cell.configure(model!.data![indexPath.section][indexPath.row])
+        cell.configure(model!.data[indexPath.section][indexPath.row])
         
         return cell
     }
