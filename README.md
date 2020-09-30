@@ -8,7 +8,7 @@ YLRefreshKit 通过协议对 Model、Cell、NetworkManager 及 ViewController �
 
 - #### Model
 
-由 `ModelType` 协议规范。它有一个可选的 `nextPage` 属性，加载下一页数据时会用的到；一个 `data` 属性，用以存储网络请求得来的被转化成模型的数据；它还有一些可选的类型属性，存储 `cell` 的类型，用以自动化注册及创建 `cell` 。
+  由 `ModelType` 协议规范。它有一个可选的 `nextPage` 属性，加载下一页数据时会用的到；一个只读的 `data` 属性，返回网络请求得来的被转化成模型的数据；一个只读的 `pageablePropertyPath` 属性，返回可分页属性的 `keyPath` ；它还有一些可选的类型属性，存储 `cell` 的类型，用以自动化注册及创建 `cell` 。
 
 - #### Target
 
@@ -71,17 +71,17 @@ Run `pod install` to build your dependencies.
 import YLExtensions
 
 struct SomeModel: ModelType {
-    let something: [Something]
+    var something: [Something]
     
     // 可选属性
     var nextPage: Int?
-    // 必要属性
-    var data: [[Any]]?
+    var pageablePropertyPath: WritableKeyPath<SomeModel, [Something]>? {
+        return \SomeModel.something
+    }
     
-    // 创建一个初始化方法初始化 data
-    init(something: [Something]) {
-        self.something = something
-        self.data = [something]
+    // 必要属性
+    var data: [[Any]] {
+        return [something]
     }
 }
 
@@ -241,16 +241,16 @@ class TViewModel<Model: ModelType>:
     var targetInfo: Any?
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        model == nil ? 0 : model!.data!.count
+        model == nil ? 0 : model!.data.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model == nil ? 0 : model!.data![section].count
+        model == nil ? 0 : model!.data[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, with: Model.tAll!)
-        cell.configure(model!.data![indexPath.section][indexPath.row])
+        cell.configure(model!.data[indexPath.section][indexPath.row])
         
         return cell
     }
